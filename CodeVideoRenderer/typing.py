@@ -5,41 +5,42 @@ PygmentsLanguage: TypeAlias = Literal['abap', 'amdgpu', 'apl', 'abnf', 'actionsc
 """
 A string literal type representing programming languages supported by Pygments for syntax highlighting. This type
 is used to ensure that only valid language identifiers are accepted when specifying the language for code
-rendering in the `CodeVideoRenderer` class. The list includes a wide range of programming languages, markup
+rendering in the ``CodeVideoRenderer`` class. The list includes a wide range of programming languages, markup
 languages, configuration file formats, and other text-based formats that Pygments can recognize and highlight appropriately.
 
 You can run the following code to get the complete list of supported languages:
 
-```python
-from pygments.lexers import get_all_lexers
+.. code-block:: python
 
-languages = []
-for language in list(get_all_lexers()):
-    if type(language[1]) == tuple:
-        for subitem in language[1]:
-            languages.append(subitem)
-print(languages)
-```
+    from pygments.lexers import get_all_lexers
+
+    languages = []
+    for language in list(get_all_lexers()):
+        if type(language[1]) == tuple:
+            for subitem in language[1]:
+                languages.append(subitem)
+    print(languages)
 """
 
 PygmentsFormatterStyle: TypeAlias = Literal['abap', 'algol', 'algol_nu', 'arduino', 'autumn', 'bw', 'borland', 'coffee', 'colorful', 'default', 'dracula', 'emacs', 'friendly_grayscale', 'friendly', 'fruity', 'github-dark', 'gruvbox-dark', 'gruvbox-light', 'igor', 'inkpot', 'lightbulb', 'lilypond', 'lovelace', 'manni', 'material', 'monokai', 'murphy', 'native', 'nord-darker', 'nord', 'one-dark', 'paraiso-dark', 'paraiso-light', 'pastie', 'perldoc', 'rainbow_dash', 'rrt', 'sas', 'solarized-dark', 'solarized-light', 'staroffice', 'stata-dark', 'stata-light', 'tango', 'trac', 'vim', 'vs', 'xcode', 'zenburn', 'a11y-dark', 'a11y-high-contrast-dark', 'a11y-high-contrast-light', 'a11y-light', 'blinds-dark', 'blinds-light', 'github-dark', 'github-dark-colorblind', 'github-dark-high-contrast', 'github-light', 'github-light-colorblind', 'github-light-high-contrast', 'gotthard-dark', 'gotthard-light', 'greative', 'pitaya-smoothie', 'vsc']
 """
 A string literal type representing formatter styles supported by Pygments for syntax highlighting. This type is used
 to ensure that only valid formatter styles are accepted when specifying the formatter style for code rendering in the
-`CodeVideoRenderer` class. The list includes a variety of styles that can be applied to the syntax highlighting,
+``CodeVideoRenderer`` class. The list includes a variety of styles that can be applied to the syntax highlighting,
 ranging from light and dark themes to styles designed for accessibility and specific color schemes.
 
 You can run the following code to get the complete list of supported formatter styles:
-```python
-from pygments.styles import get_all_styles
 
-print(list(get_all_styles()))
-```
+.. code-block:: python
+
+    from pygments.styles import get_all_styles
+
+    print(list(get_all_styles()))
 """
 
 StrPath: TypeAlias = Union[str, PathLike[str]]
 """
-A string or `os.PathLike` representing a path to a directory or file.
+A string or ``os.PathLike[str]`` representing a path to a directory or file.
 """
 
 __all__ = [

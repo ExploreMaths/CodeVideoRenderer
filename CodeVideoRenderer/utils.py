@@ -10,6 +10,7 @@ from PIL import Image, ImageFilter, ImageEnhance
 from proglog import ProgressBarLogger
 from collections import OrderedDict
 from os import PathLike
+from functools import wraps
 import numpy as np
 import time, sys, inspect, re
 
@@ -362,6 +363,7 @@ def typeChecker(func: Callable[P, R]) -> Callable[P, R]:
     Returns:
         Callable: The wrapped function with type checking.
     """
+    @wraps(func)
     def wrapper(*args, **kwargs):
         sig = inspect.signature(func)
         bound_args = sig.bind(*args, **kwargs)
