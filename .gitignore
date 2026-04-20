@@ -1,0 +1,8 @@
+/build/
+/dist/
+/CodeVideoRenderer.egg-info/
+/media/
+/.vscode/
+/test.py
+/update.bat
+/CodeVideoRenderer/__pycache__/
