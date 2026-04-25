@@ -85,7 +85,7 @@ def test_camera_follow_cursor():
     """Test camera follows cursor correctly."""
     video = CameraFollowCursorCV(('string', 'print("test")'), 'python')
     # Test implementation
-    assert renderer.camera_behavior is not None
+    assert video.camera_behavior is not None
 ```
 
 ### Running Tests
