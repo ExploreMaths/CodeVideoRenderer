@@ -25,6 +25,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     "sphinx_design",
     "sphinx_copybutton",
+    "m2r2",
 ]
 
 templates_path = ['_templates']
@@ -43,3 +44,4 @@ html_css_files = ['custom.css']
 
 html_title = f'{project} v{release}'
 html_logo = f'{html_static_path[0]}/logo.png'
+html_favicon = f'{html_static_path[0]}/favicon.ico'
