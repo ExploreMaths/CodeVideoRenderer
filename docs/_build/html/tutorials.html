@@ -10,8 +10,10 @@
         <title>Tutorials &amp; Guides - CodeVideoRenderer v1.2.1</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4f9db875" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=869e443f" />
     
     
 
@@ -208,14 +210,13 @@
 <li class="toctree-l2"><a class="reference internal" href="version.html">Version</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/CodeVideoRenderer">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/codevideorenderer/">PyPI Package</a></li>
 </ul>
 
@@ -265,16 +266,20 @@
 <p>Create your first code animation video:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">CodeVideoRenderer</span><span class="w"> </span><span class="kn">import</span> <span class="n">CameraFollowCursorCV</span>
 
-<span class="c1"># Create a simple code animation</span>
-<span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
-    <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;def hello_world():</span>
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">def hello_world():</span>
 <span class="s1">    print(&quot;Hello, World!&quot;)</span>
-<span class="s1">    return True&#39;&#39;&#39;</span><span class="p">),</span>
+<span class="s1">    return True</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="c1"># Create a simple code animation</span>
+<span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+    <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">formatter_style</span><span class="o">=</span><span class="s1">&#39;github-dark&#39;</span>
 <span class="p">)</span>
 
-<span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+<span class="n">video</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -305,7 +310,7 @@
 <section id="customizing-animation-speed">
 <h3>Customizing Animation Speed<a class="headerlink" href="#customizing-animation-speed" title="Link to this heading">¶</a></h3>
 <p>Control the typing speed with interval ranges:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;your_code_here&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">interval_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>  <span class="c1"># Fast typing</span>
@@ -317,7 +322,7 @@
 <section id="working-with-files">
 <h3>Working with Files<a class="headerlink" href="#working-with-files" title="Link to this heading">¶</a></h3>
 <p>Animate code from existing files:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;path/to/your/script.py&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">video_name</span><span class="o">=</span><span class="s1">&#39;MyScriptAnimation&#39;</span>
@@ -332,7 +337,7 @@
 <h3>Custom Styling<a class="headerlink" href="#custom-styling" title="Link to this heading">¶</a></h3>
 <p>Use different syntax highlighting styles:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Available styles: github-dark, monokai, solarized-dark, etc.</span>
-<span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">formatter_style</span><span class="o">=</span><span class="s1">&#39;monokai&#39;</span>
@@ -343,7 +348,7 @@
 <section id="camera-configuration">
 <h3>Camera Configuration<a class="headerlink" href="#camera-configuration" title="Link to this heading">¶</a></h3>
 <p>Adjust camera behavior for different code sizes:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;large_code_block&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">camera_scale</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>  <span class="c1"># Zoom out for large files</span>
@@ -474,5 +479,8 @@
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     </body>
 </html>

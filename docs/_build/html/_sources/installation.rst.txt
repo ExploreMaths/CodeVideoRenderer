@@ -15,24 +15,26 @@ Before installing CodeVideoRenderer, ensure you have the following:
 Installing FFmpeg
 ^^^^^^^^^^^^^^^^^
 
-**Windows:**
+.. tab-set::
 
-1. Download FFmpeg from https://ffmpeg.org/download.html
-2. Extract to a folder (e.g., ``C:\\ffmpeg``)
-3. Add to PATH: ``System Properties > Environment Variables > Path > Edit > Add``
+   .. tab-item:: Windows
 
-**macOS:**
+      .. code-block:: bash
 
-.. code-block:: bash
+         winget install ffmpeg
 
-   brew install ffmpeg
+   .. tab-item:: macOS
 
-**Linux (Ubuntu/Debian):**
+      .. code-block:: bash
 
-.. code-block:: bash
+         brew install ffmpeg
 
-   sudo apt update
-   sudo apt install ffmpeg
+   .. tab-item:: Linux
+
+      .. code-block:: bash
+
+         sudo apt update
+         sudo apt install ffmpeg
 
 Basic Installation
 ------------------
@@ -63,7 +65,7 @@ To install from source for development:
 
 .. code-block:: bash
 
-   git clone https://github.com/yourusername/CodeVideoRenderer.git
+   git clone https://github.com/ExploreMaths/CodeVideoRenderer.git
    cd CodeVideoRenderer
    pip install -e .
 
@@ -90,8 +92,3 @@ Next Steps
 ----------
 
 After installation, proceed to the :doc:`tutorials` section to start using CodeVideoRenderer.
-
-.. seealso::
-   :doc:`tutorials` for getting started guides
-   :doc:`examples` for code examples
-   :doc:`reference` for API documentation

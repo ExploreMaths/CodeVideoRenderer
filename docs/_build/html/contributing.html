@@ -10,8 +10,10 @@
         <title>Contributing - CodeVideoRenderer v1.2.1</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4f9db875" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=869e443f" />
     
     
 
@@ -208,14 +210,13 @@
 <li class="toctree-l2"><a class="reference internal" href="version.html">Version</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/CodeVideoRenderer">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/codevideorenderer/">PyPI Package</a></li>
 </ul>
 
@@ -258,6 +259,14 @@
           <section id="contributing">
 <h1>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">¶</a></h1>
 <p>We welcome contributions from the community! This guide will help you get started with contributing to CodeVideoRenderer.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="code_of_conduct.html"><span class="doc">Code of Conduct</span></a> for community guidelines</p></li>
+<li><p><a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> for development setup</p></li>
+<li><p><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer">GitHub repository</a> for current issues and discussions</p></li>
+</ul>
+</div>
 <section id="ways-to-contribute">
 <h2>Ways to Contribute<a class="headerlink" href="#ways-to-contribute" title="Link to this heading">¶</a></h2>
 <p>There are many ways to contribute:</p>
@@ -277,7 +286,7 @@
 <ol class="arabic">
 <li><p><strong>Fork the repository</strong> on GitHub</p></li>
 <li><p><strong>Clone your fork</strong>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/yourusername/CodeVideoRenderer.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ExploreMaths/CodeVideoRenderer.git
 <span class="nb">cd</span><span class="w"> </span>CodeVideoRenderer
 </pre></div>
 </div>
@@ -345,7 +354,7 @@ pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </s
 <p>Example test:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">test_camera_follow_cursor</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Test camera follows cursor correctly.&quot;&quot;&quot;</span>
-    <span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">((</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;print(&quot;test&quot;)&#39;</span><span class="p">),</span> <span class="s1">&#39;python&#39;</span><span class="p">)</span>
+    <span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">((</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;print(&quot;test&quot;)&#39;</span><span class="p">),</span> <span class="s1">&#39;python&#39;</span><span class="p">)</span>
     <span class="c1"># Test implementation</span>
     <span class="k">assert</span> <span class="n">renderer</span><span class="o">.</span><span class="n">camera_behavior</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
 </pre></div>
@@ -470,12 +479,6 @@ What actually happened
 <li><p><strong>Join the community chat</strong> (if available)</p></li>
 <li><p><strong>Contact maintainers</strong> for guidance</p></li>
 </ul>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference internal" href="code_of_conduct.html"><span class="doc">Code of Conduct</span></a> for community guidelines
-<a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> for development setup
-GitHub repository for current issues and discussions</p>
-</div>
 </section>
 </section>
 
@@ -575,5 +578,8 @@ GitHub repository for current issues and discussions</p>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     </body>
 </html>

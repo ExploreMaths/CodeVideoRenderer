@@ -3,6 +3,12 @@ Contributing
 
 We welcome contributions from the community! This guide will help you get started with contributing to CodeVideoRenderer.
 
+.. seealso::
+   
+   * :doc:`code_of_conduct` for community guidelines
+   * :doc:`installation` for development setup
+   * `GitHub repository <https://github.com/ExploreMaths/CodeVideoRenderer>`_ for current issues and discussions
+
 Ways to Contribute
 ------------------
 
@@ -26,7 +32,7 @@ Development Environment Setup
 
    .. code-block:: bash
 
-      git clone https://github.com/yourusername/CodeVideoRenderer.git
+      git clone https://github.com/ExploreMaths/CodeVideoRenderer.git
       cd CodeVideoRenderer
 
 3. **Set up development environment**:
@@ -95,7 +101,7 @@ Example test:
 
    def test_camera_follow_cursor():
        """Test camera follows cursor correctly."""
-       renderer = CameraFollowCursorCV(('string', 'print("test")'), 'python')
+       video = CameraFollowCursorCV(('string', 'print("test")'), 'python')
        # Test implementation
        assert renderer.camera_behavior is not None
 
@@ -220,8 +226,3 @@ If you need help with contributing:
 * **Ask in GitHub discussions**
 * **Join the community chat** (if available)
 * **Contact maintainers** for guidance
-
-.. seealso::
-   :doc:`code_of_conduct` for community guidelines
-   :doc:`installation` for development setup
-   GitHub repository for current issues and discussions

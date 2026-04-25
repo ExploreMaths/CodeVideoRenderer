@@ -64,7 +64,6 @@ Index
    installation
    tutorials
    reference
-   plugins
    changelog
    contributing
    code_of_conduct
@@ -73,5 +72,5 @@ Index
    :maxdepth: 1
    :caption: External Links
    
-   GitHub Repository <https://github.com/yourusername/CodeVideoRenderer>
+   GitHub Repository <https://github.com/ExploreMaths/CodeVideoRenderer>
    PyPI Package <https://pypi.org/project/codevideorenderer/>

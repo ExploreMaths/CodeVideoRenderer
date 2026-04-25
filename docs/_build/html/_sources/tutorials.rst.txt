@@ -15,16 +15,20 @@ Create your first code animation video:
 
     from CodeVideoRenderer import CameraFollowCursorCV
 
-    # Create a simple code animation
-    renderer = CameraFollowCursorCV(
-        code=('string', '''def hello_world():
+    code = '''
+    def hello_world():
         print("Hello, World!")
-        return True'''),
+        return True
+    '''
+
+    # Create a simple code animation
+    video = CameraFollowCursorCV(
+        code=('string', code),
         language='python',
         formatter_style='github-dark'
     )
 
-    renderer.render()
+    video.render()
 
 Basic Concepts
 --------------
@@ -56,7 +60,7 @@ Control the typing speed with interval ranges:
 
 .. code-block:: python
 
-   renderer = CameraFollowCursorCV(
+   video = CameraFollowCursorCV(
        code=('string', 'your_code_here'),
        language='python',
        interval_range=(0.05, 0.1),  # Fast typing
@@ -70,7 +74,7 @@ Animate code from existing files:
 
 .. code-block:: python
 
-   renderer = CameraFollowCursorCV(
+   video = CameraFollowCursorCV(
        code=('file', 'path/to/your/script.py'),
        language='python',
        video_name='MyScriptAnimation'
@@ -87,7 +91,7 @@ Use different syntax highlighting styles:
 .. code-block:: python
 
    # Available styles: github-dark, monokai, solarized-dark, etc.
-   renderer = CameraFollowCursorCV(
+   video = CameraFollowCursorCV(
        code=('string', 'code'),
        language='python',
        formatter_style='monokai'
@@ -100,7 +104,7 @@ Adjust camera behavior for different code sizes:
 
 .. code-block:: python
 
-   renderer = CameraFollowCursorCV(
+   video = CameraFollowCursorCV(
        code=('string', 'large_code_block'),
        language='python',
        camera_scale=0.3,  # Zoom out for large files

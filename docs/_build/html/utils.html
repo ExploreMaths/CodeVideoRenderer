@@ -10,8 +10,10 @@
         <title>Utilities - CodeVideoRenderer v1.2.1</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4f9db875" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=869e443f" />
     
     
 
@@ -208,14 +210,13 @@
 <li class="toctree-l2"><a class="reference internal" href="version.html">Version</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/CodeVideoRenderer">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/codevideorenderer/">PyPI Package</a></li>
 </ul>
 
@@ -257,56 +258,42 @@
         <article role="main" id="furo-main-content">
           <section id="module-CodeVideoRenderer.utils">
 <span id="utilities"></span><h1>Utilities<a class="headerlink" href="#module-CodeVideoRenderer.utils" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.DefaultProgressBar">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">DefaultProgressBar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#DefaultProgressBar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.DefaultProgressBar" title="Link to this definition">¶</a></dt>
-<dd><p>Default progress bar.</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">RichProgressBarLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leave_bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignored_bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logged_bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_messages</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_time_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_bars_under</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger" title="Link to this definition">¶</a></dt>
-<dd><p>A progress logger that uses Rich to display progress bars.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback">
-<span class="sig-name descname"><span class="pre">bars_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.bars_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback" title="Link to this definition">¶</a></dt>
-<dd><p>Update the Rich progress bar task based on the attribute change.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar">
-<span class="sig-name descname"><span class="pre">close_tqdm_bar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.close_tqdm_bar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar" title="Link to this definition">¶</a></dt>
-<dd><p>Close the Rich progress bar task for the given bar.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar">
-<span class="sig-name descname"><span class="pre">new_tqdm_bar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.new_tqdm_bar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar" title="Link to this definition">¶</a></dt>
-<dd><p>Create a Rich progress bar task for the given bar.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.stop">
-<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.stop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.stop" title="Link to this definition">¶</a></dt>
-<dd><p>Stop the Rich progress bar.</p>
-</dd></dl>
-
+<dl class="py function">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.noManimOutput">
+<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">noManimOutput</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Generator</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#noManimOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.noManimOutput" title="Link to this definition">¶</a></dt>
+<dd><p>Context manager used to execute code without outputting Manim logs.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.addGlowEffect">
-<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">addGlowEffect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#addGlowEffect"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.addGlowEffect" title="Link to this definition">¶</a></dt>
-<dd><p>Add a glow effect to a video.</p>
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.stripEmptyLines">
+<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">stripEmptyLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#stripEmptyLines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.stripEmptyLines" title="Link to this definition">¶</a></dt>
+<dd><p>Remove empty lines from the beginning and end of a string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>input_path</strong> (<em>StrPath</em>) – Path to the input video file.</p></li>
-<li><p><strong>output_path</strong> (<em>StrPath</em>) – Path to save the output video file.</p></li>
-<li><p><strong>output</strong> (<em>bool</em>) – Whether to display progress bars.</p></li>
-</ul>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input string to process.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>None</p>
+<dd class="field-even"><p>The string with empty lines removed from the beginning and end.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.typeName">
+<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">typeName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#typeName"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.typeName" title="Link to this definition">¶</a></dt>
+<dd><p>Get the name of a type, handling union types and generic types.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item_type</strong> – The type or value to get the name of.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
@@ -334,18 +321,36 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.findEmptyLinePositions">
-<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">findEmptyLinePositions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#findEmptyLinePositions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.findEmptyLinePositions" title="Link to this definition">¶</a></dt>
-<dd><p>Find the line indices of all empty lines in a string.</p>
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.typeChecker">
+<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">typeChecker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#typeChecker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.typeChecker" title="Link to this definition">¶</a></dt>
+<dd><p>Decorator to check types of function arguments and return value.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – A string.</p>
+<dd class="field-odd"><p><strong>func</strong> (<em>Callable</em>) – The function to decorate.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list of line indices of all empty lines.</p>
+<dd class="field-even"><p>The wrapped function with type checking.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>list[int]</p>
+<dd class="field-odd"><p>Callable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.addGlowEffect">
+<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">addGlowEffect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#addGlowEffect"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.addGlowEffect" title="Link to this definition">¶</a></dt>
+<dd><p>Add a glow effect to a video.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_path</strong> (<em>StrPath</em>) – Path to the input video file.</p></li>
+<li><p><strong>output_path</strong> (<em>StrPath</em>) – Path to save the output video file.</p></li>
+<li><p><strong>output</strong> (<em>bool</em>) – Whether to display progress bars.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -370,9 +375,20 @@ Each position is represented as a list <cite>[row_index, column_index]</cite>.</
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.noManimOutput">
-<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">noManimOutput</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Generator</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#noManimOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.noManimOutput" title="Link to this definition">¶</a></dt>
-<dd><p>Context manager used to execute code without outputting Manim logs.</p>
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.findEmptyLinePositions">
+<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">findEmptyLinePositions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#findEmptyLinePositions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.findEmptyLinePositions" title="Link to this definition">¶</a></dt>
+<dd><p>Find the line indices of all empty lines in a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – A string.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of line indices of all empty lines.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
@@ -393,55 +409,40 @@ Retain leading and trailing spaces.</p>
 </dl>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.stripEmptyLines">
-<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">stripEmptyLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#stripEmptyLines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.stripEmptyLines" title="Link to this definition">¶</a></dt>
-<dd><p>Remove empty lines from the beginning and end of a string.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input string to process.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The string with empty lines removed from the beginning and end.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.DefaultProgressBar">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">DefaultProgressBar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#DefaultProgressBar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.DefaultProgressBar" title="Link to this definition">¶</a></dt>
+<dd><p>Default progress bar.</p>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.typeChecker">
-<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">typeChecker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#typeChecker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.typeChecker" title="Link to this definition">¶</a></dt>
-<dd><p>Decorator to check types of function arguments and return value.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>func</strong> (<em>Callable</em>) – The function to decorate.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The wrapped function with type checking.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Callable</p>
-</dd>
-</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">RichProgressBarLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leave_bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignored_bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logged_bars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_messages</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_time_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_bars_under</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger" title="Link to this definition">¶</a></dt>
+<dd><p>A progress logger that uses Rich to display progress bars.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar">
+<span class="sig-name descname"><span class="pre">new_tqdm_bar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.new_tqdm_bar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar" title="Link to this definition">¶</a></dt>
+<dd><p>Create a Rich progress bar task for the given bar.</p>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="CodeVideoRenderer.utils.typeName">
-<span class="sig-prename descclassname"><span class="pre">CodeVideoRenderer.utils.</span></span><span class="sig-name descname"><span class="pre">typeName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#typeName"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.typeName" title="Link to this definition">¶</a></dt>
-<dd><p>Get the name of a type, handling union types and generic types.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>item_type</strong> – The type or value to get the name of.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The name of the type.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar">
+<span class="sig-name descname"><span class="pre">close_tqdm_bar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.close_tqdm_bar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar" title="Link to this definition">¶</a></dt>
+<dd><p>Close the Rich progress bar task for the given bar.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback">
+<span class="sig-name descname"><span class="pre">bars_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.bars_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback" title="Link to this definition">¶</a></dt>
+<dd><p>Update the Rich progress bar task based on the attribute change.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CodeVideoRenderer.utils.RichProgressBarLogger.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/CodeVideoRenderer/utils.html#RichProgressBarLogger.stop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CodeVideoRenderer.utils.RichProgressBarLogger.stop" title="Link to this definition">¶</a></dt>
+<dd><p>Stop the Rich progress bar.</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -502,23 +503,23 @@ Retain leading and trailing spaces.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Utilities</a><ul>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.noManimOutput"><code class="docutils literal notranslate"><span class="pre">noManimOutput()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.stripEmptyLines"><code class="docutils literal notranslate"><span class="pre">stripEmptyLines()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.typeName"><code class="docutils literal notranslate"><span class="pre">typeName()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.checkType"><code class="docutils literal notranslate"><span class="pre">checkType()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.typeChecker"><code class="docutils literal notranslate"><span class="pre">typeChecker()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.addGlowEffect"><code class="docutils literal notranslate"><span class="pre">addGlowEffect()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.findSpacePositions"><code class="docutils literal notranslate"><span class="pre">findSpacePositions()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.findEmptyLinePositions"><code class="docutils literal notranslate"><span class="pre">findEmptyLinePositions()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter"><code class="docutils literal notranslate"><span class="pre">replaceMiddleSpacesWithOccupyCharacter()</span></code></a></li>
 <li><a class="reference internal" href="#CodeVideoRenderer.utils.DefaultProgressBar"><code class="docutils literal notranslate"><span class="pre">DefaultProgressBar</span></code></a></li>
 <li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger</span></code></a><ul>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger.bars_callback()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger.close_tqdm_bar()</span></code></a></li>
 <li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger.new_tqdm_bar()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger.close_tqdm_bar()</span></code></a></li>
+<li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger.bars_callback()</span></code></a></li>
 <li><a class="reference internal" href="#CodeVideoRenderer.utils.RichProgressBarLogger.stop"><code class="docutils literal notranslate"><span class="pre">RichProgressBarLogger.stop()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.addGlowEffect"><code class="docutils literal notranslate"><span class="pre">addGlowEffect()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.checkType"><code class="docutils literal notranslate"><span class="pre">checkType()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.findEmptyLinePositions"><code class="docutils literal notranslate"><span class="pre">findEmptyLinePositions()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.findSpacePositions"><code class="docutils literal notranslate"><span class="pre">findSpacePositions()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.noManimOutput"><code class="docutils literal notranslate"><span class="pre">noManimOutput()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter"><code class="docutils literal notranslate"><span class="pre">replaceMiddleSpacesWithOccupyCharacter()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.stripEmptyLines"><code class="docutils literal notranslate"><span class="pre">stripEmptyLines()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.typeChecker"><code class="docutils literal notranslate"><span class="pre">typeChecker()</span></code></a></li>
-<li><a class="reference internal" href="#CodeVideoRenderer.utils.typeName"><code class="docutils literal notranslate"><span class="pre">typeName()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -534,5 +535,8 @@ Retain leading and trailing spaces.</p>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     </body>
 </html>

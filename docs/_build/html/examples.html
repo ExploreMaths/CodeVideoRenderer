@@ -10,8 +10,10 @@
         <title>Example Gallery - CodeVideoRenderer v1.2.1</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4f9db875" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=869e443f" />
     
     
 
@@ -208,14 +210,13 @@
 <li class="toctree-l2"><a class="reference internal" href="version.html">Version</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/CodeVideoRenderer">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/codevideorenderer/">PyPI Package</a></li>
 </ul>
 
@@ -258,37 +259,46 @@
           <section id="example-gallery">
 <h1>Example Gallery<a class="headerlink" href="#example-gallery" title="Link to this heading">¶</a></h1>
 <p>This gallery showcases various examples of CodeVideoRenderer in action, demonstrating different use cases and configurations.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="tutorials.html"><span class="doc">Tutorials &amp; Guides</span></a> for step-by-step guides</p></li>
+<li><p><a class="reference internal" href="reference.html"><span class="doc">Reference Manual</span></a> for detailed API documentation</p></li>
+<li><p><a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> for setup instructions</p></li>
+</ul>
+</div>
 <section id="basic-examples">
 <h2>Basic Examples<a class="headerlink" href="#basic-examples" title="Link to this heading">¶</a></h2>
 <section id="simple-python-function">
 <h3>Simple Python Function<a class="headerlink" href="#simple-python-function" title="Link to this heading">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">CodeVideoRenderer</span><span class="w"> </span><span class="kn">import</span> <span class="n">CameraFollowCursorCV</span>
 
-<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;def fibonacci(n):</span>
-<span class="s1"> &quot;&quot;&quot;Calculate the nth Fibonacci number&quot;&quot;&quot;</span>
-<span class="s1"> if n &lt;= 1:</span>
-<span class="s1">     return n</span>
-<span class="s1"> return fibonacci(n-1) + fibonacci(n-2)</span>
+<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">def fibonacci(n):</span>
+<span class="s1">    &quot;&quot;&quot;Calculate the nth Fibonacci number&quot;&quot;&quot;</span>
+<span class="s1">    if n &lt;= 1:</span>
+<span class="s1">        return n</span>
+<span class="s1">    return fibonacci(n-1) + fibonacci(n-2)</span>
+
+<span class="s1"># Example usage</span>
+<span class="s1">result = fibonacci(10)</span>
+<span class="s1">print(f&quot;Fibonacci(10) = </span><span class="si">{result}</span><span class="s1">&quot;)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+    <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">),</span>
+    <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
+    <span class="n">formatter_style</span><span class="o">=</span><span class="s1">&#39;github-dark&#39;</span><span class="p">,</span>
+    <span class="n">video_name</span><span class="o">=</span><span class="s1">&#39;FibonacciExample&#39;</span>
+<span class="p">)</span>
+<span class="n">video</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
-<p># Example usage
-result = fibonacci(10)
-print(f”Fibonacci(10) = {result}”)’’’</p>
-<blockquote>
-<div><dl class="simple">
-<dt>renderer = CameraFollowCursorCV(</dt><dd><p>code=(‘string’, code),
-language=’python’,
-formatter_style=’github-dark’,
-video_name=’FibonacciExample’</p>
-</dd>
-</dl>
-<p>)
-renderer.render()</p>
-</div></blockquote>
 </section>
 <section id="javascript-example">
 <h3>JavaScript Example<a class="headerlink" href="#javascript-example" title="Link to this heading">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">js_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;function debounce(func, wait) {</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">js_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">function debounce(func, wait) {</span>
 <span class="s1">    let timeout;</span>
 <span class="s1">    return function executedFunction(...args) {</span>
 <span class="s1">        const later = () =&gt; {</span>
@@ -301,14 +311,15 @@ renderer.render()</p>
 <span class="s1">}</span>
 
 <span class="s1">// Usage example</span>
-<span class="s1">const debouncedSearch = debounce(searchFunction, 300);&#39;&#39;&#39;</span>
+<span class="s1">const debouncedSearch = debounce(searchFunction, 300);</span>
+<span class="s1">&#39;&#39;&#39;</span>
 
-<span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="n">js_code</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;javascript&#39;</span><span class="p">,</span>
     <span class="n">formatter_style</span><span class="o">=</span><span class="s1">&#39;monokai&#39;</span>
 <span class="p">)</span>
-<span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+<span class="n">video</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -318,12 +329,12 @@ renderer.render()</p>
 <section id="file-based-animation">
 <h3>File-based Animation<a class="headerlink" href="#file-based-animation" title="Link to this heading">¶</a></h3>
 <p>Animate code from an existing file:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;src/algorithm.py&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">video_name</span><span class="o">=</span><span class="s1">&#39;AlgorithmImplementation&#39;</span>
 <span class="p">)</span>
-<span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+<span class="n">video</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -331,14 +342,14 @@ renderer.render()</p>
 <h3>Custom Typing Speed<a class="headerlink" href="#custom-typing-speed" title="Link to this heading">¶</a></h3>
 <p>Simulate different coding styles:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fast typing (expert coder)</span>
-<span class="n">renderer_fast</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<span class="n">video_fast</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">interval_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.06</span><span class="p">)</span>
 <span class="p">)</span>
 
 <span class="c1"># Slow typing (learning/teaching)</span>
-<span class="n">renderer_slow</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+<span class="n">video_slow</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
     <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">),</span>
     <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
     <span class="n">interval_range</span><span class="o">=</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">)</span>
@@ -353,19 +364,19 @@ renderer.render()</p>
 <h3>Multi-language Demonstration<a class="headerlink" href="#multi-language-demonstration" title="Link to this heading">¶</a></h3>
 <p>Showcase code in different programming languages:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">languages_examples</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;python_code&#39;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">&#39;javascript&#39;</span><span class="p">,</span> <span class="s1">&#39;js_code&#39;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">&#39;java&#39;</span><span class="p">,</span> <span class="s1">&#39;java_code&#39;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">&#39;cpp&#39;</span><span class="p">,</span> <span class="s1">&#39;cpp_code&#39;</span><span class="p">)</span>
+    <span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;print(&quot;Hello, World!&quot;)&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;javascript&#39;</span><span class="p">,</span> <span class="s1">&#39;console.log(&quot;Hello, World!&quot;);&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;java&#39;</span><span class="p">,</span> <span class="s1">&#39;System.out.println(&quot;Hello, World!&quot;);&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;cpp&#39;</span><span class="p">,</span> <span class="s1">&#39;printf(&quot;Hello, World!&quot;);&#39;</span><span class="p">)</span>
 <span class="p">]</span>
 
 <span class="k">for</span> <span class="n">lang</span><span class="p">,</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">languages_examples</span><span class="p">:</span>
-    <span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+    <span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
         <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">),</span>
         <span class="n">language</span><span class="o">=</span><span class="n">lang</span><span class="p">,</span>
         <span class="n">video_name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">lang</span><span class="si">}</span><span class="s1">_example&#39;</span>
     <span class="p">)</span>
-    <span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+    <span class="n">video</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -375,13 +386,13 @@ renderer.render()</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">styles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;github-dark&#39;</span><span class="p">,</span> <span class="s1">&#39;monokai&#39;</span><span class="p">,</span> <span class="s1">&#39;solarized-dark&#39;</span><span class="p">,</span> <span class="s1">&#39;dracula&#39;</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">style</span> <span class="ow">in</span> <span class="n">styles</span><span class="p">:</span>
-    <span class="n">renderer</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
+    <span class="n">video</span> <span class="o">=</span> <span class="n">CameraFollowCursorCV</span><span class="p">(</span>
         <span class="n">code</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;example_code&#39;</span><span class="p">),</span>
         <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span>
         <span class="n">formatter_style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
         <span class="n">video_name</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;style_</span><span class="si">{</span><span class="n">style</span><span class="si">}</span><span class="s1">&#39;</span>
     <span class="p">)</span>
-    <span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+    <span class="n">video</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -391,41 +402,48 @@ renderer.render()</p>
 <section id="algorithm-explanation">
 <h3>Algorithm Explanation<a class="headerlink" href="#algorithm-explanation" title="Link to this heading">¶</a></h3>
 <p>Demonstrate sorting algorithms:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sorting_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;def quicksort(arr):</span>
-<span class="s1"> if len(arr) &lt;= 1:</span>
-<span class="s1">     return arr</span>
-<span class="s1"> pivot = arr[len(arr) // 2]</span>
-<span class="s1"> left = [x for x in arr if x &lt; pivot]</span>
-<span class="s1"> middle = [x for x in arr if x == pivot]</span>
-<span class="s1"> right = [x for x in arr if x &gt; pivot]</span>
-<span class="s1"> return quicksort(left) + middle + quicksort(right)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sorting_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">def quicksort(arr):</span>
+<span class="s1">    if len(arr) &lt;= 1:</span>
+<span class="s1">        return arr</span>
+<span class="s1">    pivot = arr[len(arr) // 2]</span>
+<span class="s1">    left = [x for x in arr if x &lt; pivot]</span>
+<span class="s1">    middle = [x for x in arr if x == pivot]</span>
+<span class="s1">    right = [x for x in arr if x &gt; pivot]</span>
+<span class="s1">    return quicksort(left) + middle + quicksort(right)</span>
+
+<span class="s1"># Example usage</span>
+<span class="s1">numbers = [3, 6, 8, 10, 1, 2, 1]</span>
+<span class="s1">sorted_numbers = quicksort(numbers)</span>
+<span class="s1">&#39;&#39;&#39;</span>
 </pre></div>
 </div>
-<p># Example usage
-numbers = [3, 6, 8, 10, 1, 2, 1]
-sorted_numbers = quicksort(numbers)’’’</p>
 </section>
 <section id="code-review-demonstration">
 <h3>Code Review Demonstration<a class="headerlink" href="#code-review-demonstration" title="Link to this heading">¶</a></h3>
 <p>Show before/after code improvements:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Original code</span>
-<span class="n">original</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;def calculate_total(items):</span>
-<span class="s1"> total = 0</span>
-<span class="s1"> for item in items:</span>
-<span class="s1">     total += item.price</span>
-<span class="s1"> return total&#39;&#39;&#39;</span>
+<span class="n">original</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">def calculate_total(items):</span>
+<span class="s1">    total = 0</span>
+<span class="s1">    for item in items:</span>
+<span class="s1">        total += item.price</span>
+<span class="s1">    return total</span>
+<span class="s1">&#39;&#39;&#39;</span>
 
 <span class="c1"># Improved code</span>
-<span class="n">improved</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;from typing import List</span>
-<span class="s1"> from dataclasses import dataclass</span>
+<span class="n">improved</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">from typing import List</span>
+<span class="s1">from dataclasses import dataclass</span>
 
-<span class="s1"> @dataclass</span>
-<span class="s1"> class Item:</span>
-<span class="s1">     price: float</span>
+<span class="s1">@dataclass</span>
+<span class="s1">class Item:</span>
+<span class="s1">    price: float</span>
 
-<span class="s1"> def calculate_total(items: List[Item]) -&gt; float:</span>
-<span class="s1">     &quot;&quot;&quot;Calculate total price of items.&quot;&quot;&quot;</span>
-<span class="s1">     return sum(item.price for item in items)&#39;&#39;&#39;</span>
+<span class="s1">def calculate_total(items: List[Item]) -&gt; float:</span>
+<span class="s1">    &quot;&quot;&quot;Calculate total price of items.&quot;&quot;&quot;</span>
+<span class="s1">    return sum(item.price for item in items)</span>
+<span class="s1">&#39;&#39;&#39;</span>
 </pre></div>
 </div>
 </section>
@@ -444,15 +462,9 @@ sorted_numbers = quicksort(numbers)’’’</p>
 <h2>Getting the Examples<a class="headerlink" href="#getting-the-examples" title="Link to this heading">¶</a></h2>
 <p>All examples can be found in the GitHub repository:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/yourusername/CodeVideoRenderer/tree/main/examples">Example scripts</a></p></li>
-<li><p><a class="reference external" href="https://github.com/yourusername/CodeVideoRenderer/tree/main/samples">Sample output videos</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer/tree/main/examples">Example scripts</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ExploreMaths/CodeVideoRenderer/tree/main/samples">Sample output videos</a></p></li>
 </ul>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference internal" href="tutorials.html"><span class="doc">Tutorials &amp; Guides</span></a> for step-by-step guides
-<a class="reference internal" href="reference.html"><span class="doc">Reference Manual</span></a> for detailed API documentation
-<a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> for setup instructions</p>
-</div>
 </section>
 </section>
 
@@ -549,5 +561,8 @@ sorted_numbers = quicksort(numbers)’’’</p>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     </body>
 </html>

@@ -3,12 +3,6 @@ Contributing
 
 We welcome contributions from the community! This guide will help you get started with contributing to CodeVideoRenderer.
 
-.. seealso::
-   
-   * :doc:`code_of_conduct` for community guidelines
-   * :doc:`installation` for development setup
-   * `GitHub repository <https://github.com/ExploreMaths/CodeVideoRenderer>`_ for current issues and discussions
-
 Ways to Contribute
 ------------------
 
@@ -206,7 +200,7 @@ Community Guidelines
 * Be respectful and inclusive
 * Help others when you can
 * Provide constructive feedback
-* Follow the :doc:`code_of_conduct`
+* Follow the `Code of Conduct <https://github.com/ExploreMaths/CodeVideoRenderer?tab=coc-ov-file>`_.
 
 Recognition
 -----------

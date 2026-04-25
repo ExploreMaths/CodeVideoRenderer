@@ -1,3 +1,10 @@
 .sidebar-brand-text {
     font-size: 1.45rem !important;
 }
+
+.sd-badge {
+    font-size: 0.45em !important;
+    vertical-align: middle;
+    margin-top: -0.45em;
+    border-radius: 100rem;
+}

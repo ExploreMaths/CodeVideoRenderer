@@ -1,12 +1,6 @@
 Code of Conduct
 ===============
 
-.. seealso::
-
-   * :doc:`contributing` for contribution guidelines
-   * `GitHub repository <https://github.com/ExploreMaths/CodeVideoRenderer>`_ for community discussions
-   * `Contributor Covenant <https://www.contributor-covenant.org/>`_ for more information
-
 Our Pledge
 ----------
 
