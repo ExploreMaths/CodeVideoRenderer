@@ -4,4 +4,3 @@ sphinx-design
 sphinx-copybutton
 m2r2
 mistune<3.0.0
--e ..
