@@ -10,7 +10,7 @@ build:
   tools:
     python: "3.13"
   commands:
-    - python -m pip install -e .. --no-deps
+    - python -m pip install -e . --no-deps
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
