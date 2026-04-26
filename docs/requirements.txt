@@ -1,0 +1,6 @@
+sphinx>=7.0
+furo
+sphinx-design
+sphinx-copybutton
+m2r2
+mistune<3.0.0
