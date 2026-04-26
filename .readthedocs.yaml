@@ -20,8 +20,4 @@ sphinx:
 python:
   install:
   - requirements: docs/requirements.txt
-  - method: pip
-    path: .
-    options:
-      no-deps: true
         
