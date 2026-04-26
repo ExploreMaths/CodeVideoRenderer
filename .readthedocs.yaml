@@ -22,5 +22,6 @@ python:
   - requirements: docs/requirements.txt
   - method: pip
     path: .
-    extra_args: "--no-deps"
+    options:
+      no-deps: true
         
