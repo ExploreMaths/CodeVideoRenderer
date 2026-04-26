@@ -61,7 +61,7 @@ video.render("hello_world.mp4")
 
 ## 📚 Documentation
 
-Full documentation and examples available at <https://exploremaths.github.io/CodeVideoRenderer/>.
+Full documentation and examples available at <https://codevideorenderer.readthedocs.io/>.
 
 ## 🤝 Contact Us
 
