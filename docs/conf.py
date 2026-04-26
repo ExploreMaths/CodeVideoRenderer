@@ -16,7 +16,7 @@ release = '1.2.1'
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.abspath('..'))
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -40,8 +40,30 @@ autodoc_default_options = {
 
 html_theme = 'furo'
 html_static_path = ['_static']
-html_css_files = ['custom.css']
+html_css_files = [
+    'custom.css',
+    'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css',
+]
 
 html_title = f'{project} v{release}'
 html_logo = f'{html_static_path[0]}/logo.png'
 html_favicon = f'{html_static_path[0]}/favicon.ico'
+html_theme_options = {
+    "light_css_variables": {
+        "font-stack--headings": "Georgia, serif",
+    },
+    "footer_icons": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/ExploreMaths/CodeVideoRenderer",
+            "html": "",
+            "class": "fa-brands fa-github fa-lg",
+        },
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/codevideorenderer/",
+            "html": "",
+            "class": "fa-brands fa-python fa-lg",
+        },
+    ],
+}

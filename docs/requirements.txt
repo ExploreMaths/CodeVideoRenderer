@@ -4,3 +4,9 @@ sphinx-design
 sphinx-copybutton
 m2r2
 mistune<3.0.0
+manim>=0.20.1
+rich>=14.2.0
+numpy>=2.4.2
+proglog>=0.1.12
+moviepy>=2.2.1
+pillow>=11.2.1
