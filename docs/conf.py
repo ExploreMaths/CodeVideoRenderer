@@ -11,10 +11,6 @@ copyright = '2026, Explore Maths'
 author = 'Explore Maths'
 release = '1.2.2'
 
-language = "en"
-gettext_compact = False
-locale_dirs = ['locales/']
-
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -69,13 +65,13 @@ html_theme_options = {
             "name": "GitHub",
             "url": "https://github.com/ExploreMaths/CodeVideoRenderer",
             "html": "",
-            "class": "fa-brands fa-github",
+            "class": "fa-brands fa-github fa-lg",
         },
         {
             "name": "PyPI",
             "url": "https://pypi.org/project/codevideorenderer/",
             "html": "",
-            "class": "fa-brands fa-python",
+            "class": "fa-brands fa-python fa-lg",
         },
     ],
 }
