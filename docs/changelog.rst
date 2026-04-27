@@ -9,8 +9,24 @@ This document records all notable changes to CodeVideoRenderer.
    * `GitHub releases <https://github.com/ExploreMaths/CodeVideoRenderer/releases>`_ for detailed change information
    * :doc:`contributing` for information on reporting issues
 
-CodeVideoRenderer 1.2.1 :bdg-success-line:`Latest`
+CodeVideoRenderer 1.2.2 :bdg-success-line:`Latest`
 ------------------------------------------------------------------------
+
+**Date**: Apr 27, 2026
+
+See details at https://pypi.org/project/codevideorenderer/1.2.2/.
+
+.. admonition:: What's Changed
+   :class: tip
+
+   **Changes 🧹**
+   
+   * Convert all documents (functions, classes, constants) to the reStructuredText format for better compatibility with Sphinx documentation.
+
+   * Change the default value of the ``formatter_style`` parameter in the :class:`~.CameraFollowCursorCV` class to ``"material"``.
+
+CodeVideoRenderer 1.2.1
+----------------------------
 
 **Date**: Mar 22, 2026
 

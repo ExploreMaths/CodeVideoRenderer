@@ -21,14 +21,14 @@ class CameraFollowCursorCV:
     character while smoothly moving the camera to follow the cursor, creating a professional-looking coding demonstration.
 
     Args:
-        code (Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]]): The code to be animated. **When using a string**, provide a tuple with the first element as `'string'` and the second element as the code string. **When using a file**, provide a tuple with the first element as `'file'` and the second element as the file path.
+        code (Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]]): The code to be animated. **When using a string**, provide a tuple with the first element as ``'string'`` and the second element as the code string. **When using a file**, provide a tuple with the first element as ``'file'`` and the second element as the file path.
         language (PygmentsLanguage): The programming language of the code.
-        formatter_style (PygmentsFormatterStyle): The style for syntax highlighting. Defaults to `"github-dark"`.
-        line_spacing (float | int): The line spacing for the code. Defaults to `DEFAULT_LINE_SPACING`.
-        interval_range (tuple[float | int, float | int]): The range of typing intervals between characters. Defaults to `(DEFAULT_TYPE_INTERVAL, DEFAULT_TYPE_INTERVAL)`.
+        formatter_style (PygmentsFormatterStyle): The style for syntax highlighting. Defaults to ``"material"``.
+        line_spacing (float | int): The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`.
+        interval_range (tuple[float | int, float | int]): The range of typing intervals between characters. Defaults to (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`).
         camera_scale (float | int): The scale factor for the camera. Defaults to 0.5.
-        video_name (str): The name of the output video file. Defaults to `"CameraFollowCursorCV"`.
-        renderer (Literal['cairo', 'opengl']): The renderer to use for video rendering. Defaults to `'cairo'`.
+        video_name (str): The name of the output video file. Defaults to ``"CameraFollowCursorCV"``.
+        renderer (Literal['cairo', 'opengl']): The renderer to use for video rendering. Defaults to ``'cairo'``.
     """
     __all__ = ["render"]
 
@@ -36,7 +36,7 @@ class CameraFollowCursorCV:
     def __init__(self,
         code: Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]],
         language: PygmentsLanguage,
-        formatter_style: PygmentsFormatterStyle = "github-dark",
+        formatter_style: PygmentsFormatterStyle = "material",
         line_spacing: float | int = DEFAULT_LINE_SPACING,
         interval_range: tuple[float | int, float | int] = (DEFAULT_TYPE_INTERVAL, DEFAULT_TYPE_INTERVAL),
         camera_scale: float | int = 0.5,
@@ -343,7 +343,7 @@ class CameraFollowCursorCV:
         Render the scene, optionally with console output.
 
         Args:
-            output (bool): Whether to print console output during rendering. Defaults to `DEFAULT_OUTPUT_VALUE`
+            output (bool): Whether to print console output during rendering. Defaults to :data:`~.DEFAULT_OUTPUT_VALUE`.
         """
         self.output = output
         self.scene.render()

@@ -213,11 +213,3 @@ Generated videos will feature:
 * **Syntax highlighting** appropriate for each language
 * **Camera movement** that follows the cursor naturally
 * **Professional appearance** suitable for presentations
-
-Getting the Examples
---------------------
-
-All examples can be found in the GitHub repository:
-
-* `Example scripts <https://github.com/ExploreMaths/CodeVideoRenderer/tree/main/examples>`_
-* `Sample output videos <https://github.com/ExploreMaths/CodeVideoRenderer/tree/main/samples>`_

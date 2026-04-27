@@ -9,7 +9,7 @@
 project = 'CodeVideoRenderer'
 copyright = '2026, Explore Maths'
 author = 'Explore Maths'
-release = '1.2.1'
+release = '1.2.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -19,13 +19,13 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 extensions = [
+    "m2r2",
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
     "sphinx_design",
     "sphinx_copybutton",
-    "m2r2",
 ]
 
 templates_path = ['_templates']

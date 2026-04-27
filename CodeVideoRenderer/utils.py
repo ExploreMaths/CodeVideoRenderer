@@ -99,7 +99,7 @@ def checkType(value: Any, expected_type: Any | type[Any], param_name: str, path:
         value (Any): The value to check.
         expected_type (Any | type[Any]): The expected type.
         param_name (str): The name of the parameter being checked.
-        path (str, optional): The path to the current value (for nested types). Defaults to "".
+        path (str, optional): The path to the current value (for nested types). Defaults to ``""``.
         
     Raises:
         TypeError: If the value doesn't match the expected type.
@@ -421,14 +421,14 @@ def addGlowEffect(input_path: StrPath, output_path: StrPath, output: bool) -> No
 def findSpacePositions(string: str) -> list[list[int]]:
     """
     Find the 2D positions of all non-leading, non-trailing spaces in a string.
-    Each position is represented as a list `[row_index, column_index]`.
+    Each position is represented as a list ``[row_index, column_index]``.
     
     Args:
         string (str): A string.
         
     Returns:
         list[list[int]]: A list of 2D positions of all non-leading, non-trailing spaces.
-        Each position is represented as a list `[row_index, column_index]`.
+        Each position is represented as a list ``[row_index, column_index]``.
     """
     result = []  # 存储所有[行, 列]格式的空格位置
     for row_idx, s in enumerate(string.splitlines()):
@@ -468,14 +468,14 @@ def findEmptyLinePositions(string: str) -> list[int]:
 
 def replaceMiddleSpacesWithOccupyCharacter(string: str) -> str:
     """
-    Replace all non-leading, non-trailing spaces in the input string with `OCCUPY_CHARACTER`.
+    Replace all non-leading, non-trailing spaces in the input string with :data:`~.OCCUPY_CHARACTER`.
     Retain leading and trailing spaces.
     
     Args:
         string (str): Original string.
         
     Returns:
-        str: Processed string with middle spaces replaced by `OCCUPY_CHARACTER`.
+        str: Processed string with middle spaces replaced by :data:`~.OCCUPY_CHARACTER`.
     """
     result = []
     for s in string.splitlines():

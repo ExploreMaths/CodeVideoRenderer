@@ -1,7 +1,7 @@
 /build/
 /dist/
 /CodeVideoRenderer.egg-info/
-/media/
+media/
 /.vscode/
 /test.py
 /update.bat
