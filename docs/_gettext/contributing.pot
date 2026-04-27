@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 20:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../CONTRIBUTING.md:3
+msgid "Contributing"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:5
+msgid "We welcome contributions from the community! This guide will help you get started with contributing to CodeVideoRenderer."
+msgstr ""
+
+#: ../../CONTRIBUTING.md:8
+msgid "Ways to Contribute"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:10
+msgid "There are many ways to contribute:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:13
+msgid "**Bug Reports**\\ : Report issues you encounter"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:14
+msgid "**Feature Requests**\\ : Suggest new features or improvements"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:15
+msgid "**Code Contributions**\\ : Submit pull requests with code changes"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:16
+msgid "**Documentation**\\ : Improve documentation and examples"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:17
+msgid "**Testing**\\ : Help test new features and report bugs"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:18
+msgid "**Community Support**\\ : Help other users in discussions"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:21
+msgid "Getting Started"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:24
+msgid "Development Environment Setup"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:28
+msgid "**Fork the repository** on GitHub"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:31
+msgid "**Clone your fork**\\ :"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:39
+msgid "**Set up development environment**\\ :"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:48
+msgid "**Install pre-commit hooks**\\ :"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:55
+msgid "Code Style Guidelines"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:58
+msgid "Python Code Style"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:61
+msgid "Follow **PEP 8** conventions"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:62
+msgid "Use **type hints** for all function signatures"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:63
+msgid "Write **docstrings** for all public functions and classes"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:64
+msgid "Keep functions focused and modular"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:66
+msgid "Example:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:83
+msgid "Documentation Standards"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:86
+msgid "Use **reStructuredText** for documentation"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:87
+msgid "Include examples for all public APIs"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:88
+msgid "Keep documentation up to date with code changes"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:89
+msgid "Use meaningful commit messages"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:92
+msgid "Testing"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:95
+msgid "Writing Tests"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:98
+msgid "Write tests for new features and bug fixes"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:99
+msgid "Use **pytest** for testing framework"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:100
+msgid "Aim for good test coverage"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:101
+msgid "Include both unit tests and integration tests"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:103
+msgid "Example test:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:114
+msgid "Running Tests"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:128
+msgid "Submitting Changes"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:131
+msgid "Pull Request Process"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:135
+msgid "**Create a feature branch**\\ :"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:142
+msgid "**Make your changes** and commit them:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:150
+msgid "**Push to your fork**\\ :"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:157
+msgid "**Create a Pull Request** on GitHub"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:160
+msgid "Pull Request Guidelines"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:163
+msgid "**One feature per PR**\\ : Keep pull requests focused"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:164
+msgid "**Descriptive title**\\ : Clearly describe what the PR does"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:165
+msgid "**Detailed description**\\ : Explain the changes and why they're needed"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:166
+msgid "**Reference issues**\\ : Link to related issues"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:167
+msgid "**Update documentation**\\ : Include documentation changes if needed"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:170
+msgid "Issue Reporting"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:172
+msgid "When reporting issues, please include:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:175
+msgid "**CodeVideoRenderer version**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:176
+msgid "**Python version**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:177
+msgid "**Operating system**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:178
+msgid "**Error message** and stack trace"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:179
+msgid "**Steps to reproduce** the issue"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:180
+msgid "**Expected behavior** vs actual behavior"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:182
+msgid "Example issue template:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:206
+msgid "Feature Requests"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:208
+msgid "When suggesting new features:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:211
+msgid "**Explain the problem** you're trying to solve"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:212
+msgid "**Describe your proposed solution**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:213
+msgid "**Provide use cases** and examples"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:214
+msgid "**Consider alternatives** you've explored"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:217
+msgid "Community Guidelines"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:220
+msgid "Be respectful and inclusive"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:221
+msgid "Help others when you can"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:222
+msgid "Provide constructive feedback"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:225
+msgid "Recognition"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:227
+msgid "Contributors will be recognized in:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:230
+msgid "**GitHub contributors list**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:231
+msgid "**Release notes**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:232
+msgid "**Documentation credits**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:235
+msgid "Getting Help"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:237
+msgid "If you need help with contributing:"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:240
+msgid "**Check existing documentation** and issues"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:241
+msgid "**Ask in GitHub discussions**"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:242
+msgid "**Join the community chat** (if available)"
+msgstr ""
+
+#: ../../CONTRIBUTING.md:243
+msgid "**Contact maintainers** for guidance"
+msgstr ""

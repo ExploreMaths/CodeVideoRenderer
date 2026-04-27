@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 20:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../examples.rst:2
+msgid "Example Gallery"
+msgstr ""
+
+#: ../examples.rst:4
+msgid "This gallery showcases various examples of CodeVideoRenderer in action, demonstrating different use cases and configurations."
+msgstr ""
+
+#: ../examples.rst:8
+msgid ":doc:`tutorials` for step-by-step guides"
+msgstr ""
+
+#: ../examples.rst:9
+msgid ":doc:`reference` for detailed API documentation"
+msgstr ""
+
+#: ../examples.rst:10
+msgid ":doc:`installation` for setup instructions"
+msgstr ""
+
+#: ../examples.rst:13
+msgid "Basic Examples"
+msgstr ""
+
+#: ../examples.rst:16
+msgid "Simple Python Function"
+msgstr ""
+
+#: ../examples.rst:43
+msgid "JavaScript Example"
+msgstr ""
+
+#: ../examples.rst:72
+msgid "Intermediate Examples"
+msgstr ""
+
+#: ../examples.rst:75
+msgid "File-based Animation"
+msgstr ""
+
+#: ../examples.rst:77
+msgid "Animate code from an existing file:"
+msgstr ""
+
+#: ../examples.rst:89
+msgid "Custom Typing Speed"
+msgstr ""
+
+#: ../examples.rst:91
+msgid "Simulate different coding styles:"
+msgstr ""
+
+#: ../examples.rst:110
+msgid "Advanced Examples"
+msgstr ""
+
+#: ../examples.rst:113
+msgid "Multi-language Demonstration"
+msgstr ""
+
+#: ../examples.rst:115
+msgid "Showcase code in different programming languages:"
+msgstr ""
+
+#: ../examples.rst:135
+msgid "Custom Styling"
+msgstr ""
+
+#: ../examples.rst:137
+msgid "Experiment with different syntax highlighting themes:"
+msgstr ""
+
+#: ../examples.rst:153
+msgid "Real-world Use Cases"
+msgstr ""
+
+#: ../examples.rst:156
+msgid "Algorithm Explanation"
+msgstr ""
+
+#: ../examples.rst:158
+msgid "Demonstrate sorting algorithms:"
+msgstr ""
+
+#: ../examples.rst:178
+msgid "Code Review Demonstration"
+msgstr ""
+
+#: ../examples.rst:180
+msgid "Show before/after code improvements:"
+msgstr ""
+
+#: ../examples.rst:208
+msgid "Video Output Examples"
+msgstr ""
+
+#: ../examples.rst:210
+msgid "Generated videos will feature:"
+msgstr ""
+
+#: ../examples.rst:212
+msgid "**Smooth typing animation** with realistic timing"
+msgstr ""
+
+#: ../examples.rst:213
+msgid "**Syntax highlighting** appropriate for each language"
+msgstr ""
+
+#: ../examples.rst:214
+msgid "**Camera movement** that follows the cursor naturally"
+msgstr ""
+
+#: ../examples.rst:215
+msgid "**Professional appearance** suitable for presentations"
+msgstr ""

@@ -1,0 +1,715 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 20:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../changelog.rst:2
+msgid "Changelog"
+msgstr ""
+
+#: ../changelog.rst:4
+msgid "This document records all notable changes to CodeVideoRenderer."
+msgstr ""
+
+#: ../changelog.rst:8
+msgid ":doc:`installation` for upgrade instructions"
+msgstr ""
+
+#: ../changelog.rst:9
+msgid "`GitHub releases <https://github.com/ExploreMaths/CodeVideoRenderer/releases>`_ for detailed change information"
+msgstr ""
+
+#: ../changelog.rst:10
+msgid ":doc:`contributing` for information on reporting issues"
+msgstr ""
+
+#: ../changelog.rst:13
+msgid "CodeVideoRenderer 1.2.2 :bdg-success-line:`Latest`"
+msgstr ""
+
+#: ../changelog.rst:15
+msgid "**Date**: Apr 27, 2026"
+msgstr ""
+
+#: ../changelog.rst:17
+msgid "See details at https://pypi.org/project/codevideorenderer/1.2.2/."
+msgstr ""
+
+#: ../changelog.rst:19
+#: ../changelog.rst:35
+#: ../changelog.rst:97
+#: ../changelog.rst:109
+#: ../changelog.rst:143
+#: ../changelog.rst:159
+#: ../changelog.rst:171
+#: ../changelog.rst:185
+#: ../changelog.rst:203
+#: ../changelog.rst:215
+#: ../changelog.rst:231
+#: ../changelog.rst:243
+#: ../changelog.rst:257
+#: ../changelog.rst:269
+#: ../changelog.rst:285
+#: ../changelog.rst:299
+#: ../changelog.rst:313
+#: ../changelog.rst:325
+#: ../changelog.rst:339
+#: ../changelog.rst:357
+msgid "What's Changed"
+msgstr ""
+
+#: ../changelog.rst:22
+#: ../changelog.rst:61
+msgid "**Changes 🧹**"
+msgstr ""
+
+#: ../changelog.rst:24
+msgid "Convert all documents (functions, classes, constants) to the reStructuredText format for better compatibility with Sphinx documentation."
+msgstr ""
+
+#: ../changelog.rst:26
+msgid "Change the default value of the ``formatter_style`` parameter in the :class:`~.CameraFollowCursorCV` class to ``\"material\"``."
+msgstr ""
+
+#: ../changelog.rst:29
+msgid "CodeVideoRenderer 1.2.1"
+msgstr ""
+
+#: ../changelog.rst:31
+msgid "**Date**: Mar 22, 2026"
+msgstr ""
+
+#: ../changelog.rst:33
+msgid "See details at https://pypi.org/project/codevideorenderer/1.2.1/."
+msgstr ""
+
+#: ../changelog.rst:38
+msgid "**Additions 🚀**"
+msgstr ""
+
+#: ../changelog.rst:40
+msgid "Add the :data:`~.__version__` variable to ``__init__.py``"
+msgstr ""
+
+#: ../changelog.rst:42
+msgid "Add the :data:`~.__all__` variable to ``config.py``, ``renderer.py``, ``typing.py``, and ``utils.py``"
+msgstr ""
+
+#: ../changelog.rst:44
+msgid "Add the :attr:`~.formatter_style` parameter to the :class:`~.CameraFollowCursorCV` class"
+msgstr ""
+
+#: ../changelog.rst:46
+msgid "Add beautification for terminal error messages"
+msgstr ""
+
+#: ../changelog.rst:48
+msgid "Add parameter descriptions and type annotations for all functions and classes"
+msgstr ""
+
+#: ../changelog.rst:50
+msgid "Add the :meth:`~.__getattribute__` function to the :class:`~.CameraFollowCursorCV` class to prevent data modification by changing attributes"
+msgstr ""
+
+#: ../changelog.rst:52
+msgid "Add the CodeVideoRendererFont font to support Chinese characters"
+msgstr ""
+
+#: ../changelog.rst:54
+msgid "Add the :data:`~.NOT_AVAILABLE_CHARACTERS` variable to ``config.py``"
+msgstr ""
+
+#: ../changelog.rst:56
+msgid "Add the :class:`~.Parameters` class to the :class:`~.CameraFollowCursorCV` class for managing and retrieving parameters"
+msgstr ""
+
+#: ../changelog.rst:58
+msgid "Add ``version.py`` to manage package version"
+msgstr ""
+
+#: ../changelog.rst:63
+msgid "Change the function name format from ``aaa_bbb`` (snake_case) to ``aaaBbb`` (camelCase)"
+msgstr ""
+
+#: ../changelog.rst:65
+msgid "Change the :data:`~.PygmentsLanguage` class to a ``Literal`` type"
+msgstr ""
+
+#: ../changelog.rst:67
+msgid "Refactor the ``default_progress_bar`` function into the :class:`~.DefaultProgressBar` class"
+msgstr ""
+
+#: ../changelog.rst:69
+msgid "Split ``CameraFollowCursorCVR.py`` into ``renderer.py``, ``typing.py``, and ``utils.py``"
+msgstr ""
+
+#: ../changelog.rst:71
+msgid "Modify the whitespace handling logic to improve rendering speed"
+msgstr ""
+
+#: ../changelog.rst:73
+msgid "Make partial modifications to the parameters and descriptions of the :class:`~.CameraFollowCursorCV` class"
+msgstr ""
+
+#: ../changelog.rst:75
+msgid "Modify some terminal output content"
+msgstr ""
+
+#: ../changelog.rst:77
+msgid "Update the value of :data:`~.CODE_OFFSET` in ``config.py``"
+msgstr ""
+
+#: ../changelog.rst:80
+msgid "**Fixes 🐛**"
+msgstr ""
+
+#: ../changelog.rst:82
+msgid "Fix the code offset issue caused by `@gaojj2000 <https://github.com/gaojj2000>`_ in `#5 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/5>`_"
+msgstr ""
+
+#: ../changelog.rst:83
+msgid "Fix the ``code_line_rectangle`` offset issue that occurs when code offset happens"
+msgstr ""
+
+#: ../changelog.rst:86
+msgid "**Deletions 🗑️**"
+msgstr ""
+
+#: ../changelog.rst:88
+msgid "Remove the :data:`~.DEFAULT_CODE_FORMATTER_STYLE`, :data:`~.AVAILABLE_CHARACTERS`, and :data:`~.EMPTY_CHARACTER` variables from ``config.py``"
+msgstr ""
+
+#: ../changelog.rst:91
+msgid "CodeVideoRenderer 1.1.2"
+msgstr ""
+
+#: ../changelog.rst:93
+#: ../changelog.rst:105
+msgid "**Date**: Feb 11, 2026"
+msgstr ""
+
+#: ../changelog.rst:95
+msgid "See details at https://pypi.org/project/codevideorenderer/1.1.2/."
+msgstr ""
+
+#: ../changelog.rst:100
+msgid "Fixed the cursor position error caused by manim uniformly removing leading spaces on each line (see `#5 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/5>`_ for details)."
+msgstr ""
+
+#: ../changelog.rst:103
+msgid "CodeVideoRenderer 1.1.1"
+msgstr ""
+
+#: ../changelog.rst:107
+msgid "See details at https://pypi.org/project/codevideorenderer/1.1.1/."
+msgstr ""
+
+#: ../changelog.rst:112
+msgid "Added compatibility updates for ``manim==0.19.1`` (see `#3 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/3>`_ for details)."
+msgstr ""
+
+#: ../changelog.rst:114
+msgid "Modified :func:`~.type_checker` to adapt to ``Literal`` and :data:`~.PygmentsLanguage`."
+msgstr ""
+
+#: ../changelog.rst:116
+msgid "Optimized terminal display."
+msgstr ""
+
+#: ../changelog.rst:118
+msgid "Added glow effects."
+msgstr ""
+
+#: ../changelog.rst:120
+msgid "Integrated ``functions.py`` into ``CameraFollowCursorCVR.py``."
+msgstr ""
+
+#: ../changelog.rst:122
+msgid "Adapted to OpenGL rendering and resolved related issues when switching to OpenGL rendering (see `#4 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/4>`_ for details)."
+msgstr ""
+
+#: ../changelog.rst:124
+msgid "Added the ``renderer`` parameter to :class:`~.CameraFollowCursorCV` to configure the renderer."
+msgstr ""
+
+#: ../changelog.rst:126
+msgid "Adopted the ``timeit`` module to calculate rendering time and eliminate redundant variables."
+msgstr ""
+
+#: ../changelog.rst:128
+msgid "Removed summary output before rendering the ``Scene``."
+msgstr ""
+
+#: ../changelog.rst:130
+msgid "Deleted unused constants in ``config.py``."
+msgstr ""
+
+#: ../changelog.rst:132
+msgid "Changed the type of the ``language`` parameter in :class:`~.CameraFollowCursorCV` from ``str`` to :data:`~.PygmentsLanguage`."
+msgstr ""
+
+#: ../changelog.rst:134
+msgid "Refactored the file structure."
+msgstr ""
+
+#: ../changelog.rst:137
+msgid "CodeVideoRenderer 1.1.0"
+msgstr ""
+
+#: ../changelog.rst:139
+msgid "**Date**: Dec 25, 2025"
+msgstr ""
+
+#: ../changelog.rst:141
+msgid "See details at https://pypi.org/project/codevideorenderer/1.1.0/."
+msgstr ""
+
+#: ../changelog.rst:146
+msgid "Revised camera movement logic."
+msgstr ""
+
+#: ../changelog.rst:148
+msgid "Added opening animation."
+msgstr ""
+
+#: ../changelog.rst:150
+msgid "Fixed the issue where output could not be terminated when ``output=False`` was used in :meth:`~.render`."
+msgstr ""
+
+#: ../changelog.rst:153
+msgid "CodeVideoRenderer 1.0.9.post2"
+msgstr ""
+
+#: ../changelog.rst:155
+msgid "**Date**: Nov 24, 2025"
+msgstr ""
+
+#: ../changelog.rst:157
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.9.post2/."
+msgstr ""
+
+#: ../changelog.rst:162
+msgid "Adjusted the spacing between the cursor and characters."
+msgstr ""
+
+#: ../changelog.rst:165
+msgid "CodeVideoRenderer 1.0.9.post1"
+msgstr ""
+
+#: ../changelog.rst:167
+msgid "**Date**: Nov 17, 2025"
+msgstr ""
+
+#: ../changelog.rst:169
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.9.post1/."
+msgstr ""
+
+#: ../changelog.rst:174
+msgid "Fixed partial issues with the :func:`~.type_checker` decorator."
+msgstr ""
+
+#: ../changelog.rst:176
+msgid "Redesigned progress bar style and added a ``{task.completed}/{task.total}`` field."
+msgstr ""
+
+#: ../changelog.rst:179
+msgid "CodeVideoRenderer 1.0.9"
+msgstr ""
+
+#: ../changelog.rst:181
+msgid "**Date**: Nov 16, 2025"
+msgstr ""
+
+#: ../changelog.rst:183
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.9/."
+msgstr ""
+
+#: ../changelog.rst:188
+msgid "Overhauled and rewrote camera movement logic, and added automatic camera scaling."
+msgstr ""
+
+#: ../changelog.rst:190
+msgid "Used ``rich`` to print initial data at the start of rendering."
+msgstr ""
+
+#: ../changelog.rst:192
+msgid "Rewrote the rendering progress bar with ``rich.progress``."
+msgstr ""
+
+#: ../changelog.rst:194
+msgid "Refactored type checking and adopted ``rich.traceback`` for cleaner error output."
+msgstr ""
+
+#: ../changelog.rst:197
+msgid "CodeVideoRenderer 1.0.8.post1"
+msgstr ""
+
+#: ../changelog.rst:199
+#: ../changelog.rst:211
+msgid "**Date**: Nov 8, 2025"
+msgstr ""
+
+#: ../changelog.rst:201
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.8.post1/."
+msgstr ""
+
+#: ../changelog.rst:206
+msgid "Fixed issues in ``__init__.py``."
+msgstr ""
+
+#: ../changelog.rst:209
+msgid "CodeVideoRenderer 1.0.8"
+msgstr ""
+
+#: ../changelog.rst:213
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.8/."
+msgstr ""
+
+#: ../changelog.rst:218
+msgid "Fixed code offset errors."
+msgstr ""
+
+#: ../changelog.rst:220
+msgid "Reverted the default font to Consolas, as Cascadia Code converts ``>=`` to ``≥`` and triggers internal Manim errors."
+msgstr ""
+
+#: ../changelog.rst:222
+msgid "Removed unused constants in ``/renderer/config.py``."
+msgstr ""
+
+#: ../changelog.rst:225
+msgid "CodeVideoRenderer 1.0.7.post3"
+msgstr ""
+
+#: ../changelog.rst:227
+#: ../changelog.rst:239
+msgid "**Date**: Nov 6, 2025"
+msgstr ""
+
+#: ../changelog.rst:229
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.7.post3/."
+msgstr ""
+
+#: ../changelog.rst:234
+msgid "Re-uploaded complete source code due to incomplete package upload on pip."
+msgstr ""
+
+#: ../changelog.rst:237
+msgid "CodeVideoRenderer 1.0.7.post2"
+msgstr ""
+
+#: ../changelog.rst:241
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.7.post2/."
+msgstr ""
+
+#: ../changelog.rst:246
+msgid "Fixed rendering errors triggered by blank lines at the start of code content."
+msgstr ""
+
+#: ../changelog.rst:248
+msgid "Disabled Manim caching to improve rendering speed."
+msgstr ""
+
+#: ../changelog.rst:251
+msgid "CodeVideoRenderer 1.0.7.post1"
+msgstr ""
+
+#: ../changelog.rst:253
+#: ../changelog.rst:265
+msgid "**Date**: Oct 3, 2025"
+msgstr ""
+
+#: ../changelog.rst:255
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.7.post1/."
+msgstr ""
+
+#: ../changelog.rst:260
+msgid "Resolved bugs occurring when using the ``code_file`` parameter."
+msgstr ""
+
+#: ../changelog.rst:263
+msgid "CodeVideoRenderer 1.0.7"
+msgstr ""
+
+#: ../changelog.rst:267
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.7/."
+msgstr ""
+
+#: ../changelog.rst:272
+msgid "Updated pip dependency configuration."
+msgstr ""
+
+#: ../changelog.rst:274
+msgid "Changed parameter ``camera_floating_maximum_value`` to ``camera_floating_max_value``, ``screen_scale`` to ``camera_scale``."
+msgstr ""
+
+#: ../changelog.rst:276
+msgid "Improved error message presentation."
+msgstr ""
+
+#: ../changelog.rst:279
+msgid "CodeVideoRenderer 1.0.6"
+msgstr ""
+
+#: ../changelog.rst:281
+msgid "**Date**: Sep 27, 2025"
+msgstr ""
+
+#: ../changelog.rst:283
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.6/."
+msgstr ""
+
+#: ../changelog.rst:288
+msgid "Fixed progress bar formatting errors caused by overly long code lines."
+msgstr ""
+
+#: ../changelog.rst:290
+msgid "Refactored the renderer module: optimized the structure and error handling of CodeVideoRenderer (see `#1 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/1>`_ for details)."
+msgstr ""
+
+#: ../changelog.rst:293
+msgid "CodeVideoRenderer 1.0.5.post2"
+msgstr ""
+
+#: ../changelog.rst:295
+msgid "**Date**: Sep 25, 2025"
+msgstr ""
+
+#: ../changelog.rst:297
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.5.post2/."
+msgstr ""
+
+#: ../changelog.rst:302
+msgid "Fixed version compatibility issues of pip dependencies to ensure full compliance with project requirements."
+msgstr ""
+
+#: ../changelog.rst:304
+msgid "Resolved inconsistent color display of ANSI escape sequences in rendering outputs across different terminals/compilers."
+msgstr ""
+
+#: ../changelog.rst:307
+msgid "CodeVideoRenderer 1.0.5.post1"
+msgstr ""
+
+#: ../changelog.rst:309
+msgid "**Date**: Sep 23, 2025"
+msgstr ""
+
+#: ../changelog.rst:311
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.5.post1/."
+msgstr ""
+
+#: ../changelog.rst:316
+msgid "Fixed pip installation failures."
+msgstr ""
+
+#: ../changelog.rst:319
+msgid "CodeVideoRenderer 1.0.5"
+msgstr ""
+
+#: ../changelog.rst:321
+msgid "**Date**: Sep 20, 2025"
+msgstr ""
+
+#: ../changelog.rst:323
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.5/."
+msgstr ""
+
+#: ../changelog.rst:328
+msgid "Added the new ``output`` parameter to the :meth:`~.render` method to control rendering output behavior."
+msgstr ""
+
+#: ../changelog.rst:330
+msgid "Refactored ``CodeVideo`` from a function to a class for better code maintainability and scalability."
+msgstr ""
+
+#: ../changelog.rst:333
+msgid "CodeVideoRenderer 1.0.4"
+msgstr ""
+
+#: ../changelog.rst:335
+msgid "**Date**: Sep 6, 2025"
+msgstr ""
+
+#: ../changelog.rst:337
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.4/."
+msgstr ""
+
+#: ../changelog.rst:342
+msgid "Fixed calculation errors of rendering duration."
+msgstr ""
+
+#: ../changelog.rst:344
+msgid "Removed the deprecated ``font`` parameter."
+msgstr ""
+
+#: ../changelog.rst:346
+msgid "Optimized terminal rendering logs."
+msgstr ""
+
+#: ../changelog.rst:348
+msgid "Improved overall code execution efficiency."
+msgstr ""
+
+#: ../changelog.rst:351
+msgid "CodeVideoRenderer 1.0.3"
+msgstr ""
+
+#: ../changelog.rst:353
+msgid "**Date**: Aug 29, 2025"
+msgstr ""
+
+#: ../changelog.rst:355
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.3/."
+msgstr ""
+
+#: ../changelog.rst:360
+msgid "Fixed the issue where the cursor failed to pause at the start of new lines."
+msgstr ""
+
+#: ../changelog.rst:362
+msgid "Excluded leading and trailing whitespace of each code line from animation playback to reduce redundant animation duration."
+msgstr ""
+
+#: ../changelog.rst:364
+msgid "Adjusted the background width of the currently highlighted code line."
+msgstr ""
+
+#: ../changelog.rst:366
+msgid "Added the new ``line_spacing`` parameter to customize line spacing."
+msgstr ""
+
+#: ../changelog.rst:368
+msgid "Optimized terminal rendering information output."
+msgstr ""
+
+#: ../changelog.rst:370
+msgid "Fine-tuned camera movement logic."
+msgstr ""
+
+#: ../changelog.rst:373
+msgid "CodeVideoRenderer 1.0.2"
+msgstr ""
+
+#: ../changelog.rst:375
+msgid "**Date**: Aug 26, 2025"
+msgstr ""
+
+#: ../changelog.rst:377
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.2/."
+msgstr ""
+
+#: ../changelog.rst:380
+msgid "CodeVideoRenderer 1.0.1.2"
+msgstr ""
+
+#: ../changelog.rst:382
+msgid "**Date**: Aug 23, 2025"
+msgstr ""
+
+#: ../changelog.rst:384
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.1.2/."
+msgstr ""
+
+#: ../changelog.rst:387
+msgid "CodeVideoRenderer 1.0.1.1"
+msgstr ""
+
+#: ../changelog.rst:389
+msgid "**Date**: Aug 22, 2025"
+msgstr ""
+
+#: ../changelog.rst:391
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.1.1/."
+msgstr ""
+
+#: ../changelog.rst:394
+msgid "CodeVideoRenderer 1.0.1.0"
+msgstr ""
+
+#: ../changelog.rst:396
+msgid "**Date**: Aug 19, 2025"
+msgstr ""
+
+#: ../changelog.rst:398
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.1.0/."
+msgstr ""
+
+#: ../changelog.rst:401
+msgid "CodeVideoRenderer 1.0.0.5"
+msgstr ""
+
+#: ../changelog.rst:403
+msgid "**Date**: Aug 18, 2025"
+msgstr ""
+
+#: ../changelog.rst:405
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.0.5/."
+msgstr ""
+
+#: ../changelog.rst:408
+msgid "CodeVideoRenderer 1.0.0.4"
+msgstr ""
+
+#: ../changelog.rst:410
+msgid "**Date**: Aug 17, 2025"
+msgstr ""
+
+#: ../changelog.rst:412
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.0.4/."
+msgstr ""
+
+#: ../changelog.rst:415
+msgid "CodeVideoRenderer 1.0.0.3"
+msgstr ""
+
+#: ../changelog.rst:417
+#: ../changelog.rst:424
+#: ../changelog.rst:431
+msgid "**Date**: Aug 16, 2025"
+msgstr ""
+
+#: ../changelog.rst:419
+msgid "No information available."
+msgstr ""
+
+#: ../changelog.rst:422
+msgid "CodeVideoRenderer 1.0.0.2"
+msgstr ""
+
+#: ../changelog.rst:426
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.0.2/."
+msgstr ""
+
+#: ../changelog.rst:429
+msgid "CodeVideoRenderer 1.0.0.1"
+msgstr ""
+
+#: ../changelog.rst:433
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.0.1/."
+msgstr ""
+
+#: ../changelog.rst:436
+msgid "CodeVideoRenderer 1.0.0.0"
+msgstr ""
+
+#: ../changelog.rst:438
+msgid "**Date**: Aug 15, 2025"
+msgstr ""
+
+#: ../changelog.rst:440
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.0.0/."
+msgstr ""

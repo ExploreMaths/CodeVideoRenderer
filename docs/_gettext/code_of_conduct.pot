@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 20:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../CODE_OF_CONDUCT.md:3
+msgid "Code of Conduct"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:6
+msgid "Our Pledge"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:8
+msgid "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:10
+msgid "We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:13
+msgid "Our Standards"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:15
+msgid "Examples of behavior that contributes to a positive environment for our community include:"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:18
+msgid "Demonstrating empathy and kindness toward other people"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:19
+msgid "Being respectful of differing opinions, viewpoints, and experiences"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:20
+msgid "Giving and gracefully accepting constructive feedback"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:21
+msgid "Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:22
+msgid "Focusing on what is best not just for us as individuals, but for the overall community"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:24
+msgid "Examples of unacceptable behavior include:"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:27
+msgid "The use of sexualized language or imagery, and sexual attention or advances of any kind"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:28
+msgid "Trolling, insulting or derogatory comments, and personal or political attacks"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:29
+msgid "Public or private harassment"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:30
+msgid "Publishing others' private information, such as a physical or email address, without their explicit permission"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:31
+msgid "Other conduct which could reasonably be considered inappropriate in a professional setting"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:34
+msgid "Enforcement Responsibilities"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:36
+msgid "Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:38
+msgid "Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:41
+msgid "Scope"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:43
+msgid "This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:46
+msgid "Enforcement"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:48
+msgid "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at zhuchongjing_pypi@163.com. All complaints will be reviewed and investigated promptly and fairly."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:50
+msgid "All community leaders are obligated to respect the privacy and security of the reporter of any incident."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:53
+msgid "Enforcement Guidelines"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:55
+msgid "Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:58
+msgid "1. Correction"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:60
+msgid "**Community Impact**\\ : Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:62
+msgid "**Consequence**\\ : A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:65
+msgid "2. Warning"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:67
+msgid "**Community Impact**\\ : A violation through a single incident or series of actions."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:69
+msgid "**Consequence**\\ : A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:72
+msgid "3. Temporary Ban"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:74
+msgid "**Community Impact**\\ : A serious violation of community standards, including sustained inappropriate behavior."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:76
+msgid "**Consequence**\\ : A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:79
+msgid "4. Permanent Ban"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:81
+msgid "**Community Impact**\\ : Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:83
+msgid "**Consequence**\\ : A permanent ban from any sort of public interaction within the community."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:86
+msgid "Attribution"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:88
+msgid "This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at `Contributor Covenant Code of Conduct <https://www.contributor-covenant.org/version/2/1/code_of_conduct.html>`_."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:90
+msgid "Community Impact Guidelines were inspired by Mozilla's code of conduct enforcement ladder."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:92
+msgid "For answers to common questions about this code of conduct, see `Frequently Asked Questions <https://www.contributor-covenant.org/faq>`_."
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:95
+msgid "Contact Information"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:97
+msgid "For reporting issues or seeking clarification:"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:100
+msgid "**Email**\\ : zhuchongjing_pypi@163.com"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:101
+msgid "**GitHub Issues**\\ : Use the appropriate issue template"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:102
+msgid "**Community Discussions**\\ : GitHub Discussions forum"
+msgstr ""
+
+#: ../../CODE_OF_CONDUCT.md:104
+msgid "We are committed to maintaining a respectful and inclusive community where everyone can contribute and learn."
+msgstr ""

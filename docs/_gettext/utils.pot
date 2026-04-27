@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 20:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../utils.rst:2
+msgid "Utilities"
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.noManimOutput:1
+msgid "Context manager used to execute code without outputting Manim logs."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.stripEmptyLines:1
+msgid "Remove empty lines from the beginning and end of a string."
+msgstr ""
+
+#: ../utils.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.stripEmptyLines:3
+msgid "The input string to process."
+msgstr ""
+
+#: ../utils.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.stripEmptyLines:6
+msgid "The string with empty lines removed from the beginning and end."
+msgstr ""
+
+#: ../utils.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.typeName:1
+msgid "Get the name of a type, handling union types and generic types."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.typeName:3
+msgid "The type or value to get the name of."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.typeName:5
+msgid "The name of the type."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:1
+msgid "Recursively check if a value matches the expected type."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:3
+msgid "The value to check."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:5
+msgid "The expected type."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:7
+msgid "The name of the parameter being checked."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:9
+msgid "The path to the current value (for nested types). Defaults to ``\"\"``."
+msgstr ""
+
+#: ../utils.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:12
+msgid "If the value doesn't match the expected type."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.checkType:13
+msgid "If the value doesn't match a Literal type."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.typeChecker:1
+msgid "Decorator to check types of function arguments and return value."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.typeChecker:3
+msgid "The function to decorate."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.typeChecker:6
+msgid "The wrapped function with type checking."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.addGlowEffect:1
+msgid "Add a glow effect to a video."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.addGlowEffect:3
+msgid "Path to the input video file."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.addGlowEffect:5
+msgid "Path to save the output video file."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.addGlowEffect:7
+msgid "Whether to display progress bars."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.addGlowEffect:10
+msgid "None"
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.findSpacePositions:1
+msgid "Find the 2D positions of all non-leading, non-trailing spaces in a string. Each position is represented as a list ``[row_index, column_index]``."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.findEmptyLinePositions:3
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.findSpacePositions:4
+msgid "A string."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.findSpacePositions:7
+msgid "A list of 2D positions of all non-leading, non-trailing spaces. Each position is represented as a list ``[row_index, column_index]``."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.findEmptyLinePositions:1
+msgid "Find the line indices of all empty lines in a string."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.findEmptyLinePositions:6
+msgid "A list of line indices of all empty lines."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:1
+msgid "Replace all non-leading, non-trailing spaces in the input string with :data:`~.OCCUPY_CHARACTER`. Retain leading and trailing spaces."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:4
+msgid "Original string."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:7
+msgid "Processed string with middle spaces replaced by :data:`~.OCCUPY_CHARACTER`."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.DefaultProgressBar:1
+msgid "Default progress bar."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.RichProgressBarLogger:1
+msgid "A progress logger that uses Rich to display progress bars."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar:1
+msgid "Create a Rich progress bar task for the given bar."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar:1
+msgid "Close the Rich progress bar task for the given bar."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback:1
+msgid "Update the Rich progress bar task based on the attribute change."
+msgstr ""
+
+#: ../../CodeVideoRenderer/utils.py:docstring of CodeVideoRenderer.utils.RichProgressBarLogger.stop:1
+msgid "Stop the Rich progress bar."
+msgstr ""

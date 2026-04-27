@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 20:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../tutorials.rst:2
+msgid "Tutorials & Guides"
+msgstr ""
+
+#: ../tutorials.rst:4
+msgid "This section contains step-by-step tutorials and comprehensive guides for using CodeVideoRenderer."
+msgstr ""
+
+#: ../tutorials.rst:7
+msgid "Getting Started"
+msgstr ""
+
+#: ../tutorials.rst:10
+msgid "Quick Start Guide"
+msgstr ""
+
+#: ../tutorials.rst:12
+msgid "Create your first code animation video:"
+msgstr ""
+
+#: ../tutorials.rst:34
+msgid "Basic Concepts"
+msgstr ""
+
+#: ../tutorials.rst:37
+msgid "Understanding CodeVideoRenderer"
+msgstr ""
+
+#: ../tutorials.rst:39
+msgid "CodeVideoRenderer works by:"
+msgstr ""
+
+#: ../tutorials.rst:41
+msgid "**Parsing Code**: Reads and processes your code"
+msgstr ""
+
+#: ../tutorials.rst:42
+msgid "**Syntax Highlighting**: Applies language-specific coloring"
+msgstr ""
+
+#: ../tutorials.rst:43
+msgid "**Animation**: Creates typing animations character by character"
+msgstr ""
+
+#: ../tutorials.rst:44
+msgid "**Camera Movement**: Smoothly follows the cursor"
+msgstr ""
+
+#: ../tutorials.rst:47
+msgid "Core Components"
+msgstr ""
+
+#: ../tutorials.rst:49
+msgid "**CameraFollowCursorCV**: Main class for creating animations"
+msgstr ""
+
+#: ../tutorials.rst:50
+msgid "**Code Input**: Support for strings and files"
+msgstr ""
+
+#: ../tutorials.rst:51
+msgid "**Renderer Types**: Cairo (software) and OpenGL (hardware accelerated)"
+msgstr ""
+
+#: ../tutorials.rst:54
+msgid "Intermediate Tutorials"
+msgstr ""
+
+#: ../tutorials.rst:57
+msgid "Customizing Animation Speed"
+msgstr ""
+
+#: ../tutorials.rst:59
+msgid "Control the typing speed with interval ranges:"
+msgstr ""
+
+#: ../tutorials.rst:71
+msgid "Working with Files"
+msgstr ""
+
+#: ../tutorials.rst:73
+msgid "Animate code from existing files:"
+msgstr ""
+
+#: ../tutorials.rst:84
+msgid "Advanced Tutorials"
+msgstr ""
+
+#: ../tutorials.rst:87
+msgid "Custom Styling"
+msgstr ""
+
+#: ../tutorials.rst:89
+msgid "Use different syntax highlighting styles:"
+msgstr ""
+
+#: ../tutorials.rst:101
+msgid "Camera Configuration"
+msgstr ""
+
+#: ../tutorials.rst:103
+msgid "Adjust camera behavior for different code sizes:"
+msgstr ""
+
+#: ../tutorials.rst:115
+msgid "Best Practices"
+msgstr ""
+
+#: ../tutorials.rst:118
+msgid "Code Preparation"
+msgstr ""
+
+#: ../tutorials.rst:120
+msgid "**Clean Code**: Remove unnecessary comments and whitespace"
+msgstr ""
+
+#: ../tutorials.rst:121
+msgid "**Consistent Formatting**: Use consistent indentation"
+msgstr ""
+
+#: ../tutorials.rst:122
+msgid "**Reasonable Length**: Keep code blocks under 100 lines for optimal viewing"
+msgstr ""
+
+#: ../tutorials.rst:125
+msgid "Performance Optimization"
+msgstr ""
+
+#: ../tutorials.rst:127
+msgid "**Use OpenGL**: For faster rendering on supported systems"
+msgstr ""
+
+#: ../tutorials.rst:128
+msgid "**Batch Processing**: Render multiple videos in sequence"
+msgstr ""
+
+#: ../tutorials.rst:129
+msgid "**Resolution**: Choose appropriate resolution for your needs"
+msgstr ""
+
+#: ../tutorials.rst:132
+msgid "Troubleshooting Common Issues"
+msgstr ""
+
+#: ../tutorials.rst:134
+msgid "See the :doc:`reference` section for detailed API documentation and troubleshooting tips."
+msgstr ""
