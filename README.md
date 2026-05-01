@@ -23,21 +23,27 @@ pip install codevideorenderer
 ## 💡 Quick Start
 
 ```python
-from CodeVideoRenderer import CodeVideoRenderer
+from CodeVideoRenderer import CameraFollowCursorCV
 
-# Create renderer instance
-video = CodeVideoRenderer(
-    code="""
-def hello_world():
-    print("Hello, World!")
-    return True
-""",
-    language="python",
-    style="github-dark"
+code = '''
+def fibonacci(n):
+    """Calculate the nth Fibonacci number"""
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# Example usage
+result = fibonacci(10)
+print(f"Fibonacci(10) = {result}")
+'''
+
+video = CameraFollowCursorCV(
+    code=('string', code),
+    language='python',
+    formatter_style='github-dark',
+    video_name='FibonacciExample'
 )
-
-# Render video
-video.render("hello_world.mp4")
+video.render()
 ```
 
 ## 📋 Main Features
