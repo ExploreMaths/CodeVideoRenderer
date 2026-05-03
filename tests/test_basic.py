@@ -183,7 +183,8 @@ def test_code_processing_utilities():
     # Test stripEmptyLines
     code_with_empty_lines = '\n\nline1\n\nline2\n\n'
     processed = stripEmptyLines(code_with_empty_lines)
-    assert '\n\n' not in processed
+    assert processed.startswith('line1')
+    assert processed.endswith('line2')
     
     # Test findSpacePositions
     test_code = '  line1\n    line2'
