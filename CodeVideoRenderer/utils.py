@@ -1,9 +1,10 @@
+from __future__ import annotations
 from manim import config
 from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, TransferSpeedColumn
 from copy import copy
 from contextlib import contextmanager
 from io import StringIO
-from typing import get_args, get_origin, Literal, Generator, Any, Callable, ParamSpec, TypeVar, Union
+from typing import get_args, get_origin, Literal, Generator, Any, Callable, TypeVar, Union
 from types import UnionType
 from moviepy import VideoFileClip
 from PIL import Image, ImageFilter, ImageEnhance
@@ -13,6 +14,11 @@ from os import PathLike
 from functools import wraps
 import numpy as np
 import time, sys, inspect, re
+
+try:
+    from typing import ParamSpec
+except ImportError:
+    from typing_extensions import ParamSpec
 
 from .config import *
 from .typing import StrPath
