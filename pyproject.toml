@@ -33,7 +33,7 @@ dependencies = [
     "numpy>=1.24.4",
     "proglog>=0.1.12",
     "moviepy>=2.2.1",
-    "pillow>=11.2.1",
+    "pillow>=10.4.0",
 ]
 license = {text = "MIT"}
 classifiers = [
