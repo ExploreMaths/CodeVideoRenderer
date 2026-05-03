@@ -5,7 +5,7 @@ from copy import copy
 from contextlib import contextmanager
 from io import StringIO
 from typing import get_args, get_origin, Literal, Generator, Any, Callable, TypeVar, Union
-from moviepy import VideoFileClip
+from moviepy.video.io.VideoFileClip import VideoFileClip
 from PIL import Image, ImageFilter, ImageEnhance
 from proglog import ProgressBarLogger
 from collections import OrderedDict
