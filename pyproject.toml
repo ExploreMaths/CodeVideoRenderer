@@ -32,8 +32,8 @@ dependencies = [
     "rich>=14.2.0",
     "numpy>=1.24.4",
     "proglog>=0.1.12",
-    "moviepy>=2.2.1 ; python_version>3.8",
-    "moviepy<2.0.0 ; python_version==3.8",
+    "moviepy>=2.2.1;python_version>'3.8'",
+    "moviepy<2.0.0;python_version=='3.8'",
     "pillow>=9.1",
     "typing-extensions>=4.0.0",
 ]
