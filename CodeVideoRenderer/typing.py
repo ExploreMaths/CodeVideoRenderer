@@ -44,9 +44,9 @@ You can run the following code to get the complete list of supported formatter s
     print(list(get_all_styles()))
 """
 
-StrPath: TypeAlias = Union[str, PathLike[str]]
+StrPath: TypeAlias = Union[str, PathLike]
 """
-A string or ``os.PathLike[str]`` representing a path to a directory or file.
+A string or ``os.PathLike`` representing a path to a directory or file.
 """
 
 __all__ = [
