@@ -28,7 +28,7 @@ authors = [
     {name = "Zhu Chongjing", email = "zhuchongjing_pypi@163.com"},
 ]
 dependencies = [
-    "manim>=0.20.1",
+    "manim>=0.18.0",
     "rich>=14.2.0",
     "numpy>=2.4.2",
     "proglog>=0.1.12",
