@@ -19,7 +19,7 @@ try:
     from types import UnionType
 except ImportError:
     from typing_extensions import ParamSpec
-    UnionType = type(int | str)
+    UnionType = type(Union[int, str])
 
 from .config import *
 from .typing import StrPath
