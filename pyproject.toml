@@ -30,7 +30,7 @@ authors = [
 dependencies = [
     "manim>=0.18.0",
     "rich>=14.2.0",
-    "numpy>=1.25.0",
+    "numpy>=1.24.4",
     "proglog>=0.1.12",
     "moviepy<2.0.0",
     "pillow>=9.1",
