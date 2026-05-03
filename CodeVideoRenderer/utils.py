@@ -98,13 +98,13 @@ def typeName(item_type: Any) -> str:
     # Handle basic types
     return item_type.__name__
 
-def checkType(value: Any, expected_type: Any | type[Any], param_name: str, path: str = "") -> None:
+def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str, path: str = "") -> None:
     """
     Recursively check if a value matches the expected type.
 
     Args:
         value (Any): The value to check.
-        expected_type (Any | type[Any]): The expected type.
+        expected_type (Union[Any, type[Any]]): The expected type.
         param_name (str): The name of the parameter being checked.
         path (str, optional): The path to the current value (for nested types). Defaults to ``""``.
         

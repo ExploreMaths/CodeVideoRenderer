@@ -24,9 +24,9 @@ class CameraFollowCursorCV:
         code (Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]]): The code to be animated. **When using a string**, provide a tuple with the first element as ``'string'`` and the second element as the code string. **When using a file**, provide a tuple with the first element as ``'file'`` and the second element as the file path.
         language (PygmentsLanguage): The programming language of the code.
         formatter_style (PygmentsFormatterStyle): The style for syntax highlighting. Defaults to ``"material"``.
-        line_spacing (float | int): The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`.
-        interval_range (tuple[float | int, float | int]): The range of typing intervals between characters. Defaults to (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`).
-        camera_scale (float | int): The scale factor for the camera. Defaults to 0.5.
+        line_spacing (Union[float, int]): The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`.
+        interval_range (tuple[Union[float, int], Union[float, int]]): The range of typing intervals between characters. Defaults to (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`).
+        camera_scale (Union[float, int]): The scale factor for the camera. Defaults to 0.5.
         video_name (str): The name of the output video file. Defaults to ``"CameraFollowCursorCV"``.
         renderer (Literal['cairo', 'opengl']): The renderer to use for video rendering. Defaults to ``'cairo'``.
     """
@@ -37,9 +37,9 @@ class CameraFollowCursorCV:
         code: Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]],
         language: PygmentsLanguage,
         formatter_style: PygmentsFormatterStyle = "material",
-        line_spacing: float | int = DEFAULT_LINE_SPACING,
-        interval_range: tuple[float | int, float | int] = (DEFAULT_TYPE_INTERVAL, DEFAULT_TYPE_INTERVAL),
-        camera_scale: float | int = 0.5,
+        line_spacing: Union[float, int] = DEFAULT_LINE_SPACING,
+        interval_range: tuple[Union[float, int], Union[float, int]] = (DEFAULT_TYPE_INTERVAL, DEFAULT_TYPE_INTERVAL),
+        camera_scale: Union[float, int] = 0.5,
         video_name: str = "CameraFollowCursorCV",
         renderer: Literal['cairo', 'opengl'] = 'cairo',
     ):
@@ -79,9 +79,9 @@ class CameraFollowCursorCV:
             code: Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]]
             language: PygmentsLanguage
             formatter_style: PygmentsFormatterStyle
-            line_spacing: float | int
-            interval_range: tuple[float | int, float | int]
-            camera_scale: float | int
+            line_spacing: Union[float, int]
+            interval_range: tuple[Union[float, int], Union[float, int]]
+            camera_scale: Union[float, int]
             video_name: str
             renderer: Literal['cairo', 'opengl']
         Parameters.code = code
@@ -180,7 +180,7 @@ class CameraFollowCursorCV:
                 )
                 
                 # 定义固定动画
-                scene.Animation_list: list[dict[str, Point3D | float]] = []
+                scene.Animation_list: list[dict[str, Union[Point3D, float]]] = []
                 def linebreakAnimation():
                     scene.Animation_list.append({"move_to": cursor.get_center()})
 
