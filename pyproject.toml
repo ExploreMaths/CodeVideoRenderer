@@ -36,6 +36,7 @@ dependencies = [
     "moviepy<2.0.0;python_version=='3.8'",
     "pillow>=9.1",
     "typing-extensions>=4.0.0",
+    "imageio-ffmpeg>=0.4.0",
 ]
 license = {text = "MIT"}
 classifiers = [
