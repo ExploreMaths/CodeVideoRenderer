@@ -5,5 +5,5 @@ media/
 /.vscode/
 /test.py
 /update.bat
-/CodeVideoRenderer/__pycache__/
+__pycache__/
 /docs/_build/

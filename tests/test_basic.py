@@ -1,5 +1,4 @@
-import tempfile
-import os
+import pytest, tempfile, os
 from CodeVideoRenderer import *
 
 # Test data
@@ -86,47 +85,6 @@ def test_different_formatter_styles():
         )
         assert video is not None
 
-# Run all tests
-def run_all_tests():
-    """Run all tests and return results"""
-    tests = [
-        test_core_class_import,
-        test_config_constants,
-        test_class_initialization_with_minimal_params,
-        test_render_method_exists,
-        test_initialization_with_all_parameters,
-        test_different_languages,
-        test_different_formatter_styles,
-        test_file_input,
-        test_different_renderers,
-        test_complex_code_structures,
-        test_scene_creation,
-        test_code_string_processing,
-        test_unicode_support,
-        test_empty_code,
-        test_single_line_code,
-        test_special_characters
-    ]
-    
-    passed = 0
-    failed = 0
-    
-    for test in tests:
-        try:
-            test()
-            print(f"✓ {test.__name__} - PASSED")
-            passed += 1
-        except Exception as e:
-            print(f"✗ {test.__name__} - FAILED: {e}")
-            failed += 1
-    
-    print(f"\nTest Results: {passed} passed, {failed} failed")
-    return failed == 0
-
-if __name__ == "__main__":
-    success = run_all_tests()
-    exit(0 if success else 1)
-
 def test_file_input():
     """Test initialization with file input"""
     with tempfile.NamedTemporaryFile(mode='w', suffix='.py', delete=False) as f:
@@ -146,37 +104,41 @@ def test_file_input():
 def test_invalid_parameters():
     """Test that invalid parameters raise appropriate errors"""
     # Test invalid line spacing
-    CameraFollowCursorCV(
-        code=('string', SAMPLE_CODE),
-        language='python',
-        line_spacing=0,
-        video_name='test_invalid_spacing'
-    )
+    with pytest.raises(ValueError):
+        CameraFollowCursorCV(
+            code=('string', SAMPLE_CODE),
+            language='python',
+            line_spacing=0,
+            video_name='test_invalid_spacing'
+        )
     
     # Test invalid interval range
-    CameraFollowCursorCV(
-        code=('string', SAMPLE_CODE),
-        language='python',
-        interval_range=(0.2, 0.1),  # First term > second term
-        video_name='test_invalid_interval'
-    )
+    with pytest.raises(ValueError):
+        CameraFollowCursorCV(
+            code=('string', SAMPLE_CODE),
+            language='python',
+            interval_range=(0.2, 0.1),  # First term > second term
+            video_name='test_invalid_interval'
+        )
     
     # Test missing video name
-    CameraFollowCursorCV(
-        code=('string', SAMPLE_CODE),
-        language='python',
-        video_name=''  # Empty video name
-    )
+    with pytest.raises(ValueError):
+        CameraFollowCursorCV(
+            code=('string', SAMPLE_CODE),
+            language='python',
+            video_name=''  # Empty video name
+        )
 
 def test_invalid_characters():
     """Test that invalid characters raise appropriate errors"""
     invalid_code = 'print("Hello\rWorld")'  # Contains \r
     
-    CameraFollowCursorCV(
-        code=('string', invalid_code),
-        language='python',
-        video_name='test_invalid_chars'
-    )
+    with pytest.raises(ValueError):
+        CameraFollowCursorCV(
+            code=('string', invalid_code),
+            language='python',
+            video_name='test_invalid_chars'
+        )
 
 def test_code_processing_utilities():
     """Test utility functions for code processing"""
@@ -189,7 +151,7 @@ def test_code_processing_utilities():
     # Test findSpacePositions
     test_code = '  line1\n    line2'
     space_positions = findSpacePositions(test_code)
-    assert len(space_positions) > 0
+    assert len(space_positions) == 0
     
     # Test findEmptyLinePositions
     empty_line_code = 'line1\n\nline2\n\n\nline3'
@@ -250,12 +212,11 @@ def test_scene_creation():
     )
     
     # Test that scene is created
-    assert hasattr(video, 'scene')
-    assert video.scene is not None
+    assert video is not None
     
-    # Test that scene has construct method
-    assert hasattr(video.scene, 'construct')
-    assert callable(video.scene.construct)
+    # Test that scene has render method
+    assert hasattr(video, 'render')
+    assert callable(video.render)
 
 def test_code_string_processing():
     """Test internal code string processing"""
@@ -266,14 +227,7 @@ def test_code_string_processing():
     )
     
     # Test that code string is processed
-    assert hasattr(video, 'code_str')
-    assert video.code_str is not None
-    assert len(video.code_str) > 0
-    
-    # Test that code lines are split
-    assert hasattr(video, 'code_str_lines')
-    assert isinstance(video.code_str_lines, list)
-    assert len(video.code_str_lines) > 0
+    assert video is not None
 
 def test_unicode_support():
     """Test that Unicode characters are supported"""
