@@ -9,7 +9,7 @@
 project = 'CodeVideoRenderer'
 copyright = '2026, Explore Maths'
 author = 'Explore Maths'
-release = '1.2.2'
+release = '1.2.3 (Unreleased)'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
