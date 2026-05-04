@@ -1,5 +1,3 @@
-[![Python package](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml/badge.svg)](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml)
-
 <p align=center>
 	<img alt="logo" src="https://github.com/user-attachments/assets/e28c0ce7-2962-4487-a347-029f3a7ed2ff" width="400" alt="CodeVideoRenderer" />
 </p>
@@ -7,6 +5,18 @@
 <h3><p align=center>A Python library for rendering dynamic code videos based on Manim</p></h3>
 
 CodeVideoRenderer is a Python animation library specifically designed for creating dynamic code demonstration videos. It transforms static code into lively animations that simulate real programming processes.
+
+[![License](https://img.shields.io/github/license/ExploreMaths/CodeVideoRenderer.svg?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/ExploreMaths/CodeVideoRenderer.svg?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/ExploreMaths/CodeVideoRenderer.svg?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer)
+[![Contributors](https://img.shields.io/github/contributors/ExploreMaths/CodeVideoRenderer)](https://github.com/ExploreMaths/CodeVideoRenderer/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/ExploreMaths/CodeVideoRenderer?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer)
+[![Issues](https://img.shields.io/github/issues/ExploreMaths/CodeVideoRenderer)](https://github.com/ExploreMaths/CodeVideoRenderer/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/ExploreMaths/CodeVideoRenderer)](https://github.com/ExploreMaths/CodeVideoRenderer/pulls)
+[![Python Versions](https://img.shields.io/pypi/pyversions/CodeVideoRenderer.svg?style=flat-square)](https://pypi.org/project/CodeVideoRenderer/)
+[![PyPI Version](https://img.shields.io/pypi/v/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/CodeVideoRenderer/)
+[![Python package](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml/badge.svg)](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/CodeVideoRenderer/)
 
 ## ✨ Core Features
 
