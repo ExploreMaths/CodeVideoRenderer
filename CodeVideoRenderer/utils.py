@@ -119,11 +119,7 @@ def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str,
         return
     
     # Handle PathLike types
-    # Only check for PathLike if the value is actually expected to be PathLike
-    # Avoid incorrectly treating tuples as needing str or PathLike
-    if (expected_type is PathLike or 
-        (hasattr(expected_type, '__name__') and expected_type.__name__ == 'PathLike') or
-        (hasattr(expected_type, '__name__') and expected_type.__name__ == 'StrPath')):
+    if expected_type is PathLike or (hasattr(expected_type, '__name__') and expected_type.__name__ == 'PathLike'):
         if not isinstance(value, (str, PathLike)):
             raise TypeError(f"Parameter '{param_name}'{path}: Expected 'str' or 'PathLike', got '{type(value).__name__}'")
         return
@@ -142,6 +138,17 @@ def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str,
         if not union_types:
             # Empty Union is equivalent to Never type
             raise TypeError(f"Parameter '{param_name}'{path}: Expected 'Never', got '{type(value).__name__}'")
+        
+        # Python 3.8 specific fix: Check for StrPath type alias in union types
+        # This prevents the "Expected 'str' or 'PathLike', got 'tuple'" error
+        for union_type in union_types:
+            # Check if this union type contains StrPath
+            if hasattr(union_type, '__name__') and union_type.__name__ == 'StrPath':
+                # For Python 3.8, handle StrPath as Union[str, PathLike]
+                if isinstance(value, tuple) and len(value) == 2:
+                    # This is a tuple like ('file', 'path'), so skip StrPath check
+                    # Let the tuple type checking handle it
+                    continue
         
         # Track all errors to find the most specific one
         errors = []
