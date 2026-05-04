@@ -1,3 +1,5 @@
+[![Python package](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml/badge.svg)](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml)
+
 <p align=center>
 	<img alt="logo" src="https://github.com/user-attachments/assets/e28c0ce7-2962-4487-a347-029f3a7ed2ff" width="400" alt="CodeVideoRenderer" />
 </p>
