@@ -6,6 +6,7 @@
 
 CodeVideoRenderer is a Python animation library specifically designed for creating dynamic code demonstration videos. It transforms static code into lively animations that simulate real programming processes.
 
+[![Documentation Status](https://readthedocs.org/projects/CodeVideoRenderer/badge/?version=latest)](https://CodeVideoRenderer.readthedocs.io/)
 [![License](https://img.shields.io/github/license/ExploreMaths/CodeVideoRenderer.svg?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer/blob/main/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/ExploreMaths/CodeVideoRenderer.svg?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer/commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/ExploreMaths/CodeVideoRenderer.svg?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer)
