@@ -30,7 +30,8 @@ jobs:
         sudo apt-get install -y \
           libpango1.0-dev libcairo2-dev libgirepository1.0-dev pkg-config \
           libgl1-mesa-dev libegl1-mesa-dev libx11-dev \
-          xvfb
+          xvfb \
+          ffmpeg
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
