@@ -60,18 +60,4 @@ html_theme_options = {
     "light_css_variables": {
         "font-stack--headings": "Georgia, serif",
     },
-    "footer_icons": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/ExploreMaths/CodeVideoRenderer",
-            "html": "",
-            "class": "fa-brands fa-github fa-lg",
-        },
-        {
-            "name": "PyPI",
-            "url": "https://pypi.org/project/codevideorenderer/",
-            "html": "",
-            "class": "fa-brands fa-python fa-lg",
-        },
-    ],
 }
