@@ -13,10 +13,10 @@ CodeVideoRenderer is a Python animation library specifically designed for creati
 [![Stars](https://img.shields.io/github/stars/ExploreMaths/CodeVideoRenderer?style=flat-square)](https://github.com/ExploreMaths/CodeVideoRenderer)
 [![Issues](https://img.shields.io/github/issues/ExploreMaths/CodeVideoRenderer)](https://github.com/ExploreMaths/CodeVideoRenderer/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/ExploreMaths/CodeVideoRenderer)](https://github.com/ExploreMaths/CodeVideoRenderer/pulls)
-[![Python Versions](https://img.shields.io/pypi/pyversions/CodeVideoRenderer.svg?style=flat-square)](https://pypi.org/project/CodeVideoRenderer/)
-[![PyPI Version](https://img.shields.io/pypi/v/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/CodeVideoRenderer/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/codevideorenderer/)
+[![PyPI Version](https://img.shields.io/pypi/v/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/codevideorenderer/)
 [![Python package](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml/badge.svg)](https://github.com/ExploreMaths/CodeVideoRenderer/actions/workflows/python-package.yml)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/CodeVideoRenderer/)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/codevideorenderer.svg?style=flat-square)](https://pypi.org/project/codevideorenderer/)
 
 ## ✨ Core Features
 
