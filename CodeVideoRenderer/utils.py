@@ -119,13 +119,11 @@ def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str,
         return
     
     # Handle PathLike types
-    if expected_type is PathLike or (hasattr(expected_type, '__name__') and expected_type.__name__ == 'PathLike'):
-        if not isinstance(value, (str, PathLike)):
-            raise TypeError(f"Parameter '{param_name}'{path}: Expected 'str' or 'PathLike', got '{type(value).__name__}'")
-        return
-    
-    # Handle PathLike types
-    if expected_type is PathLike or (hasattr(expected_type, '__name__') and expected_type.__name__ == 'PathLike'):
+    # Only check for PathLike if the value is actually expected to be PathLike
+    # Avoid incorrectly treating tuples as needing str or PathLike
+    if (expected_type is PathLike or 
+        (hasattr(expected_type, '__name__') and expected_type.__name__ == 'PathLike') or
+        (hasattr(expected_type, '__name__') and expected_type.__name__ == 'StrPath')):
         if not isinstance(value, (str, PathLike)):
             raise TypeError(f"Parameter '{param_name}'{path}: Expected 'str' or 'PathLike', got '{type(value).__name__}'")
         return
@@ -263,7 +261,7 @@ def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str,
         # If no error was captured, raise a generic error
         # Special handling for StrPath type to show more informative error message
         if len(union_types) == 2:
-            # Check if this is Union[str, PathLike[str]] (StrPath)
+            # Check if this is Union[str, PathLike] (StrPath)
             has_str = False
             has_pathlike = False
             
@@ -274,7 +272,7 @@ def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str,
                     has_pathlike = True
                 elif hasattr(t, '__name__') and t.__name__ == 'PathLike':
                     has_pathlike = True
-                # Also check for PathLike[str] specifically
+                # Also check for PathLike specifically
                 elif hasattr(t, '__origin__') and t.__origin__ is PathLike and hasattr(t, '__args__') and t.__args__:
                     has_pathlike = True
             
@@ -347,13 +345,13 @@ def checkType(value: Any, expected_type: Union[Any, type[Any]], param_name: str,
         is_instance = False
 
     if not is_instance:
-        # Special case for PathLike[str]
-        if expected_type is PathLike[str] or (hasattr(expected_type, '__args__') and 
+        # Special case for PathLike
+        if expected_type is PathLike or (hasattr(expected_type, '__args__') and 
                                              len(expected_type.__args__) == 1 and 
                                              expected_type.__args__[0] is str and
                                              getattr(expected_type, '__origin__', None) is PathLike):
             if not isinstance(value, (str, PathLike)):
-                raise TypeError(f"Parameter '{param_name}'{path}: Expected 'str' or 'PathLike[str]', got '{type(value).__name__}'")
+                raise TypeError(f"Parameter '{param_name}'{path}: Expected 'str' or 'PathLike', got '{type(value).__name__}'")
             return
         
         raise TypeError(f"Parameter '{param_name}'{path}: Expected '{typeName(expected_type)}', got '{type(value).__name__}'")
