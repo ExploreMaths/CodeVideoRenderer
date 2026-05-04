@@ -4,7 +4,7 @@ from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, 
 from copy import copy
 from contextlib import contextmanager
 from io import StringIO
-from typing import get_args, get_origin, Literal, Generator, Any, Callable, TypeVar, Union
+from typing import get_args, get_origin, Literal, Generator, Any, Callable, TypeVar, Union, List
 from moviepy.video.io.VideoFileClip import VideoFileClip
 from PIL import Image, ImageFilter, ImageEnhance
 from proglog import ProgressBarLogger
@@ -425,7 +425,7 @@ def addGlowEffect(input_path: StrPath, output_path: StrPath, output: bool) -> No
     glow_video: VideoFileClip = VideoFileClip(input_path).image_transform(_frame_glow)
     glow_video.write_videofile(output_path, codec='libx264', audio=True, logger=RichProgressBarLogger(output=output, title="Glow Effect", leave_bars=False))
 
-def findSpacePositions(string: str) -> list[list[int]]:
+def findSpacePositions(string: str) -> List[List[int]]:
     """
     Find the 2D positions of all non-leading, non-trailing spaces in a string.
     Each position is represented as a list ``[row_index, column_index]``.
@@ -434,7 +434,7 @@ def findSpacePositions(string: str) -> list[list[int]]:
         string (str): A string.
         
     Returns:
-        list[list[int]]: A list of 2D positions of all non-leading, non-trailing spaces.
+        List[List[int]]: A list of 2D positions of all non-leading, non-trailing spaces.
         Each position is represented as a list ``[row_index, column_index]``.
     """
     result = []  # 存储所有[行, 列]格式的空格位置
@@ -461,7 +461,7 @@ def findSpacePositions(string: str) -> list[list[int]]:
     
     return result
 
-def findEmptyLinePositions(string: str) -> list[int]:
+def findEmptyLinePositions(string: str) -> List[int]:
     """
     Find the line indices of all empty lines in a string.
     
@@ -469,7 +469,7 @@ def findEmptyLinePositions(string: str) -> list[int]:
         string (str): A string.
         
     Returns:
-        list[int]: A list of line indices of all empty lines.
+        List[int]: A list of line indices of all empty lines.
     """
     return [idx for idx, line in enumerate(string.splitlines()) if line.strip() == '']
 

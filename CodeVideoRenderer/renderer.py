@@ -2,7 +2,7 @@ from manim import VGroup, Code, SurroundingRectangle, RoundedRectangle, MovingCa
 from manim.typing import Point3D
 from pathlib import Path
 from copy import copy
-from typing import Literal, Union
+from typing import Literal, Union, Tuple, List, Dict
 from timeit import timeit
 from rich import traceback
 from dataclasses import dataclass
@@ -21,11 +21,11 @@ class CameraFollowCursorCV:
     character while smoothly moving the camera to follow the cursor, creating a professional-looking coding demonstration.
 
     Args:
-        code (Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]]): The code to be animated. **When using a string**, provide a tuple with the first element as ``'string'`` and the second element as the code string. **When using a file**, provide a tuple with the first element as ``'file'`` and the second element as the file path.
+        code (Union[Tuple[Literal['string'], str], Tuple[Literal['file'], StrPath]]): The code to be animated. **When using a string**, provide a tuple with the first element as ``'string'`` and the second element as the code string. **When using a file**, provide a tuple with the first element as ``'file'`` and the second element as the file path.
         language (PygmentsLanguage): The programming language of the code.
         formatter_style (PygmentsFormatterStyle): The style for syntax highlighting. Defaults to ``"material"``.
         line_spacing (Union[float, int]): The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`.
-        interval_range (tuple[Union[float, int], Union[float, int]]): The range of typing intervals between characters. Defaults to (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`).
+        interval_range (Tuple[Union[float, int], Union[float, int]]): The range of typing intervals between characters. Defaults to (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`).
         camera_scale (Union[float, int]): The scale factor for the camera. Defaults to 0.5.
         video_name (str): The name of the output video file. Defaults to ``"CameraFollowCursorCV"``.
         renderer (Literal['cairo', 'opengl']): The renderer to use for video rendering. Defaults to ``'cairo'``.
@@ -34,11 +34,11 @@ class CameraFollowCursorCV:
 
     @typeChecker
     def __init__(self,
-        code: Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]],
+        code: Union[Tuple[Literal['string'], str], Tuple[Literal['file'], StrPath]],
         language: PygmentsLanguage,
         formatter_style: PygmentsFormatterStyle = "material",
         line_spacing: Union[float, int] = DEFAULT_LINE_SPACING,
-        interval_range: tuple[Union[float, int], Union[float, int]] = (DEFAULT_TYPE_INTERVAL, DEFAULT_TYPE_INTERVAL),
+        interval_range: Tuple[Union[float, int], Union[float, int]] = (DEFAULT_TYPE_INTERVAL, DEFAULT_TYPE_INTERVAL),
         camera_scale: Union[float, int] = 0.5,
         video_name: str = "CameraFollowCursorCV",
         renderer: Literal['cairo', 'opengl'] = 'cairo',
@@ -76,11 +76,11 @@ class CameraFollowCursorCV:
         global Parameters
         @dataclass
         class Parameters:
-            code: Union[tuple[Literal['string'], str], tuple[Literal['file'], StrPath]]
+            code: Union[Tuple[Literal['string'], str], Tuple[Literal['file'], StrPath]]
             language: PygmentsLanguage
             formatter_style: PygmentsFormatterStyle
             line_spacing: Union[float, int]
-            interval_range: tuple[Union[float, int], Union[float, int]]
+            interval_range: Tuple[Union[float, int], Union[float, int]]
             camera_scale: Union[float, int]
             video_name: str
             renderer: Literal['cairo', 'opengl']
@@ -180,7 +180,7 @@ class CameraFollowCursorCV:
                 )
                 
                 # 定义固定动画
-                scene.Animation_list: list[dict[str, Union[Point3D, float]]] = []
+                scene.Animation_list: List[Dict[str, Union[Point3D, float]]] = []
                 def linebreakAnimation():
                     scene.Animation_list.append({"move_to": cursor.get_center()})
 
