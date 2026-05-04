@@ -6,6 +6,7 @@ from typing import Literal, Union, Tuple, List, Dict
 from timeit import timeit
 from rich import traceback
 from dataclasses import dataclass
+from typeguard import typechecked
 import numpy as np
 import random, inspect, os
 
@@ -32,7 +33,7 @@ class CameraFollowCursorCV:
     """
     __all__ = ["render"]
 
-    @typeChecker
+    @typechecked
     def __init__(self,
         code: Union[Tuple[Literal['string'], str], Tuple[Literal['file'], StrPath]],
         language: PygmentsLanguage,
@@ -151,7 +152,7 @@ class CameraFollowCursorCV:
                     
                 # 创建代码行矩形框
                 code_line_rectangle = SurroundingRectangle(
-                    VGroup(code_mobject[-1], line_number_mobject[-1]), # type: ignore[reportArgumentType]
+                    VGroup(code_mobject[-1], line_number_mobject[-1]), # type: ignore
                     color="#333333",
                     fill_opacity=1,
                     stroke_width=0
@@ -165,12 +166,12 @@ class CameraFollowCursorCV:
 
                 # 适配opengl
                 if config.renderer == RendererType.OPENGL:
-                    scene.camera.frame = scene.camera # type: ignore[reportAttributeAccessIssue]
+                    scene.camera.frame = scene.camera # type: ignore
 
                 # 入场动画
                 target_center = cursor.get_center()
                 start_center = target_center + UP * 3
-                scene.camera.frame.scale(Parameters.camera_scale).move_to(start_center) # type: ignore[reportAttributeAccessIssue]
+                scene.camera.frame.scale(Parameters.camera_scale).move_to(start_center) # type: ignore
                 scene.add(code_line_rectangle, line_number_mobject[0].set_color(WHITE), cursor)
 
                 scene.play(
@@ -187,14 +188,14 @@ class CameraFollowCursorCV:
                 camera_scale = Parameters.camera_scale
                 def JUDGE_cameraScaleAnimation():
                     nonlocal camera_scale
-                    distance = (scene.camera.frame.get_x() - line_number_mobject.get_x()) / 14.22 # type: ignore[reportAttributeAccessIssue]
+                    distance = (scene.camera.frame.get_x() - line_number_mobject.get_x()) / 14.22 # type: ignore
                     if distance > camera_scale:
                         scene.Animation_list.append({"scale": distance/camera_scale})
                         camera_scale = distance
 
                 def playAnimation(**kwargs):
                     if scene.Animation_list:
-                        cameraAnimation = scene.camera.frame.animate # type: ignore[reportAttributeAccessIssue]
+                        cameraAnimation = scene.camera.frame.animate # type: ignore
 
                         for anim in scene.Animation_list:
                             if "move_to" in anim:
@@ -277,7 +278,7 @@ class CameraFollowCursorCV:
                                 oscillation = np.sin(alpha * omega)
                                 
                                 # 振幅为相机框高度的 2.5%
-                                amplitude = scene.camera.frame.height * 0.025 # type: ignore[reportAttributeAccessIssue]
+                                amplitude = scene.camera.frame.height * 0.025 # type: ignore
                                 offset_y = amplitude * envelope * oscillation
                                 
                                 target_pos = cursor.get_center() + UP * offset_y
@@ -337,7 +338,7 @@ class CameraFollowCursorCV:
 
         return CameraFollowCursorCVScene()
     
-    @typeChecker
+    @typechecked
     def render(self, output: bool = DEFAULT_OUTPUT_VALUE):
         """
         Render the scene, optionally with console output.
