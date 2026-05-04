@@ -57,7 +57,7 @@ See details at https://pypi.org/project/codevideorenderer/1.2.2/.
    
    * Convert all documents (functions, classes, constants) to the reStructuredText format for better compatibility with Sphinx documentation.
 
-   * Change the default value of the ```formatter_style``` parameter in the :class:`~.CameraFollowCursorCV` class to ```"material"```.
+   * Change the default value of the ``formatter_style`` parameter in the :class:`~.CameraFollowCursorCV` class to ``"material"``.
 
 CodeVideoRenderer 1.2.1
 ----------------------------
@@ -71,9 +71,9 @@ See details at https://pypi.org/project/codevideorenderer/1.2.1/.
 
    **Additions 🚀**
 
-   * Add the :data:`~.__version__` variable to ```__init__.py```
+   * Add the :data:`~.__version__` variable to ``__init__.py``
    
-   * Add the :data:`~.__all__` variable to ```config.py```, ```renderer.py```, ```typing.py```, and ```utils.py```
+   * Add the :data:`~.__all__` variable to ``config.py``, ``renderer.py``, ``typing.py``, and ``utils.py``
    
    * Add the :attr:`~.formatter_style` parameter to the :class:`~.CameraFollowCursorCV` class
    
@@ -85,22 +85,22 @@ See details at https://pypi.org/project/codevideorenderer/1.2.1/.
    
    * Add the CodeVideoRendererFont font to support Chinese characters
    
-   * Add the :data:`~.NOT_AVAILABLE_CHARACTERS` variable to ```config.py```
+   * Add the :data:`~.NOT_AVAILABLE_CHARACTERS` variable to ``config.py``
    
    * Add the :class:`~.Parameters` class to the :class:`~.CameraFollowCursorCV` class for managing and retrieving parameters
 
-   * Add ```version.py``` to manage package version
+   * Add ``version.py`` to manage package version
 
 
    **Changes 🧹**
 
-   * Change the function name format from ```aaa_bbb``` (snake_case) to ```aaaBbb``` (camelCase)
+   * Change the function name format from ``aaa_bbb`` (snake_case) to ``aaaBbb`` (camelCase)
    
-   * Change the :data:`~.PygmentsLanguage` class to a ```Literal``` type
+   * Change the :data:`~.PygmentsLanguage` class to a ``Literal`` type
    
-   * Refactor the ```default_progress_bar``` function into the :class:`~.DefaultProgressBar` class
+   * Refactor the ``default_progress_bar`` function into the :class:`~.DefaultProgressBar` class
    
-   * Split ```CameraFollowCursorCVR.py``` into ```renderer.py```, ```typing.py```, and ```utils.py```
+   * Split ``CameraFollowCursorCVR.py`` into ``renderer.py``, ``typing.py``, and ``utils.py``
    
    * Modify the whitespace handling logic to improve rendering speed
    
@@ -108,18 +108,18 @@ See details at https://pypi.org/project/codevideorenderer/1.2.1/.
    
    * Modify some terminal output content
    
-   * Update the value of :data:`~.CODE_OFFSET` in ```config.py```
+   * Update the value of :data:`~.CODE_OFFSET` in ``config.py``
 
 
    **Fixes 🐛**
 
    * Fix the code offset issue caused by `@gaojj2000 <https://github.com/gaojj2000>`_ in `#5 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/5>`_
-   * Fix the ```code_line_rectangle``` offset issue that occurs when code offset happens
+   * Fix the ``code_line_rectangle`` offset issue that occurs when code offset happens
 
 
    **Deletions 🗑️**
 
-   * Remove the :data:`~.DEFAULT_CODE_FORMATTER_STYLE`, :data:`~.AVAILABLE_CHARACTERS`, and :data:`~.EMPTY_CHARACTER` variables from ```config.py```
+   * Remove the :data:`~.DEFAULT_CODE_FORMATTER_STYLE`, :data:`~.AVAILABLE_CHARACTERS`, and :data:`~.EMPTY_CHARACTER` variables from ``config.py``
 
 CodeVideoRenderer 1.1.2
 ----------------------------
@@ -143,27 +143,27 @@ See details at https://pypi.org/project/codevideorenderer/1.1.1/.
 .. admonition:: What's Changed
    :class: tip
 
-   * Added compatibility updates for ```manim==0.19.1``` (see `#3 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/3>`_ for details).
+   * Added compatibility updates for ``manim==0.19.1`` (see `#3 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/3>`_ for details).
 
-   * Modified :func:`~.type_checker` to adapt to ```Literal``` and :data:`~.PygmentsLanguage`.
+   * Modified :func:`~.type_checker` to adapt to ``Literal`` and :data:`~.PygmentsLanguage`.
 
    * Optimized terminal display.
 
    * Added glow effects.
 
-   * Integrated ```functions.py``` into ```CameraFollowCursorCVR.py```.
+   * Integrated ``functions.py`` into ``CameraFollowCursorCVR.py``.
 
    * Adapted to OpenGL rendering and resolved related issues when switching to OpenGL rendering (see `#4 <https://github.com/ExploreMaths/CodeVideoRenderer/pull/4>`_ for details).
 
-   * Added the ```renderer``` parameter to :class:`~.CameraFollowCursorCV` to configure the renderer.
+   * Added the ``renderer`` parameter to :class:`~.CameraFollowCursorCV` to configure the renderer.
 
-   * Adopted the ```timeit``` module to calculate rendering time and eliminate redundant variables.
+   * Adopted the ``timeit`` module to calculate rendering time and eliminate redundant variables.
 
-   * Removed summary output before rendering the ```Scene```.
+   * Removed summary output before rendering the ``Scene``.
 
-   * Deleted unused constants in ```config.py```.
+   * Deleted unused constants in ``config.py``.
 
-   * Changed the type of the ```language``` parameter in :class:`~.CameraFollowCursorCV` from ```str``` to :data:`~.PygmentsLanguage`.
+   * Changed the type of the ``language`` parameter in :class:`~.CameraFollowCursorCV` from ``str`` to :data:`~.PygmentsLanguage`.
 
    * Refactored the file structure.
 
@@ -181,7 +181,7 @@ See details at https://pypi.org/project/codevideorenderer/1.1.0/.
 
    * Added opening animation.
 
-   * Fixed the issue where output could not be terminated when ```output=False``` was used in :meth:`~.render`.
+   * Fixed the issue where output could not be terminated when ``output=False`` was used in :meth:`~.render`.
 
 CodeVideoRenderer 1.0.9.post2
 ------------------------------
@@ -207,7 +207,7 @@ See details at https://pypi.org/project/codevideorenderer/1.0.9.post1/.
 
    * Fixed partial issues with the :func:`~.type_checker` decorator.
 
-   * Redesigned progress bar style and added a ```{task.completed}/{task.total}``` field.
+   * Redesigned progress bar style and added a ``{task.completed}/{task.total}`` field.
 
 CodeVideoRenderer 1.0.9
 ----------------------------
@@ -221,11 +221,11 @@ See details at https://pypi.org/project/codevideorenderer/1.0.9/.
 
    * Overhauled and rewrote camera movement logic, and added automatic camera scaling.
 
-   * Used ```rich``` to print initial data at the start of rendering.
+   * Used ``rich`` to print initial data at the start of rendering.
 
-   * Rewrote the rendering progress bar with ```rich.progress```.
+   * Rewrote the rendering progress bar with ``rich.progress``.
 
-   * Refactored type checking and adopted ```rich.traceback``` for cleaner error output.
+   * Refactored type checking and adopted ``rich.traceback`` for cleaner error output.
 
 CodeVideoRenderer 1.0.8.post1
 --------------------------------
@@ -237,7 +237,7 @@ See details at https://pypi.org/project/codevideorenderer/1.0.8.post1/.
 .. admonition:: What's Changed
    :class: tip
 
-   * Fixed issues in ```__init__.py```.
+   * Fixed issues in ``__init__.py``.
 
 CodeVideoRenderer 1.0.8
 ----------------------------
@@ -251,9 +251,9 @@ See details at https://pypi.org/project/codevideorenderer/1.0.8/.
 
    * Fixed code offset errors.
 
-   * Reverted the default font to Consolas, as Cascadia Code converts ```>=``` to ```≥``` and triggers internal Manim errors.
+   * Reverted the default font to Consolas, as Cascadia Code converts ``>=`` to ``≥`` and triggers internal Manim errors.
 
-   * Removed unused constants in ```/renderer/config.py```.
+   * Removed unused constants in ``/renderer/config.py``.
 
 CodeVideoRenderer 1.0.7.post3
 --------------------------------
@@ -291,7 +291,7 @@ See details at https://pypi.org/project/codevideorenderer/1.0.7.post1/.
 .. admonition:: What's Changed
    :class: tip
 
-   * Resolved bugs occurring when using the ```code_file``` parameter.
+   * Resolved bugs occurring when using the ``code_file`` parameter.
 
 CodeVideoRenderer 1.0.7
 ----------------------------
@@ -305,7 +305,7 @@ See details at https://pypi.org/project/codevideorenderer/1.0.7/.
 
    * Updated pip dependency configuration.
 
-   * Changed parameter ```camera_floating_maximum_value``` to ```camera_floating_max_value```, ```screen_scale``` to ```camera_scale```.
+   * Changed parameter ``camera_floating_maximum_value`` to ``camera_floating_max_value``, ``screen_scale`` to ``camera_scale``.
 
    * Improved error message presentation.
 
@@ -359,9 +359,9 @@ See details at https://pypi.org/project/codevideorenderer/1.0.5/.
 .. admonition:: What's Changed
    :class: tip
 
-   * Added the new ```output``` parameter to the :meth:`~.render` method to control rendering output behavior.
+   * Added the new ``output`` parameter to the :meth:`~.render` method to control rendering output behavior.
 
-   * Refactored ```CodeVideo``` from a function to a class for better code maintainability and scalability.
+   * Refactored ``CodeVideo`` from a function to a class for better code maintainability and scalability.
 
 CodeVideoRenderer 1.0.4
 ----------------------------
@@ -375,7 +375,7 @@ See details at https://pypi.org/project/codevideorenderer/1.0.4/.
 
    * Fixed calculation errors of rendering duration.
 
-   * Removed the deprecated ```font``` parameter.
+   * Removed the deprecated ``font`` parameter.
 
    * Optimized terminal rendering logs.
 
@@ -397,7 +397,7 @@ See details at https://pypi.org/project/codevideorenderer/1.0.3/.
 
    * Adjusted the background width of the currently highlighted code line.
 
-   * Added the new ```line_spacing``` parameter to customize line spacing.
+   * Added the new ``line_spacing`` parameter to customize line spacing.
 
    * Optimized terminal rendering information output.
 
