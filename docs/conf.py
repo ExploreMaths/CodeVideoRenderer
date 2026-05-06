@@ -41,7 +41,8 @@ autodoc_mock_imports = [
     "typeguard",
 ]
 autodoc_default_options = {
-    'member-order': 'bysource'
+    'member-order': 'bysource',
+    'show-inheritance': True,
 }
 
 # -- Options for HTML output -------------------------------------------------

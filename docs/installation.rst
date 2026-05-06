@@ -45,19 +45,6 @@ Install CodeVideoRenderer using pip:
 
    pip install codevideorenderer
 
-Installation with Extras
-------------------------
-
-For additional features, install with optional dependencies:
-
-.. code-block:: bash
-
-   # Install with OpenGL support
-   pip install codevideorenderer[opengl]
-   
-   # Install with all extras
-   pip install codevideorenderer[all]
-
 Development Installation
 ------------------------
 
