@@ -38,7 +38,6 @@ autodoc_mock_imports = [
     "proglog",
     "moviepy",
     "PIL",
-    "typeguard",
 ]
 autodoc_default_options = {
     'member-order': 'bysource',
