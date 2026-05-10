@@ -1,3 +1,11 @@
+body {
+    --color-brand-visited: #2757dd !important;
+}
+
+body[data-theme="dark"] {
+    --color-brand-visited: #5ca5ff !important;
+}
+
 .sidebar-brand-text {
     font-size: 1.45rem !important;
 }
