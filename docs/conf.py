@@ -43,6 +43,13 @@ autodoc_default_options = {
     'member-order': 'bysource',
     'show-inheritance': True,
 }
+autodoc_typehints_format = 'short'
+python_use_unqualified_type_names = True
+autodoc_type_aliases = {
+    'PygmentsLanguage': 'CodeVideoRenderer.typing.PygmentsLanguage',
+    'PygmentsFormatterStyle': 'CodeVideoRenderer.typing.PygmentsFormatterStyle',
+    'StrPath': 'CodeVideoRenderer.typing.StrPath',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -51,7 +58,6 @@ html_theme = 'furo'
 html_static_path = ['_static']
 html_css_files = [
     'custom.css',
-    'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css',
 ]
 
 html_title = f'{project} v{release}'

@@ -1,3 +1,4 @@
+from __future__ import annotations # for Sphinx typehints
 from manim import VGroup, Code, SurroundingRectangle, RoundedRectangle, MovingCameraScene, rate_functions, RendererType, config, WHITE, GREY, UP, DOWN, LEFT, RIGHT, register_font
 from manim.typing import Point3D
 from pathlib import Path

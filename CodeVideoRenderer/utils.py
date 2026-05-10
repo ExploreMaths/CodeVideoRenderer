@@ -1,4 +1,4 @@
-from __future__ import annotations
+from __future__ import annotations # for Sphinx typehints
 from manim import config
 from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, TransferSpeedColumn
 from copy import copy
