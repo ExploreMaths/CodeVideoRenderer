@@ -7,3 +7,4 @@ media/
 /update.bat
 __pycache__/
 /docs/_build/
+*.log

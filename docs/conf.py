@@ -69,10 +69,22 @@ html_theme_options = {
     },
 }
 
-# -- Fix mock signatures ---------------------------------------------------
+# -- Setup connections ---------------------------------------------------
 
 import inspect
+import re
 from sphinx.util.inspect import stringify_signature
+from pathlib import Path
+
+def replace_typealias_forwardrefs(app, what, name, obj, options, signature, return_annotation):
+    """Replace TypeAliasForwardRef('module.path.AliasName') with AliasName in signatures."""
+    pattern = r"TypeAliasForwardRef\(['\"]([\w.]+)['\"]\)"
+    repl = lambda m: m.group(1).rsplit('.', 1)[-1]
+    if signature:
+        signature = re.sub(pattern, repl, signature)
+    if return_annotation:
+        return_annotation = re.sub(pattern, repl, return_annotation)
+    return signature, return_annotation
 
 def fix_mock_signatures(app, what, name, obj, options, signature, return_annotation):
     """Fix signatures for classes whose __new__ is inherited from mocked base classes.
@@ -95,5 +107,35 @@ def fix_mock_signatures(app, what, name, obj, options, signature, return_annotat
                 pass
     return signature, return_annotation
 
+def _link_type_aliases_in_html(app, exception):
+    """Scan built HTML files and replace <em>Alias</em> with native <a><em> links.
+
+    This runs after the HTML build finishes so that Sphinx's own
+    PyTypedField.make_field logic (which wraps every type token in <em>)
+    is left untouched; we only turn the bare <em> aliases into hyperlinks.
+    """
+    if exception is not None:
+        return
+
+    build_dir = Path(app.outdir)
+    for html_path in build_dir.rglob('*.html'):
+        content = html_path.read_text(encoding='utf-8')
+        new_content = content
+        for alias, full_path in autodoc_type_aliases.items():
+            # Only replace <em>Alias</em> when it is NOT already inside an <a> tag.
+            pattern = re.compile(
+                rf'(?<!</a>)<em>{re.escape(alias)}</em>(?!</a>)'
+            )
+            repl = (
+                f'<a class="reference internal" href="typing.html#{full_path}" '
+                f'title="{full_path}"><em>{alias}</em></a>'
+            )
+            new_content = pattern.sub(repl, new_content)
+        if new_content != content:
+            html_path.write_text(new_content, encoding='utf-8')
+
+
 def setup(app):
+    app.connect('autodoc-process-signature', replace_typealias_forwardrefs)
     app.connect('autodoc-process-signature', fix_mock_signatures)
+    app.connect('build-finished', _link_type_aliases_in_html)
