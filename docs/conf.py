@@ -33,9 +33,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 autodoc_mock_imports = [
     "typing", 
     "manim",
-    "rich",
     "numpy",
-    "proglog",
     "moviepy",
     "PIL",
 ]

@@ -5,3 +5,5 @@ sphinx-copybutton
 m2r2
 mistune<3.0.0
 typeguard>=3.0
+rich
+proglog
