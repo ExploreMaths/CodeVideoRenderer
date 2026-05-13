@@ -71,9 +71,7 @@ html_theme_options = {
 
 # -- Setup connections ---------------------------------------------------
 
-import inspect
 import re
-from sphinx.util.inspect import stringify_signature
 from pathlib import Path
 
 def replace_typealias_forwardrefs(app, what, name, obj, options, signature, return_annotation):
