@@ -86,27 +86,6 @@ def replace_typealias_forwardrefs(app, what, name, obj, options, signature, retu
         return_annotation = re.sub(pattern, repl, return_annotation)
     return signature, return_annotation
 
-def fix_mock_signatures(app, what, name, obj, options, signature, return_annotation):
-    """Fix signatures for classes whose __new__ is inherited from mocked base classes.
-
-    When a class inherits from a mocked object (e.g. via autodoc_mock_imports),
-    Sphinx may pick up the mock's __new__ signature (*args, **kwargs) instead of
-    the actual __init__ signature. This handler falls back to __init__ when it
-    detects the generic mock signature.
-    """
-    if what == 'class' and signature == '(*args: Any, **kwargs: Any)':
-        init = getattr(obj, '__init__', None)
-        if init is not None:
-            try:
-                sig = inspect.signature(init)
-                params = list(sig.parameters.values())[1:]  # remove self
-                if params:
-                    sig = sig.replace(parameters=params)
-                    return stringify_signature(sig), None
-            except ValueError:
-                pass
-    return signature, return_annotation
-
 def _link_type_aliases_in_html(app, exception):
     """Scan built HTML files and replace <em>Alias</em> with native <a><em> links.
 
@@ -137,5 +116,4 @@ def _link_type_aliases_in_html(app, exception):
 
 def setup(app):
     app.connect('autodoc-process-signature', replace_typealias_forwardrefs)
-    app.connect('autodoc-process-signature', fix_mock_signatures)
     app.connect('build-finished', _link_type_aliases_in_html)
