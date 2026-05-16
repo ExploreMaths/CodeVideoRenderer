@@ -1,4 +1,4 @@
-# Read the Docs configuration file
+# Read the Docs configuration file for Chinese builds
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
 version: 2
@@ -13,7 +13,7 @@ build:
     - python -m pip install --upgrade --no-cache-dir sphinx 
     - python -m pip install --exists-action=w --no-cache-dir -r docs/requirements.txt
     - python -m pip install -e . --no-deps
-    - cd docs && python -m sphinx -T -j auto -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
+    - cd docs && python -m sphinx -T -j auto -b html -d _build/doctrees -D language=zh_CN . $READTHEDOCS_OUTPUT/html
 
 sphinx:
   configuration: docs/conf.py
