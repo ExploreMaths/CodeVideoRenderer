@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../CODE_OF_CONDUCT.md:3
+msgid "Code of Conduct"
+msgstr "行为准则"
+
+#: ../../../CODE_OF_CONDUCT.md:6
+msgid "Our Pledge"
+msgstr "我们的承诺"
+
+#: ../../../CODE_OF_CONDUCT.md:8
+msgid ""
+"We as members, contributors, and leaders pledge to make participation in "
+"our community a harassment-free experience for everyone, regardless of "
+"age, body size, visible or invisible disability, ethnicity, sex "
+"characteristics, gender identity and expression, level of experience, "
+"education, socio-economic status, nationality, personal appearance, race,"
+" religion, or sexual identity and orientation."
+msgstr ""
+"我们作为成员、贡献者和领导者，承诺为每个人提供无骚扰的社区参与体验，"
+"无论年龄、体型、可见或不可见的残疾、种族、性别特征、"
+"性别认同和表达、经验水平、教育程度、社会经济地位、"
+"国籍、个人外貌、种族、宗教或性身份和取向。"
+
+#: ../../../CODE_OF_CONDUCT.md:10
+msgid ""
+"We pledge to act and interact in ways that contribute to an open, "
+"welcoming, diverse, inclusive, and healthy community."
+msgstr ""
+"我们承诺以有助于建立开放、热情、多元、包容和健康社区的方式行事和互动。"
+
+#: ../../../CODE_OF_CONDUCT.md:13
+msgid "Our Standards"
+msgstr "我们的标准"
+
+#: ../../../CODE_OF_CONDUCT.md:15
+msgid ""
+"Examples of behavior that contributes to a positive environment for our "
+"community include:"
+msgstr "有助于为我们社区营造积极环境的行为示例包括："
+
+#: ../../../CODE_OF_CONDUCT.md:18
+msgid "Demonstrating empathy and kindness toward other people"
+msgstr "对他人表现出同理心和善意"
+
+#: ../../../CODE_OF_CONDUCT.md:19
+msgid "Being respectful of differing opinions, viewpoints, and experiences"
+msgstr "尊重不同的意见、观点和经验"
+
+#: ../../../CODE_OF_CONDUCT.md:20
+msgid "Giving and gracefully accepting constructive feedback"
+msgstr "给予并优雅地接受建设性的反馈"
+
+#: ../../../CODE_OF_CONDUCT.md:21
+msgid ""
+"Accepting responsibility and apologizing to those affected by our "
+"mistakes, and learning from the experience"
+msgstr "承担责任并向受我们错误影响的人道歉，并从中吸取教训"
+
+#: ../../../CODE_OF_CONDUCT.md:22
+msgid ""
+"Focusing on what is best not just for us as individuals, but for the "
+"overall community"
+msgstr "不仅关注我们个人，更关注对整个社区最有利的事情"
+
+#: ../../../CODE_OF_CONDUCT.md:24
+msgid "Examples of unacceptable behavior include:"
+msgstr "不可接受的行为示例包括："
+
+#: ../../../CODE_OF_CONDUCT.md:27
+msgid ""
+"The use of sexualized language or imagery, and sexual attention or "
+"advances of any kind"
+msgstr "使用性化语言或图像，以及任何形式的性关注或性暗示"
+
+#: ../../../CODE_OF_CONDUCT.md:28
+msgid ""
+"Trolling, insulting or derogatory comments, and personal or political "
+"attacks"
+msgstr "挑衅、侮辱或贬损性评论，以及人身或政治攻击"
+
+#: ../../../CODE_OF_CONDUCT.md:29
+msgid "Public or private harassment"
+msgstr "公开或私下的骚扰"
+
+#: ../../../CODE_OF_CONDUCT.md:30
+msgid ""
+"Publishing others' private information, such as a physical or email "
+"address, without their explicit permission"
+msgstr "未经他人明确许可发布他人的私人信息，如物理地址或电子邮件地址"
+
+#: ../../../CODE_OF_CONDUCT.md:31
+msgid ""
+"Other conduct which could reasonably be considered inappropriate in a "
+"professional setting"
+msgstr "在专业环境中可能合理被视为不适当的其他行为"
+
+#: ../../../CODE_OF_CONDUCT.md:34
+msgid "Enforcement Responsibilities"
+msgstr "执行责任"
+
+#: ../../../CODE_OF_CONDUCT.md:36
+msgid ""
+"Community leaders are responsible for clarifying and enforcing our "
+"standards of acceptable behavior and will take appropriate and fair "
+"corrective action in response to any behavior that they deem "
+"inappropriate, threatening, offensive, or harmful."
+msgstr ""
+"社区领导者负责澄清和执行我们的可接受行为标准，"
+"并将对他们认为不适当、威胁性、冒犯性或有害的行为采取适当和公平的纠正措施。"
+
+#: ../../../CODE_OF_CONDUCT.md:38
+msgid ""
+"Community leaders have the right and responsibility to remove, edit, or "
+"reject comments, commits, code, wiki edits, issues, and other "
+"contributions that are not aligned to this Code of Conduct, and will "
+"communicate reasons for moderation decisions when appropriate."
+msgstr ""
+"社区领导者有权并有责任删除、编辑或拒绝不符合本行为准则的评论、"
+"提交、代码、wiki 编辑、问题和其他贡献，并在适当的时候沟通审核决定的理由。"
+
+#: ../../../CODE_OF_CONDUCT.md:41
+msgid "Scope"
+msgstr "范围"
+
+#: ../../../CODE_OF_CONDUCT.md:43
+msgid ""
+"This Code of Conduct applies within all community spaces, and also "
+"applies when an individual is officially representing the community in "
+"public spaces. Examples of representing our community include using an "
+"official e-mail address, posting via an official social media account, or"
+" acting as an appointed representative at an online or offline event."
+msgstr ""
+"本行为准则适用于所有社区空间，也适用于个人在公共场所正式代表社区时。"
+"代表我们社区的示例包括使用官方电子邮件地址、通过官方社交媒体账户发帖，"
+"或作为指定代表参加线上或线下活动。"
+
+#: ../../../CODE_OF_CONDUCT.md:46
+msgid "Enforcement"
+msgstr "执行"
+
+#: ../../../CODE_OF_CONDUCT.md:48
+msgid ""
+"Instances of abusive, harassing, or otherwise unacceptable behavior may "
+"be reported to the community leaders responsible for enforcement at "
+"zhuchongjing_pypi@163.com. All complaints will be reviewed and "
+"investigated promptly and fairly."
+msgstr ""
+"辱骂、骚扰或其他不可接受的行为实例可以报告给负责执行的社区领导者，"
+"邮箱为 zhuchongjing_pypi@163.com。所有投诉都将得到及时和公正的审查和调查。"
+
+#: ../../../CODE_OF_CONDUCT.md:50
+msgid ""
+"All community leaders are obligated to respect the privacy and security "
+"of the reporter of any incident."
+msgstr "所有社区领导者都有义务尊重任何事件报告者的隐私和安全。"
+
+#: ../../../CODE_OF_CONDUCT.md:53
+msgid "Enforcement Guidelines"
+msgstr "执行指南"
+
+#: ../../../CODE_OF_CONDUCT.md:55
+msgid ""
+"Community leaders will follow these Community Impact Guidelines in "
+"determining the consequences for any action they deem in violation of "
+"this Code of Conduct:"
+msgstr ""
+"社区领导者将遵循这些社区影响指南，"
+"来确定他们认为违反本行为准则的任何行为的后果："
+
+#: ../../../CODE_OF_CONDUCT.md:58
+msgid "1. Correction"
+msgstr "1. 纠正"
+
+#: ../../../CODE_OF_CONDUCT.md:60
+msgid ""
+"**Community Impact**\\ : Use of inappropriate language or other behavior "
+"deemed unprofessional or unwelcome in the community."
+msgstr ""
+"**社区影响**\\ ：使用不恰当的语言或其他被认为不专业或不受欢迎的行为。"
+
+#: ../../../CODE_OF_CONDUCT.md:62
+msgid ""
+"**Consequence**\\ : A private, written warning from community leaders, "
+"providing clarity around the nature of the violation and an explanation "
+"of why the behavior was inappropriate. A public apology may be requested."
+msgstr ""
+"**后果**\\ ：来自社区领导者的私人书面警告，明确违规性质并解释该行为为何不恰当。"
+"可能会要求公开道歉。"
+
+#: ../../../CODE_OF_CONDUCT.md:65
+msgid "2. Warning"
+msgstr "2. 警告"
+
+#: ../../../CODE_OF_CONDUCT.md:67
+msgid ""
+"**Community Impact**\\ : A violation through a single incident or series "
+"of actions."
+msgstr "**社区影响**\\ ：通过单一事件或一系列行为造成的违规。"
+
+#: ../../../CODE_OF_CONDUCT.md:69
+msgid ""
+"**Consequence**\\ : A warning with consequences for continued behavior. "
+"No interaction with the people involved, including unsolicited "
+"interaction with those enforcing the Code of Conduct, for a specified "
+"period of time. This includes avoiding interactions in community spaces "
+"as well as external channels like social media. Violating these terms may"
+" lead to a temporary or permanent ban."
+msgstr ""
+"**后果**\\ ：对持续行为的后果发出警告。在指定时间内不得与相关人员互动，"
+"包括未经请求与执行行为准则的人员互动。这包括避免在社区空间以及社交媒体等外部渠道中互动。"
+"违反这些条款可能导致临时或永久封禁。"
+
+#: ../../../CODE_OF_CONDUCT.md:72
+msgid "3. Temporary Ban"
+msgstr "3. 临时封禁"
+
+#: ../../../CODE_OF_CONDUCT.md:74
+msgid ""
+"**Community Impact**\\ : A serious violation of community standards, "
+"including sustained inappropriate behavior."
+msgstr "**社区影响**\\ ：严重违反社区标准，包括持续的不当行为。"
+
+#: ../../../CODE_OF_CONDUCT.md:76
+msgid ""
+"**Consequence**\\ : A temporary ban from any sort of interaction or "
+"public communication with the community for a specified period of time. "
+"No public or private interaction with the people involved, including "
+"unsolicited interaction with those enforcing the Code of Conduct, is "
+"allowed during this period. Violating these terms may lead to a permanent"
+" ban."
+msgstr ""
+"**后果**\\ ：在指定时间内禁止与社区进行任何形式的互动或公开交流。"
+"在此期间，不允许与相关人员进行公开或私下互动，包括未经请求与执行行为准则的人员互动。"
+"违反这些条款可能导致永久封禁。"
+
+#: ../../../CODE_OF_CONDUCT.md:79
+msgid "4. Permanent Ban"
+msgstr "4. 永久封禁"
+
+#: ../../../CODE_OF_CONDUCT.md:81
+msgid ""
+"**Community Impact**\\ : Demonstrating a pattern of violation of "
+"community standards, including sustained inappropriate behavior, "
+"harassment of an individual, or aggression toward or disparagement of "
+"classes of individuals."
+msgstr ""
+"**社区影响**\\ ：表现出违反社区标准的行为模式，包括持续的不当行为、"
+"骚扰个人，或对某类人群进行攻击或贬低。"
+
+#: ../../../CODE_OF_CONDUCT.md:83
+msgid ""
+"**Consequence**\\ : A permanent ban from any sort of public interaction "
+"within the community."
+msgstr "**后果**\\ ：永久禁止在社区内进行任何形式的公开互动。"
+
+#: ../../../CODE_OF_CONDUCT.md:86
+msgid "Attribution"
+msgstr "归属"
+
+#: ../../../CODE_OF_CONDUCT.md:88
+msgid ""
+"This Code of Conduct is adapted from the Contributor Covenant, version "
+"2.1, available at `Contributor Covenant Code of Conduct <https://www"
+".contributor-covenant.org/version/2/1/code_of_conduct.html>`_."
+msgstr ""
+"本行为准则改编自贡献者公约 2.1 版，"
+"可在 `贡献者公约行为准则 <https://www.contributor-covenant.org/version/2/1/code_of_conduct.html>`_ 获取。"
+
+#: ../../../CODE_OF_CONDUCT.md:90
+msgid ""
+"Community Impact Guidelines were inspired by Mozilla's code of conduct "
+"enforcement ladder."
+msgstr "社区影响指南的灵感来源于 Mozilla 的行为准则执行阶梯。"
+
+#: ../../../CODE_OF_CONDUCT.md:92
+msgid ""
+"For answers to common questions about this code of conduct, see "
+"`Frequently Asked Questions <https://www.contributor-covenant.org/faq>`_."
+msgstr ""
+"关于本行为准则的常见问题的解答，"
+"请参阅 `常见问题 <https://www.contributor-covenant.org/faq>`_。"
+
+#: ../../../CODE_OF_CONDUCT.md:95
+msgid "Contact Information"
+msgstr "联系信息"
+
+#: ../../../CODE_OF_CONDUCT.md:97
+msgid "For reporting issues or seeking clarification:"
+msgstr "如需报告问题或寻求澄清："
+
+#: ../../../CODE_OF_CONDUCT.md:100
+msgid "**Email**\\ : zhuchongjing_pypi@163.com"
+msgstr "**电子邮件**\\ ：zhuchongjing_pypi@163.com"
+
+#: ../../../CODE_OF_CONDUCT.md:101
+msgid "**GitHub Issues**\\ : Use the appropriate issue template"
+msgstr "**GitHub Issues**\\ ：使用适当的问题模板"
+
+#: ../../../CODE_OF_CONDUCT.md:102
+msgid "**Community Discussions**\\ : GitHub Discussions forum"
+msgstr "**社区讨论**\\ ：GitHub Discussions 论坛"
+
+#: ../../../CODE_OF_CONDUCT.md:104
+msgid ""
+"We are committed to maintaining a respectful and inclusive community "
+"where everyone can contribute and learn."
+msgstr ""
+"我们致力于维护一个相互尊重、包容的社区，让每个人都能贡献和学习。"

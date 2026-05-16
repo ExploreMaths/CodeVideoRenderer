@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../index.rst:59
+msgid "Documentation"
+msgstr "文档"
+
+#: ../../index.rst:71
+msgid "GitHub Repository"
+msgstr "GitHub 仓库"
+
+#: ../../index.rst:71
+msgid "PyPI Package"
+msgstr "PyPI 包"
+
+#: ../../index.rst:71
+msgid "External Links"
+msgstr "外部链接"
+
+#: ../../index.rst:7
+msgid "CodeVideoRenderer"
+msgstr "CodeVideoRenderer"
+
+#: ../../index.rst:9
+msgid ""
+"**CodeVideoRenderer** is a Python animation library based on Manim, "
+"specifically designed for creating dynamic code demonstration videos. It "
+"transforms static code into lively animations that simulate real "
+"programming processes."
+msgstr ""
+"**CodeVideoRenderer** 是一个基于 Manim 的 Python 动画库，"
+"专为创建动态代码演示视频而设计。它将静态代码转化为生动的动画，"
+"模拟真实的编程过程。"
+
+#: ../../index.rst:12
+msgid "Core Concepts"
+msgstr "核心概念"
+
+#: ../../index.rst:15
+msgid "Code Animation"
+msgstr "代码动画"
+
+#: ../../index.rst:17
+msgid ""
+"CodeVideoRenderer's core functionality is to animate code character by "
+"character and line by line. Unlike traditional static code displays, it "
+"can:"
+msgstr ""
+"CodeVideoRenderer 的核心功能是逐字符、逐行地为代码添加动画。"
+"与传统的静态代码展示不同，它能够："
+
+#: ../../index.rst:19
+msgid ""
+"**Simulate typing process**: Display code character by character, "
+"simulating real programming experience"
+msgstr ""
+"**模拟打字过程**：逐字符显示代码，模拟真实的编程体验"
+
+#: ../../index.rst:20
+msgid ""
+"**Intelligent cursor tracking**: Camera automatically follows the cursor "
+"movement, ensuring the currently edited code stays in the center of view"
+msgstr ""
+"**智能光标跟踪**：镜头自动跟随光标移动，确保当前编辑的代码始终位于视野中央"
+
+#: ../../index.rst:21
+msgid ""
+"**Syntax highlighting support**: Integrates Pygments syntax highlighting "
+"engine, supporting multiple programming languages"
+msgstr ""
+"**语法高亮支持**：集成 Pygments 语法高亮引擎，支持多种编程语言"
+
+#: ../../index.rst:24
+msgid "Camera System"
+msgstr "镜头系统"
+
+#: ../../index.rst:26
+msgid "The library includes an intelligent camera system that can:"
+msgstr "该库包含一个智能镜头系统，能够："
+
+#: ../../index.rst:28
+msgid "**Auto-scaling**: Automatically adjust camera zoom based on code content"
+msgstr "**自动缩放**：根据代码内容自动调整镜头缩放"
+
+#: ../../index.rst:29
+msgid ""
+"**Smooth movement**: Camera smoothly follows cursor movement, avoiding "
+"abrupt jumps"
+msgstr "**平滑移动**：镜头平滑跟随光标移动，避免突兀的跳跃"
+
+#: ../../index.rst:30
+msgid ""
+"**Focus management**: Intelligently recognizes code structure to ensure "
+"important parts remain visible"
+msgstr "**焦点管理**：智能识别代码结构，确保重要部分始终可见"
+
+#: ../../index.rst:33
+msgid "Key Features"
+msgstr "主要特性"
+
+#: ../../index.rst:35
+msgid ""
+"**🎬 Professional animation effects**: Based on Manim engine, providing "
+"high-quality animation rendering"
+msgstr ""
+"**🎬 专业动画效果**：基于 Manim 引擎，提供高质量的动画渲染"
+
+#: ../../index.rst:36
+msgid ""
+"**📝 Multi-language support**: Syntax highlighting for various programming"
+" languages including Python, JavaScript, Java, and more"
+msgstr ""
+"**📝 多语言支持**：支持多种编程语言的语法高亮，包括 Python、JavaScript、Java 等"
+
+#: ../../index.rst:37
+msgid ""
+"**⚙️ Highly customizable**: Adjustable typing speed, line spacing, camera"
+" behavior, and other parameters"
+msgstr ""
+"**⚙️ 高度可定制**：可调节打字速度、行间距、镜头行为等参数"
+
+#: ../../index.rst:38
+msgid ""
+"**🎨 Rich styling**: Multiple code highlighting styles (such as github-"
+"dark, monokai, etc.)"
+msgstr ""
+"**🎨 丰富的样式**：多种代码高亮样式（如 github-dark、monokai 等）"
+
+#: ../../index.rst:39
+msgid "**🔧 Dual renderers**: Support for both Cairo and OpenGL rendering backends"
+msgstr "**🔧 双渲染器**：支持 Cairo 和 OpenGL 两种渲染后端"
+
+#: ../../index.rst:42
+msgid "Use Cases"
+msgstr "使用场景"
+
+#: ../../index.rst:44
+msgid ""
+"CodeVideoRenderer is particularly suitable for the following application "
+"scenarios:"
+msgstr "CodeVideoRenderer 特别适用于以下应用场景："
+
+#: ../../index.rst:46
+msgid ""
+"**Educational demonstrations**: Create code explanation videos for "
+"programming courses"
+msgstr "**教学演示**：为编程课程创建代码讲解视频"
+
+#: ../../index.rst:47
+msgid ""
+"**Technical presentations**: Make code demonstration segments for "
+"conference talks"
+msgstr "**技术演讲**：为会议演讲制作代码演示片段"
+
+#: ../../index.rst:48
+msgid ""
+"**Algorithm visualization**: Dynamically showcase algorithm "
+"implementation processes and logic"
+msgstr "**算法可视化**：动态展示算法的实现过程和逻辑"
+
+#: ../../index.rst:49
+msgid "**Code review**: Visualize code modifications and refactoring processes"
+msgstr "**代码审查**：将代码修改和重构过程可视化"
+
+#: ../../index.rst:52
+msgid "Design Philosophy"
+msgstr "设计理念"
+
+#: ../../index.rst:54
+msgid ""
+"CodeVideoRenderer's design philosophy is \"making code come alive,\" "
+"aiming to better convey programming ideas and code logic through "
+"animation. It's not just a code rendering tool, but a code storytelling "
+"tool."
+msgstr ""
+"CodeVideoRenderer 的设计理念是\"让代码活起来\"，"
+"旨在通过动画更好地传达编程思想和代码逻辑。"
+"它不仅仅是一个代码渲染工具，更是一个代码叙事工具。"
+
+#: ../../index.rst:57
+msgid "Index"
+msgstr "索引"

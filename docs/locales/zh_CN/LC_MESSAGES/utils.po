@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../utils.rst:2
+msgid "Utilities"
+msgstr "工具函数"
+
+#: CodeVideoRenderer.utils.noManimOutput:1 of
+msgid "Context manager used to execute code without outputting Manim logs."
+msgstr "用于在不输出 Manim 日志的情况下执行代码的上下文管理器。"
+
+#: CodeVideoRenderer.utils.stripEmptyLines:1 of
+msgid "Remove empty lines from the beginning and end of a string."
+msgstr "移除字符串开头和结尾的空行。"
+
+#: ../../utils.rst
+msgid "Parameters"
+msgstr "参数"
+
+#: CodeVideoRenderer.utils.stripEmptyLines:3 of
+msgid "The input string to process."
+msgstr "要处理的输入字符串。"
+
+#: ../../utils.rst
+msgid "Returns"
+msgstr "返回值"
+
+#: CodeVideoRenderer.utils.stripEmptyLines:6 of
+msgid "The string with empty lines removed from the beginning and end."
+msgstr "移除了开头和结尾空行后的字符串。"
+
+#: ../../utils.rst
+msgid "Return type"
+msgstr "返回类型"
+
+#: CodeVideoRenderer.utils.typeName:1 of
+msgid "Get the name of a type, handling union types and generic types."
+msgstr "获取类型名称，支持联合类型和泛型。"
+
+#: CodeVideoRenderer.utils.typeName:3 of
+msgid "The type or value to get the name of."
+msgstr "要获取名称的类型或值。"
+
+#: CodeVideoRenderer.utils.typeName:5 of
+msgid "The name of the type."
+msgstr "类型名称。"
+
+#: CodeVideoRenderer.utils.addGlowEffect:1 of
+msgid "Add a glow effect to a video."
+msgstr "为视频添加发光效果。"
+
+#: CodeVideoRenderer.utils.addGlowEffect:3 of
+msgid "Path to the input video file."
+msgstr "输入视频文件的路径。"
+
+#: CodeVideoRenderer.utils.addGlowEffect:5 of
+msgid "Path to save the output video file."
+msgstr "输出视频文件的保存路径。"
+
+#: CodeVideoRenderer.utils.addGlowEffect:7 of
+msgid "Whether to display progress bars."
+msgstr "是否显示进度条。"
+
+#: CodeVideoRenderer.utils.addGlowEffect:10 of
+msgid "None"
+msgstr "无"
+
+#: CodeVideoRenderer.utils.findSpacePositions:1 of
+msgid ""
+"Find the 2D positions of all non-leading, non-trailing spaces in a "
+"string. Each position is represented as a list ``[row_index, "
+"column_index]``."
+msgstr ""
+"查找字符串中所有非开头、非结尾的空格的二维位置。"
+"每个位置以列表 ``[row_index, column_index]`` 表示。"
+
+#: CodeVideoRenderer.utils.findEmptyLinePositions:3
+#: CodeVideoRenderer.utils.findSpacePositions:4 of
+msgid "A string."
+msgstr "一个字符串。"
+
+#: CodeVideoRenderer.utils.findSpacePositions:7 of
+msgid ""
+"A list of 2D positions of all non-leading, non-trailing spaces. Each "
+"position is represented as a list ``[row_index, column_index]``."
+msgstr ""
+"所有非开头、非结尾空格的二维位置列表。"
+"每个位置以列表 ``[row_index, column_index]`` 表示。"
+
+#: CodeVideoRenderer.utils.findEmptyLinePositions:1 of
+msgid "Find the line indices of all empty lines in a string."
+msgstr "查找字符串中所有空行的行索引。"
+
+#: CodeVideoRenderer.utils.findEmptyLinePositions:6 of
+msgid "A list of line indices of all empty lines."
+msgstr "所有空行的行索引列表。"
+
+#: CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:1 of
+msgid ""
+"Replace all non-leading, non-trailing spaces in the input string with "
+":data:`~.OCCUPY_CHARACTER`. Retain leading and trailing spaces."
+msgstr ""
+"将输入字符串中所有非开头、非结尾的空格替换为 :data:`~.OCCUPY_CHARACTER`。"
+"保留开头和结尾的空格。"
+
+#: CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:4 of
+msgid "Original string."
+msgstr "原始字符串。"
+
+#: CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:7 of
+msgid ""
+"Processed string with middle spaces replaced by "
+":data:`~.OCCUPY_CHARACTER`."
+msgstr ""
+"中间空格已被替换为 :data:`~.OCCUPY_CHARACTER` 的处理后字符串。"
+
+#: CodeVideoRenderer.utils.DefaultProgressBar:1 of
+msgid "Default progress bar."
+msgstr "默认进度条。"
+
+#: CodeVideoRenderer.utils.RichProgressBarLogger:1 of
+msgid "A progress logger that uses Rich to display progress bars."
+msgstr "使用 Rich 显示进度条的进度记录器。"
+
+#: CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar:1 of
+msgid "Create a Rich progress bar task for the given bar."
+msgstr "为给定的进度条创建 Rich 进度条任务。"
+
+#: CodeVideoRenderer.utils.RichProgressBarLogger.close_tqdm_bar:1 of
+msgid "Close the Rich progress bar task for the given bar."
+msgstr "关闭给定进度条的 Rich 进度条任务。"
+
+#: CodeVideoRenderer.utils.RichProgressBarLogger.bars_callback:1 of
+msgid "Update the Rich progress bar task based on the attribute change."
+msgstr "根据属性变化更新 Rich 进度条任务。"
+
+#: CodeVideoRenderer.utils.RichProgressBarLogger.stop:1 of
+msgid "Stop the Rich progress bar."
+msgstr "停止 Rich 进度条。"

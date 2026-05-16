@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../CONTRIBUTING.md:3
+msgid "Contributing"
+msgstr "贡献指南"
+
+#: ../../../CONTRIBUTING.md:5
+msgid ""
+"We welcome contributions from the community! This guide will help you get"
+" started with contributing to CodeVideoRenderer."
+msgstr "我们欢迎社区的贡献！本指南将帮助您开始为 CodeVideoRenderer 做出贡献。"
+
+#: ../../../CONTRIBUTING.md:8
+msgid "Ways to Contribute"
+msgstr "贡献方式"
+
+#: ../../../CONTRIBUTING.md:10
+msgid "There are many ways to contribute:"
+msgstr "有多种贡献方式："
+
+#: ../../../CONTRIBUTING.md:13
+msgid "**Bug Reports**\\ : Report issues you encounter"
+msgstr "**错误报告**\\ ：报告您遇到的问题"
+
+#: ../../../CONTRIBUTING.md:14
+msgid "**Feature Requests**\\ : Suggest new features or improvements"
+msgstr "**功能请求**\\ ：建议新功能或改进"
+
+#: ../../../CONTRIBUTING.md:15
+msgid "**Code Contributions**\\ : Submit pull requests with code changes"
+msgstr "**代码贡献**\\ ：提交包含代码更改的 Pull Request"
+
+#: ../../../CONTRIBUTING.md:16
+msgid "**Documentation**\\ : Improve documentation and examples"
+msgstr "**文档**\\ ：改进文档和示例"
+
+#: ../../../CONTRIBUTING.md:17
+msgid "**Testing**\\ : Help test new features and report bugs"
+msgstr "**测试**\\ ：帮助测试新功能并报告错误"
+
+#: ../../../CONTRIBUTING.md:18
+msgid "**Community Support**\\ : Help other users in discussions"
+msgstr "**社区支持**\\ ：在讨论中帮助其他用户"
+
+#: ../../../CONTRIBUTING.md:21
+msgid "Getting Started"
+msgstr "入门"
+
+#: ../../../CONTRIBUTING.md:24
+msgid "Development Environment Setup"
+msgstr "开发环境设置"
+
+#: ../../../CONTRIBUTING.md:28
+msgid "**Fork the repository** on GitHub"
+msgstr "在 GitHub 上**Fork 仓库**"
+
+#: ../../../CONTRIBUTING.md:31
+msgid "**Clone your fork**\\ :"
+msgstr "**克隆您的 Fork**\\ ："
+
+#: ../../../CONTRIBUTING.md:39
+msgid "**Set up development environment**\\ :"
+msgstr "**设置开发环境**\\ ："
+
+#: ../../../CONTRIBUTING.md:48
+msgid "**Install pre-commit hooks**\\ :"
+msgstr "**安装 pre-commit 钩子**\\ ："
+
+#: ../../../CONTRIBUTING.md:55
+msgid "Code Style Guidelines"
+msgstr "代码风格指南"
+
+#: ../../../CONTRIBUTING.md:58
+msgid "Python Code Style"
+msgstr "Python 代码风格"
+
+#: ../../../CONTRIBUTING.md:61
+msgid "Follow **PEP 8** conventions"
+msgstr "遵循 **PEP 8** 规范"
+
+#: ../../../CONTRIBUTING.md:62
+msgid "Use **type hints** for all function signatures"
+msgstr "为所有函数签名使用**类型提示**"
+
+#: ../../../CONTRIBUTING.md:63
+msgid "Write **docstrings** for all public functions and classes"
+msgstr "为所有公共函数和类编写**文档字符串**"
+
+#: ../../../CONTRIBUTING.md:64
+msgid "Keep functions focused and modular"
+msgstr "保持函数专注且模块化"
+
+#: ../../../CONTRIBUTING.md:66
+msgid "Example:"
+msgstr "示例："
+
+#: ../../../CONTRIBUTING.md:83
+msgid "Documentation Standards"
+msgstr "文档标准"
+
+#: ../../../CONTRIBUTING.md:86
+msgid "Use **reStructuredText** for documentation"
+msgstr "使用 **reStructuredText** 编写文档"
+
+#: ../../../CONTRIBUTING.md:87
+msgid "Include examples for all public APIs"
+msgstr "为所有公共 API 包含示例"
+
+#: ../../../CONTRIBUTING.md:88
+msgid "Keep documentation up to date with code changes"
+msgstr "使文档与代码更改保持同步"
+
+#: ../../../CONTRIBUTING.md:89
+msgid "Use meaningful commit messages"
+msgstr "使用有意义的提交信息"
+
+#: ../../../CONTRIBUTING.md:92
+msgid "Testing"
+msgstr "测试"
+
+#: ../../../CONTRIBUTING.md:95
+msgid "Writing Tests"
+msgstr "编写测试"
+
+#: ../../../CONTRIBUTING.md:98
+msgid "Write tests for new features and bug fixes"
+msgstr "为新功能和错误修复编写测试"
+
+#: ../../../CONTRIBUTING.md:99
+msgid "Use **pytest** for testing framework"
+msgstr "使用 **pytest** 作为测试框架"
+
+#: ../../../CONTRIBUTING.md:100
+msgid "Aim for good test coverage"
+msgstr "追求良好的测试覆盖率"
+
+#: ../../../CONTRIBUTING.md:101
+msgid "Include both unit tests and integration tests"
+msgstr "包含单元测试和集成测试"
+
+#: ../../../CONTRIBUTING.md:103
+msgid "Example test:"
+msgstr "测试示例："
+
+#: ../../../CONTRIBUTING.md:114
+msgid "Running Tests"
+msgstr "运行测试"
+
+#: ../../../CONTRIBUTING.md:128
+msgid "Submitting Changes"
+msgstr "提交更改"
+
+#: ../../../CONTRIBUTING.md:131
+msgid "Pull Request Process"
+msgstr "Pull Request 流程"
+
+#: ../../../CONTRIBUTING.md:135
+msgid "**Create a feature branch**\\ :"
+msgstr "**创建功能分支**\\ ："
+
+#: ../../../CONTRIBUTING.md:142
+msgid "**Make your changes** and commit them:"
+msgstr "**进行您的更改**并提交："
+
+#: ../../../CONTRIBUTING.md:150
+msgid "**Push to your fork**\\ :"
+msgstr "**推送到您的 Fork**\\ ："
+
+#: ../../../CONTRIBUTING.md:157
+msgid "**Create a Pull Request** on GitHub"
+msgstr "在 GitHub 上**创建 Pull Request**"
+
+#: ../../../CONTRIBUTING.md:160
+msgid "Pull Request Guidelines"
+msgstr "Pull Request 指南"
+
+#: ../../../CONTRIBUTING.md:163
+msgid "**One feature per PR**\\ : Keep pull requests focused"
+msgstr "**每个 PR 一个功能**\\ ：保持 Pull Request 的专注性"
+
+#: ../../../CONTRIBUTING.md:164
+msgid "**Descriptive title**\\ : Clearly describe what the PR does"
+msgstr "**描述性标题**\\ ：清楚描述 PR 的作用"
+
+#: ../../../CONTRIBUTING.md:165
+msgid ""
+"**Detailed description**\\ : Explain the changes and why they're needed"
+msgstr "**详细描述**\\ ：解释更改内容及其必要性"
+
+#: ../../../CONTRIBUTING.md:166
+msgid "**Reference issues**\\ : Link to related issues"
+msgstr "**引用问题**\\ ：链接到相关问题"
+
+#: ../../../CONTRIBUTING.md:167
+msgid ""
+"**Update documentation**\\ : Include documentation changes if needed"
+msgstr "**更新文档**\\ ：如有需要，包含文档更改"
+
+#: ../../../CONTRIBUTING.md:170
+msgid "Issue Reporting"
+msgstr "问题报告"
+
+#: ../../../CONTRIBUTING.md:172
+msgid "When reporting issues, please include:"
+msgstr "报告问题时，请包含："
+
+#: ../../../CONTRIBUTING.md:175
+msgid "**CodeVideoRenderer version**"
+msgstr "**CodeVideoRenderer 版本**"
+
+#: ../../../CONTRIBUTING.md:176
+msgid "**Python version**"
+msgstr "**Python 版本**"
+
+#: ../../../CONTRIBUTING.md:177
+msgid "**Operating system**"
+msgstr "**操作系统**"
+
+#: ../../../CONTRIBUTING.md:178
+msgid "**Error message** and stack trace"
+msgstr "**错误信息**和堆栈跟踪"
+
+#: ../../../CONTRIBUTING.md:179
+msgid "**Steps to reproduce** the issue"
+msgstr "**复现步骤**"
+
+#: ../../../CONTRIBUTING.md:180
+msgid "**Expected behavior** vs actual behavior"
+msgstr "**预期行为**与实际行为"
+
+#: ../../../CONTRIBUTING.md:182
+msgid "Example issue template:"
+msgstr "问题模板示例："
+
+#: ../../../CONTRIBUTING.md:206
+msgid "Feature Requests"
+msgstr "功能请求"
+
+#: ../../../CONTRIBUTING.md:208
+msgid "When suggesting new features:"
+msgstr "建议新功能时："
+
+#: ../../../CONTRIBUTING.md:211
+msgid "**Explain the problem** you're trying to solve"
+msgstr "**解释您要解决的问题**"
+
+#: ../../../CONTRIBUTING.md:212
+msgid "**Describe your proposed solution**"
+msgstr "**描述您提议的解决方案**"
+
+#: ../../../CONTRIBUTING.md:213
+msgid "**Provide use cases** and examples"
+msgstr "**提供使用场景**和示例"
+
+#: ../../../CONTRIBUTING.md:214
+msgid "**Consider alternatives** you've explored"
+msgstr "**考虑您已探索过的替代方案**"
+
+#: ../../../CONTRIBUTING.md:217
+msgid "Community Guidelines"
+msgstr "社区指南"
+
+#: ../../../CONTRIBUTING.md:220
+msgid "Be respectful and inclusive"
+msgstr "保持尊重和包容"
+
+#: ../../../CONTRIBUTING.md:221
+msgid "Help others when you can"
+msgstr "在能力范围内帮助他人"
+
+#: ../../../CONTRIBUTING.md:222
+msgid "Provide constructive feedback"
+msgstr "提供建设性的反馈"
+
+#: ../../../CONTRIBUTING.md:225
+msgid "Recognition"
+msgstr "致谢"
+
+#: ../../../CONTRIBUTING.md:227
+msgid "Contributors will be recognized in:"
+msgstr "贡献者将在以下地方获得认可："
+
+#: ../../../CONTRIBUTING.md:230
+msgid "**GitHub contributors list**"
+msgstr "**GitHub 贡献者列表**"
+
+#: ../../../CONTRIBUTING.md:231
+msgid "**Release notes**"
+msgstr "**发布说明**"
+
+#: ../../../CONTRIBUTING.md:232
+msgid "**Documentation credits**"
+msgstr "**文档致谢**"
+
+#: ../../../CONTRIBUTING.md:235
+msgid "Getting Help"
+msgstr "获取帮助"
+
+#: ../../../CONTRIBUTING.md:237
+msgid "If you need help with contributing:"
+msgstr "如果您在贡献方面需要帮助："
+
+#: ../../../CONTRIBUTING.md:240
+msgid "**Check existing documentation** and issues"
+msgstr "**查看现有文档**和问题"
+
+#: ../../../CONTRIBUTING.md:241
+msgid "**Ask in GitHub discussions**"
+msgstr "**在 GitHub Discussions 中提问**"
+
+#: ../../../CONTRIBUTING.md:242
+msgid "**Join the community chat** (if available)"
+msgstr "**加入社区聊天**（如有）"
+
+#: ../../../CONTRIBUTING.md:243
+msgid "**Contact maintainers** for guidance"
+msgstr "**联系维护者**寻求指导"

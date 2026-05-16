@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../examples.rst:2
+msgid "Example Gallery"
+msgstr "示例画廊"
+
+#: ../../examples.rst:4
+msgid ""
+"This gallery showcases various examples of CodeVideoRenderer in action, "
+"demonstrating different use cases and configurations."
+msgstr ""
+"本画廊展示了 CodeVideoRenderer 的各种实际应用示例，"
+"演示了不同的使用场景和配置。"
+
+#: ../../examples.rst:8
+msgid ":doc:`tutorials` for step-by-step guides"
+msgstr ":doc:`tutorials` 分步教程"
+
+#: ../../examples.rst:9
+msgid ":doc:`reference` for detailed API documentation"
+msgstr ":doc:`reference` 详细 API 文档"
+
+#: ../../examples.rst:10
+msgid ":doc:`installation` for setup instructions"
+msgstr ":doc:`installation` 安装说明"
+
+#: ../../examples.rst:13
+msgid "Basic Examples"
+msgstr "基础示例"
+
+#: ../../examples.rst:16
+msgid "Simple Python Function"
+msgstr "简单的 Python 函数"
+
+#: ../../examples.rst:43
+msgid "JavaScript Example"
+msgstr "JavaScript 示例"
+
+#: ../../examples.rst:72
+msgid "Intermediate Examples"
+msgstr "中级示例"
+
+#: ../../examples.rst:75
+msgid "File-based Animation"
+msgstr "基于文件的动画"
+
+#: ../../examples.rst:77
+msgid "Animate code from an existing file:"
+msgstr "从现有文件动画化代码："
+
+#: ../../examples.rst:89
+msgid "Custom Typing Speed"
+msgstr "自定义打字速度"
+
+#: ../../examples.rst:91
+msgid "Simulate different coding styles:"
+msgstr "模拟不同的编码风格："
+
+#: ../../examples.rst:110
+msgid "Advanced Examples"
+msgstr "高级示例"
+
+#: ../../examples.rst:113
+msgid "Multi-language Demonstration"
+msgstr "多语言演示"
+
+#: ../../examples.rst:115
+msgid "Showcase code in different programming languages:"
+msgstr "展示不同编程语言的代码："
+
+#: ../../examples.rst:135
+msgid "Custom Styling"
+msgstr "自定义样式"
+
+#: ../../examples.rst:137
+msgid "Experiment with different syntax highlighting themes:"
+msgstr "尝试不同的语法高亮主题："
+
+#: ../../examples.rst:153
+msgid "Real-world Use Cases"
+msgstr "实际使用场景"
+
+#: ../../examples.rst:156
+msgid "Algorithm Explanation"
+msgstr "算法讲解"
+
+#: ../../examples.rst:158
+msgid "Demonstrate sorting algorithms:"
+msgstr "演示排序算法："
+
+#: ../../examples.rst:178
+msgid "Code Review Demonstration"
+msgstr "代码审查演示"
+
+#: ../../examples.rst:180
+msgid "Show before/after code improvements:"
+msgstr "展示代码改进前后的对比："
+
+#: ../../examples.rst:208
+msgid "Video Output Examples"
+msgstr "视频输出示例"
+
+#: ../../examples.rst:210
+msgid "Generated videos will feature:"
+msgstr "生成的视频将具备以下特点："
+
+#: ../../examples.rst:212
+msgid "**Smooth typing animation** with realistic timing"
+msgstr "**流畅的打字动画**，具有真实的时间节奏"
+
+#: ../../examples.rst:213
+msgid "**Syntax highlighting** appropriate for each language"
+msgstr "适合每种语言的**语法高亮**"
+
+#: ../../examples.rst:214
+msgid "**Camera movement** that follows the cursor naturally"
+msgstr "自然跟随光标的**镜头移动**"
+
+#: ../../examples.rst:215
+msgid "**Professional appearance** suitable for presentations"
+msgstr "适合演示的**专业外观**"

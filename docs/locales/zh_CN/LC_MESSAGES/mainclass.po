@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../mainclass.rst:2
+msgid "CameraFollowCursorCV"
+msgstr "CameraFollowCursorCV"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:1 of
+msgid ""
+"CameraFollowCursorCV is a class designed to create animated videos that "
+"simulate the process of typing code. It animates code line by line and "
+"character by character while smoothly moving the camera to follow the "
+"cursor, creating a professional-looking coding demonstration."
+msgstr ""
+"CameraFollowCursorCV 是一个用于创建模拟打字过程的动画视频的类。"
+"它逐行逐字符地动画化代码，同时平滑移动镜头跟随光标，"
+"打造出专业的代码演示效果。"
+
+#: ../../mainclass.rst
+msgid "Parameters"
+msgstr "参数"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:4 of
+msgid ""
+"The code to be animated. **When using a string**, provide a tuple with "
+"the first element as ``'string'`` and the second element as the code "
+"string. **When using a file**, provide a tuple with the first element as "
+"``'file'`` and the second element as the file path."
+msgstr ""
+"要动画化的代码。**使用字符串时**，提供一个元组，第一个元素为 ``'string'``，"
+"第二个元素为代码字符串。**使用文件时**，提供一个元组，第一个元素为 ``'file'``，"
+"第二个元素为文件路径。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:6 of
+msgid "The programming language of the code."
+msgstr "代码的编程语言。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:8 of
+msgid "The style for syntax highlighting. Defaults to ``\"material\"``."
+msgstr "语法高亮的样式。默认为 ``\"material\"``。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:10 of
+msgid "The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`."
+msgstr "代码的行间距。默认为 :data:`~.DEFAULT_LINE_SPACING`。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:12 of
+msgid ""
+"The range of typing intervals between characters. Defaults to "
+"(:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`)."
+msgstr ""
+"字符之间的打字间隔范围。"
+"默认为 (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`)。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:14 of
+msgid "The scale factor for the camera. Defaults to 0.5."
+msgstr "相机的缩放因子。默认为 0.5。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:16 of
+msgid ""
+"The name of the output video file. Defaults to "
+"``\"CameraFollowCursorCV\"``."
+msgstr "输出视频文件的名称。默认为 ``\"CameraFollowCursorCV\"``。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV:18 of
+msgid "The renderer to use for video rendering. Defaults to ``'cairo'``."
+msgstr "用于视频渲染的渲染器。默认为 ``'cairo'``。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV._create_scene:1 of
+msgid "Create manim scene to animate code rendering."
+msgstr "创建 manim 场景以动画化代码渲染。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:1 of
+msgid "Render the scene, optionally with console output."
+msgstr "渲染场景，可选择是否输出到控制台。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:3 of
+msgid ""
+"Whether to print console output during rendering. Defaults to "
+":data:`~.DEFAULT_OUTPUT_VALUE`."
+msgstr "渲染期间是否打印控制台输出。默认为 :data:`~.DEFAULT_OUTPUT_VALUE`。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.__getattribute__:1 of
+msgid "Return getattr(self, name)."
+msgstr "返回 getattr(self, name)。"

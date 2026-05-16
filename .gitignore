@@ -7,4 +7,6 @@ media/
 /update.bat
 __pycache__/
 /docs/_build/
+# Compiled translation files
+*.mo
 *.log

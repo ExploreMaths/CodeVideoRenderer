@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../installation.rst:2
+msgid "Installation"
+msgstr "安装"
+
+#: ../../installation.rst:4
+msgid "CodeVideoRenderer can be installed using pip, the Python package manager."
+msgstr "CodeVideoRenderer 可以使用 Python 包管理器 pip 进行安装。"
+
+#: ../../installation.rst:7
+msgid "Prerequisites"
+msgstr "前置条件"
+
+#: ../../installation.rst:9
+msgid "Before installing CodeVideoRenderer, ensure you have the following:"
+msgstr "在安装 CodeVideoRenderer 之前，请确保您已具备以下条件："
+
+#: ../../installation.rst:11
+msgid "**Python 3.8 or higher**"
+msgstr "**Python 3.8 或更高版本**"
+
+#: ../../installation.rst:12
+msgid "**pip** (Python package installer)"
+msgstr "**pip**（Python 包安装器）"
+
+#: ../../installation.rst:13
+msgid "**FFmpeg** (for video rendering)"
+msgstr "**FFmpeg**（用于视频渲染）"
+
+#: ../../installation.rst:16
+msgid "Installing FFmpeg"
+msgstr "安装 FFmpeg"
+
+#: ../../installation.rst
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../installation.rst
+msgid "macOS"
+msgstr "macOS"
+
+#: ../../installation.rst
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../installation.rst:40
+msgid "Basic Installation"
+msgstr "基本安装"
+
+#: ../../installation.rst:42
+msgid "Install CodeVideoRenderer using pip:"
+msgstr "使用 pip 安装 CodeVideoRenderer："
+
+#: ../../installation.rst:49
+msgid "Development Installation"
+msgstr "开发安装"
+
+#: ../../installation.rst:51
+msgid "To install from source for development:"
+msgstr "要从源代码进行开发安装："
+
+#: ../../installation.rst:60
+msgid "Verifying Installation"
+msgstr "验证安装"
+
+#: ../../installation.rst:62
+msgid "Test your installation:"
+msgstr "测试您的安装："
+
+#: ../../installation.rst:70
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../installation.rst:72
+msgid "Common installation issues:"
+msgstr "常见的安装问题："
+
+#: ../../installation.rst:74
+msgid "**ModuleNotFoundError**: Ensure you're using Python 3.8+"
+msgstr "**ModuleNotFoundError**：请确保您使用的是 Python 3.8 或更高版本"
+
+#: ../../installation.rst:75
+msgid "**FFmpeg not found**: Verify FFmpeg is installed and in PATH"
+msgstr "**找不到 FFmpeg**：请验证 FFmpeg 已安装并在 PATH 中"
+
+#: ../../installation.rst:76
+msgid "**Permission errors**: Use ``pip install --user`` or virtual environment"
+msgstr "**权限错误**：请使用 ``pip install --user`` 或虚拟环境"
+
+#: ../../installation.rst:79
+msgid "Next Steps"
+msgstr "下一步"
+
+#: ../../installation.rst:81
+msgid ""
+"After installation, proceed to the :doc:`tutorials` section to start "
+"using CodeVideoRenderer."
+msgstr "安装完成后，请前往 :doc:`tutorials` 部分开始使用 CodeVideoRenderer。"

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../config.rst:2
+msgid "Configuration and constants"
+msgstr "配置与常量"
+
+#: CodeVideoRenderer.config.ORIGINAL_STDOUT:1 of
+msgid "Original standard output stream, used for console output."
+msgstr "原始标准输出流，用于控制台输出。"
+
+#: CodeVideoRenderer.config.ORIGINAL_STDERR:1 of
+msgid "Original standard error stream, used for console error output."
+msgstr "原始标准错误流，用于控制台错误输出。"
+
+#: manim.config.progress_bar:1 of
+msgid "Original progress bar, used for progress tracking."
+msgstr "原始进度条，用于进度跟踪。"
+
+#: CodeVideoRenderer.config.DEFAULT_OUTPUT_VALUE:1 of
+msgid "Default output value."
+msgstr "默认输出值。"
+
+#: CodeVideoRenderer.config.DEFAULT_LINE_SPACING:1 of
+msgid "Default line spacing."
+msgstr "默认行间距。"
+
+#: CodeVideoRenderer.config.DEFAULT_CURSOR_HEIGHT:1 of
+msgid "Default cursor height."
+msgstr "默认光标高度。"
+
+#: CodeVideoRenderer.config.DEFAULT_CURSOR_WIDTH:1 of
+msgid "Default cursor width."
+msgstr "默认光标宽度。"
+
+#: CodeVideoRenderer.config.DEFAULT_CODE_FONT:1 of
+msgid "Default code font."
+msgstr "默认代码字体。"
+
+#: CodeVideoRenderer.config.DEFAULT_CURSOR_TO_CHAR_BUFFER:1 of
+msgid "Default buffer time between cursor movement and character rendering."
+msgstr "光标移动与字符渲染之间的默认缓冲时间。"
+
+#: CodeVideoRenderer.config.DEFAULT_TYPE_INTERVAL:1 of
+msgid "Default typing interval."
+msgstr "默认打字间隔。"
+
+#: CodeVideoRenderer.config.DEFAULT_LINE_BREAK_RUN_TIME:1 of
+msgid "Default line break animation run time."
+msgstr "默认换行动画运行时间。"
+
+#: CodeVideoRenderer.config.DEFAULT_TAB_WIDTH:1 of
+msgid "Default tab width."
+msgstr "默认制表符宽度。"
+
+#: CodeVideoRenderer.config.DEFAULT_OUTPUT_CONSOLE:1 of
+msgid "Default output console."
+msgstr "默认输出控制台。"
+
+#: CodeVideoRenderer.config.DEFAULT_CURSOR_BLINK_RUN_TIME:1 of
+msgid "Default cursor blink animation run time."
+msgstr "默认光标闪烁动画运行时间。"
+
+#: CodeVideoRenderer.config.CODE_OFFSET:1 of
+msgid "Default offset for code rendering."
+msgstr "代码渲染的默认偏移量。"
+
+#: CodeVideoRenderer.config.NOT_AVAILABLE_CHARACTERS:1 of
+msgid "Characters that are not available for rendering."
+msgstr "不支持渲染的字符。"
+
+#: CodeVideoRenderer.config.OCCUPY_CHARACTER:1 of
+msgid "Character that is used to occupy a position in the code."
+msgstr "用于在代码中占据位置的字符。"
