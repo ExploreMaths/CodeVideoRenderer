@@ -116,6 +116,15 @@ def _link_type_aliases_in_html(app, exception):
             html_path.write_text(new_content, encoding='utf-8')
 
 
+import os
+
+def _force_rtd_language(app, config):
+    """Override language from READTHEDOCS_LANGUAGE env var."""
+    rtd_lang = os.environ.get('READTHEDOCS_LANGUAGE')
+    if rtd_lang:
+        config.language = rtd_lang
+
 def setup(app):
+    app.connect('config-inited', _force_rtd_language)
     app.connect('autodoc-process-signature', replace_typealias_forwardrefs)
     app.connect('build-finished', _link_type_aliases_in_html)
