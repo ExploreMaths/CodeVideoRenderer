@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../installation.rst:2
@@ -25,7 +25,8 @@ msgid "Installation"
 msgstr "安装"
 
 #: ../../installation.rst:4
-msgid "CodeVideoRenderer can be installed using pip, the Python package manager."
+msgid ""
+"CodeVideoRenderer can be installed using pip, the Python package manager."
 msgstr "CodeVideoRenderer 可以使用 Python 包管理器 pip 进行安装。"
 
 #: ../../installation.rst:7
@@ -42,13 +43,20 @@ msgstr "**Python 3.8 或更高版本**"
 
 #: ../../installation.rst:12
 msgid "**pip** (Python package installer)"
-msgstr "**pip**（Python 包安装器）"
+msgstr "**pip**\\ （Python 包安装器）"
 
 #: ../../installation.rst:13
 msgid "**FFmpeg** (for video rendering)"
-msgstr "**FFmpeg**（用于视频渲染）"
+msgstr "**FFmpeg**\\ （用于视频渲染）"
 
-#: ../../installation.rst:16
+#: ../../installation.rst:15
+msgid ""
+"We strongly recommend installing inside a virtual environment because Manim "
+"(a heavy dependency) may conflict with other packages in your global Python "
+"environment."
+msgstr "我们强烈建议在虚拟环境中安装，因为 Manim（一个重量级依赖项）可能会与全局 Python 环境中的其他包发生冲突。"
+
+#: ../../installation.rst:23
 msgid "Installing FFmpeg"
 msgstr "安装 FFmpeg"
 
@@ -64,56 +72,74 @@ msgstr "macOS"
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../installation.rst:40
+#: ../../installation.rst:47
+msgid "Verifying FFmpeg"
+msgstr "验证 FFmpeg"
+
+#: ../../installation.rst:49
+msgid "After installation, confirm FFmpeg is available in your ``PATH``:"
+msgstr "安装完成后，请确认 FFmpeg 在您的 ``PATH`` 中可用："
+
+#: ../../installation.rst:55
+msgid ""
+"You should see version information printed. If you get a \"command not "
+"found\" error, restart your terminal or add FFmpeg to your system ``PATH`` "
+"before continuing."
+msgstr ""
+"您应该能看到打印的版本信息。如果出现 \"command not found\" 错误，请重启终端或将 FFmpeg 添加到系统 ``PATH`` "
+"后再继续。"
+
+#: ../../installation.rst:58
 msgid "Basic Installation"
 msgstr "基本安装"
 
-#: ../../installation.rst:42
+#: ../../installation.rst:60
 msgid "Install CodeVideoRenderer using pip:"
 msgstr "使用 pip 安装 CodeVideoRenderer："
 
-#: ../../installation.rst:49
+#: ../../installation.rst:67
 msgid "Development Installation"
 msgstr "开发安装"
 
-#: ../../installation.rst:51
+#: ../../installation.rst:69
 msgid "To install from source for development:"
 msgstr "要从源代码进行开发安装："
 
-#: ../../installation.rst:60
+#: ../../installation.rst:78
 msgid "Verifying Installation"
 msgstr "验证安装"
 
-#: ../../installation.rst:62
+#: ../../installation.rst:80
 msgid "Test your installation:"
 msgstr "测试您的安装："
 
-#: ../../installation.rst:70
+#: ../../installation.rst:88
 msgid "Troubleshooting"
 msgstr "故障排除"
 
-#: ../../installation.rst:72
+#: ../../installation.rst:90
 msgid "Common installation issues:"
 msgstr "常见的安装问题："
 
-#: ../../installation.rst:74
+#: ../../installation.rst:92
 msgid "**ModuleNotFoundError**: Ensure you're using Python 3.8+"
 msgstr "**ModuleNotFoundError**：请确保您使用的是 Python 3.8 或更高版本"
 
-#: ../../installation.rst:75
+#: ../../installation.rst:93
 msgid "**FFmpeg not found**: Verify FFmpeg is installed and in PATH"
 msgstr "**找不到 FFmpeg**：请验证 FFmpeg 已安装并在 PATH 中"
 
-#: ../../installation.rst:76
-msgid "**Permission errors**: Use ``pip install --user`` or virtual environment"
+#: ../../installation.rst:94
+msgid ""
+"**Permission errors**: Use ``pip install --user`` or virtual environment"
 msgstr "**权限错误**：请使用 ``pip install --user`` 或虚拟环境"
 
-#: ../../installation.rst:79
+#: ../../installation.rst:97
 msgid "Next Steps"
 msgstr "下一步"
 
-#: ../../installation.rst:81
+#: ../../installation.rst:99
 msgid ""
-"After installation, proceed to the :doc:`tutorials` section to start "
-"using CodeVideoRenderer."
+"After installation, proceed to the :doc:`tutorials` section to start using "
+"CodeVideoRenderer."
 msgstr "安装完成后，请前往 :doc:`tutorials` 部分开始使用 CodeVideoRenderer。"

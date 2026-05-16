@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 18:59+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
@@ -97,8 +97,8 @@ msgid ""
 "Added import of ``annotations`` (from ``__future__``) in ``typing.py`` and "
 "``utils.py`` for compatibility with Python 3.8, 3.9"
 msgstr ""
-"在 ``typing.py`` 和 ``utils.py`` 中添加 ``annotations``（来自 ``__future__``）导入，以兼容 "
-"Python 3.8、3.9"
+"在 ``typing.py`` 和 ``utils.py`` 中添加 ``annotations``\\ （来自 "
+"``__future__``）导入，以兼容 Python 3.8、3.9"
 
 #: ../../changelog.rst:30 ../../changelog.rst:56 ../../changelog.rst:95
 msgid "**Changes 🧹**"
@@ -145,7 +145,8 @@ msgid ""
 "Changed all ``PathLike[str]`` to ``PathLike`` (as ``PathLike`` in Python 3.8"
 " does not support generics)"
 msgstr ""
-"将所有 ``PathLike[str]`` 改为 ``PathLike``（因为 Python 3.8 中的 ``PathLike`` 不支持泛型）"
+"将所有 ``PathLike[str]`` 改为 ``PathLike``\\ （因为 Python 3.8 中的 ``PathLike`` "
+"不支持泛型）"
 
 #: ../../changelog.rst:39
 msgid ""
@@ -268,7 +269,7 @@ msgstr "添加 ``version.py`` 以管理包版本"
 msgid ""
 "Change the function name format from ``aaa_bbb`` (snake_case) to ``aaaBbb`` "
 "(camelCase)"
-msgstr "将函数命名格式从 ``aaa_bbb``（蛇形命名法）改为 ``aaaBbb``（驼峰命名法）"
+msgstr "将函数命名格式从 ``aaa_bbb``\\ （蛇形命名法）改为 ``aaaBbb``\\ （驼峰命名法）"
 
 #: ../../changelog.rst:99
 msgid "Change the :data:`~.PygmentsLanguage` class to a ``Literal`` type"
@@ -888,8 +889,9 @@ msgid "**Date**: Aug 16, 2025"
 msgstr "**日期**：2025年8月16日"
 
 #: ../../changelog.rst:453
-msgid "No information available."
-msgstr "无可用信息。"
+#, fuzzy
+msgid "See details at https://pypi.org/project/codevideorenderer/1.0.0.3/."
+msgstr "详情请见 https://pypi.org/project/codevideorenderer/1.0.0.5/。"
 
 #: ../../changelog.rst:456
 msgid "CodeVideoRenderer 1.0.0.2"

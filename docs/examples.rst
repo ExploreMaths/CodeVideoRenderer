@@ -174,6 +174,13 @@ Demonstrate sorting algorithms:
     sorted_numbers = quicksort(numbers)
     '''
 
+    video = CameraFollowCursorCV(
+        code=('string', sorting_code),
+        language='python',
+        video_name='QuicksortDemo'
+    )
+    video.render()
+
 Code Review Demonstration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -190,6 +197,13 @@ Show before/after code improvements:
         return total
     '''
 
+    video_before = CameraFollowCursorCV(
+        code=('string', original),
+        language='python',
+        video_name='CodeReviewBefore'
+    )
+    video_before.render()
+
     # Improved code
     improved = '''
     from typing import List
@@ -203,6 +217,24 @@ Show before/after code improvements:
         """Calculate total price of items."""
         return sum(item.price for item in items)
     '''
+
+    video_after = CameraFollowCursorCV(
+        code=('string', improved),
+        language='python',
+        video_name='CodeReviewAfter'
+    )
+    video_after.render()
+
+Video Output
+------------
+
+All examples above produce an MP4 file after calling ``render()``. The default output location follows Manim's convention:
+
+.. code-block:: text
+
+   ./media/videos/1080p60/{video_name}.mp4
+
+The exact sub-directory depends on Manim's quality settings. You control the file name via the ``video_name`` parameter passed to :class:`~.CameraFollowCursorCV`.
 
 Video Output Examples
 ---------------------

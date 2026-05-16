@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-16 12:12+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../../CONTRIBUTING.md:3
@@ -26,8 +26,8 @@ msgstr "贡献指南"
 
 #: ../../../CONTRIBUTING.md:5
 msgid ""
-"We welcome contributions from the community! This guide will help you get"
-" started with contributing to CodeVideoRenderer."
+"We welcome contributions from the community! This guide will help you get "
+"started with contributing to CodeVideoRenderer."
 msgstr "我们欢迎社区的贡献！本指南将帮助您开始为 CodeVideoRenderer 做出贡献。"
 
 #: ../../../CONTRIBUTING.md:8
@@ -72,7 +72,7 @@ msgstr "开发环境设置"
 
 #: ../../../CONTRIBUTING.md:28
 msgid "**Fork the repository** on GitHub"
-msgstr "在 GitHub 上**Fork 仓库**"
+msgstr "在 GitHub 上\\ **Fork 仓库**"
 
 #: ../../../CONTRIBUTING.md:31
 msgid "**Clone your fork**\\ :"
@@ -100,11 +100,11 @@ msgstr "遵循 **PEP 8** 规范"
 
 #: ../../../CONTRIBUTING.md:62
 msgid "Use **type hints** for all function signatures"
-msgstr "为所有函数签名使用**类型提示**"
+msgstr "为所有函数签名使用\\ **类型提示**"
 
 #: ../../../CONTRIBUTING.md:63
 msgid "Write **docstrings** for all public functions and classes"
-msgstr "为所有公共函数和类编写**文档字符串**"
+msgstr "为所有公共函数和类编写\\ **文档字符串**"
 
 #: ../../../CONTRIBUTING.md:64
 msgid "Keep functions focused and modular"
@@ -180,7 +180,7 @@ msgstr "**创建功能分支**\\ ："
 
 #: ../../../CONTRIBUTING.md:142
 msgid "**Make your changes** and commit them:"
-msgstr "**进行您的更改**并提交："
+msgstr "**进行您的更改**\\ 并提交："
 
 #: ../../../CONTRIBUTING.md:150
 msgid "**Push to your fork**\\ :"
@@ -188,7 +188,7 @@ msgstr "**推送到您的 Fork**\\ ："
 
 #: ../../../CONTRIBUTING.md:157
 msgid "**Create a Pull Request** on GitHub"
-msgstr "在 GitHub 上**创建 Pull Request**"
+msgstr "在 GitHub 上\\ **创建 Pull Request**"
 
 #: ../../../CONTRIBUTING.md:160
 msgid "Pull Request Guidelines"
@@ -203,8 +203,7 @@ msgid "**Descriptive title**\\ : Clearly describe what the PR does"
 msgstr "**描述性标题**\\ ：清楚描述 PR 的作用"
 
 #: ../../../CONTRIBUTING.md:165
-msgid ""
-"**Detailed description**\\ : Explain the changes and why they're needed"
+msgid "**Detailed description**\\ : Explain the changes and why they're needed"
 msgstr "**详细描述**\\ ：解释更改内容及其必要性"
 
 #: ../../../CONTRIBUTING.md:166
@@ -212,8 +211,7 @@ msgid "**Reference issues**\\ : Link to related issues"
 msgstr "**引用问题**\\ ：链接到相关问题"
 
 #: ../../../CONTRIBUTING.md:167
-msgid ""
-"**Update documentation**\\ : Include documentation changes if needed"
+msgid "**Update documentation**\\ : Include documentation changes if needed"
 msgstr "**更新文档**\\ ：如有需要，包含文档更改"
 
 #: ../../../CONTRIBUTING.md:170
@@ -238,7 +236,7 @@ msgstr "**操作系统**"
 
 #: ../../../CONTRIBUTING.md:178
 msgid "**Error message** and stack trace"
-msgstr "**错误信息**和堆栈跟踪"
+msgstr "**错误信息**\\ 和堆栈跟踪"
 
 #: ../../../CONTRIBUTING.md:179
 msgid "**Steps to reproduce** the issue"
@@ -246,7 +244,7 @@ msgstr "**复现步骤**"
 
 #: ../../../CONTRIBUTING.md:180
 msgid "**Expected behavior** vs actual behavior"
-msgstr "**预期行为**与实际行为"
+msgstr "**预期行为**\\ 与实际行为"
 
 #: ../../../CONTRIBUTING.md:182
 msgid "Example issue template:"
@@ -270,7 +268,7 @@ msgstr "**描述您提议的解决方案**"
 
 #: ../../../CONTRIBUTING.md:213
 msgid "**Provide use cases** and examples"
-msgstr "**提供使用场景**和示例"
+msgstr "**提供使用场景**\\ 和示例"
 
 #: ../../../CONTRIBUTING.md:214
 msgid "**Consider alternatives** you've explored"
@@ -322,7 +320,7 @@ msgstr "如果您在贡献方面需要帮助："
 
 #: ../../../CONTRIBUTING.md:240
 msgid "**Check existing documentation** and issues"
-msgstr "**查看现有文档**和问题"
+msgstr "**查看现有文档**\\ 和问题"
 
 #: ../../../CONTRIBUTING.md:241
 msgid "**Ask in GitHub discussions**"
@@ -330,8 +328,8 @@ msgstr "**在 GitHub Discussions 中提问**"
 
 #: ../../../CONTRIBUTING.md:242
 msgid "**Join the community chat** (if available)"
-msgstr "**加入社区聊天**（如有）"
+msgstr "**加入社区聊天**\\ （如有）"
 
 #: ../../../CONTRIBUTING.md:243
 msgid "**Contact maintainers** for guidance"
-msgstr "**联系维护者**寻求指导"
+msgstr "**联系维护者**\\ 寻求指导"

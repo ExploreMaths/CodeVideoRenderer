@@ -7,22 +7,171 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../mainclass.rst:2
 msgid "CameraFollowCursorCV"
 msgstr "CameraFollowCursorCV"
+
+#: ../../mainclass.rst:4
+msgid ""
+"``CameraFollowCursorCV`` is the primary class for creating code typing "
+"animation videos. It handles code parsing, syntax highlighting, camera "
+"movement, and the full rendering pipeline."
+msgstr "``CameraFollowCursorCV`` 是用于创建代码输入动画视频的主类。它处理代码解析、语法高亮、相机移动和完整的渲染流水线。"
+
+#: ../../mainclass.rst:7
+msgid "Quick Example"
+msgstr "快速示例"
+
+#: ../../mainclass.rst:21
+msgid "Constructor Parameters"
+msgstr "构造函数参数"
+
+#: ../../mainclass.rst:23
+msgid ""
+"The following table summarizes the parameters accepted by the constructor. "
+"For the complete signature, see the API reference below."
+msgstr "下表总结了构造函数接受的参数。有关完整签名，请参阅下面的 API 参考。"
+
+#: ../../mainclass.rst:29
+msgid "Parameter"
+msgstr "参数"
+
+#: ../../mainclass.rst:30
+msgid "Default"
+msgstr "默认值"
+
+#: ../../mainclass.rst:31
+msgid "Description"
+msgstr "描述"
+
+#: ../../mainclass.rst:32
+msgid "``code``"
+msgstr "``code``"
+
+#: ../../mainclass.rst:33 ../../mainclass.rst:36
+msgid "*required*"
+msgstr "*必填*"
+
+#: ../../mainclass.rst:34
+msgid "A tuple ``('string', code_str)`` or ``('file', file_path)``."
+msgstr "元组 ``('string', code_str)`` 或 ``('file', file_path)``。"
+
+#: ../../mainclass.rst:35
+msgid "``language``"
+msgstr "``language``"
+
+#: ../../mainclass.rst:37
+msgid ""
+"Programming language for syntax highlighting (e.g. ``'python'``, "
+"``'javascript'``)."
+msgstr "用于语法高亮的编程语言（例如 ``'python'``、``'javascript'``）。"
+
+#: ../../mainclass.rst:38
+msgid "``formatter_style``"
+msgstr "``formatter_style``"
+
+#: ../../mainclass.rst:39
+msgid "``\"material\"``"
+msgstr "``\"material\"``"
+
+#: ../../mainclass.rst:40
+msgid "Pygments style name (e.g. ``\"github-dark\"``, ``\"monokai\"``)."
+msgstr "Pygments 样式名称（例如 ``\"github-dark\"``、``\"monokai\"``）。"
+
+#: ../../mainclass.rst:41
+msgid "``line_spacing``"
+msgstr "``line_spacing``"
+
+#: ../../mainclass.rst:42
+msgid "``0.8``"
+msgstr "``0.8``"
+
+#: ../../mainclass.rst:43
+msgid "Vertical spacing between code lines."
+msgstr "代码行之间的垂直间距。"
+
+#: ../../mainclass.rst:44
+msgid "``interval_range``"
+msgstr "``interval_range``"
+
+#: ../../mainclass.rst:45
+msgid "``(0.15, 0.15)``"
+msgstr "``(0.15, 0.15)``"
+
+#: ../../mainclass.rst:46
+msgid "Min/max seconds between typed characters."
+msgstr "输入字符之间的最小/最大秒数。"
+
+#: ../../mainclass.rst:47
+msgid "``camera_scale``"
+msgstr "``camera_scale``"
+
+#: ../../mainclass.rst:48
+msgid "``0.5``"
+msgstr "``0.5``"
+
+#: ../../mainclass.rst:49
+msgid "Initial camera zoom level."
+msgstr "初始相机缩放级别。"
+
+#: ../../mainclass.rst:50
+msgid "``video_name``"
+msgstr "``video_name``"
+
+#: ../../mainclass.rst:51
+msgid "``\"CameraFollowCursorCV\"``"
+msgstr "``\"CameraFollowCursorCV\"``"
+
+#: ../../mainclass.rst:52
+msgid "Base name of the output MP4 file (without extension)."
+msgstr "输出 MP4 文件的基本名称（不含扩展名）。"
+
+#: ../../mainclass.rst:53
+msgid "``renderer``"
+msgstr "``renderer``"
+
+#: ../../mainclass.rst:54
+msgid "``\"cairo\"``"
+msgstr "``\"cairo\"``"
+
+#: ../../mainclass.rst:55
+msgid "Rendering backend: ``\"cairo\"`` (CPU) or ``\"opengl\"`` (GPU)."
+msgstr "渲染后端：``\"cairo\"``\\ （CPU）或 ``\"opengl\"``\\ （GPU）。"
+
+#: ../../mainclass.rst:58
+msgid "Output"
+msgstr "输出"
+
+#: ../../mainclass.rst:60
+msgid ""
+"After calling :meth:`~.render`, the final video is saved as an MP4 file. The"
+" default location follows Manim's output convention:"
+msgstr "调用 :meth:`~.render` 后，最终视频会保存为 MP4 文件。默认位置遵循 Manim 的输出约定："
+
+#: ../../mainclass.rst:66
+msgid ""
+"The exact sub-directory (e.g. ``1080p60``) depends on Manim's quality "
+"configuration. The file name is determined by the ``video_name`` parameter "
+"you passed to the constructor."
+msgstr ""
+"具体的子目录（例如 ``1080p60``）取决于 Manim 的质量配置。文件名由您传递给构造函数的 ``video_name`` 参数决定。"
+
+#: ../../mainclass.rst:69
+msgid "Full API Reference"
+msgstr "完整 API 参考"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:1 of
 msgid ""
@@ -31,9 +180,8 @@ msgid ""
 "character by character while smoothly moving the camera to follow the "
 "cursor, creating a professional-looking coding demonstration."
 msgstr ""
-"CameraFollowCursorCV 是一个用于创建模拟打字过程的动画视频的类。"
-"它逐行逐字符地动画化代码，同时平滑移动镜头跟随光标，"
-"打造出专业的代码演示效果。"
+"CameraFollowCursorCV "
+"是一个用于创建模拟打字过程的动画视频的类。它逐行逐字符地动画化代码，同时平滑移动镜头跟随光标，打造出专业的代码演示效果。"
 
 #: ../../mainclass.rst
 msgid "Parameters"
@@ -41,14 +189,13 @@ msgstr "参数"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:4 of
 msgid ""
-"The code to be animated. **When using a string**, provide a tuple with "
-"the first element as ``'string'`` and the second element as the code "
-"string. **When using a file**, provide a tuple with the first element as "
-"``'file'`` and the second element as the file path."
+"The code to be animated. **When using a string**, provide a tuple with the "
+"first element as ``'string'`` and the second element as the code string. "
+"**When using a file**, provide a tuple with the first element as ``'file'`` "
+"and the second element as the file path."
 msgstr ""
-"要动画化的代码。**使用字符串时**，提供一个元组，第一个元素为 ``'string'``，"
-"第二个元素为代码字符串。**使用文件时**，提供一个元组，第一个元素为 ``'file'``，"
-"第二个元素为文件路径。"
+"要动画化的代码。**使用字符串时**，提供一个元组，第一个元素为 "
+"``'string'``，第二个元素为代码字符串。**使用文件时**，提供一个元组，第一个元素为 ``'file'``，第二个元素为文件路径。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:6 of
 msgid "The programming language of the code."
@@ -59,7 +206,8 @@ msgid "The style for syntax highlighting. Defaults to ``\"material\"``."
 msgstr "语法高亮的样式。默认为 ``\"material\"``。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:10 of
-msgid "The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`."
+msgid ""
+"The line spacing for the code. Defaults to :data:`~.DEFAULT_LINE_SPACING`."
 msgstr "代码的行间距。默认为 :data:`~.DEFAULT_LINE_SPACING`。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:12 of
@@ -67,8 +215,8 @@ msgid ""
 "The range of typing intervals between characters. Defaults to "
 "(:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`)."
 msgstr ""
-"字符之间的打字间隔范围。"
-"默认为 (:data:`~.DEFAULT_TYPE_INTERVAL`, :data:`~.DEFAULT_TYPE_INTERVAL`)。"
+"字符之间的打字间隔范围。默认为 (:data:`~.DEFAULT_TYPE_INTERVAL`, "
+":data:`~.DEFAULT_TYPE_INTERVAL`)。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:14 of
 msgid "The scale factor for the camera. Defaults to 0.5."
@@ -76,8 +224,7 @@ msgstr "相机的缩放因子。默认为 0.5。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:16 of
 msgid ""
-"The name of the output video file. Defaults to "
-"``\"CameraFollowCursorCV\"``."
+"The name of the output video file. Defaults to ``\"CameraFollowCursorCV\"``."
 msgstr "输出视频文件的名称。默认为 ``\"CameraFollowCursorCV\"``。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV:18 of
@@ -89,15 +236,62 @@ msgid "Create manim scene to animate code rendering."
 msgstr "创建 manim 场景以动画化代码渲染。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:1 of
-msgid "Render the scene, optionally with console output."
-msgstr "渲染场景，可选择是否输出到控制台。"
+msgid "Render the animated code video."
+msgstr "渲染动画代码视频。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:3 of
+msgid "This method triggers the full rendering pipeline:"
+msgstr "此方法触发完整的渲染流水线："
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:5 of
 msgid ""
-"Whether to print console output during rendering. Defaults to "
-":data:`~.DEFAULT_OUTPUT_VALUE`."
-msgstr "渲染期间是否打印控制台输出。默认为 :data:`~.DEFAULT_OUTPUT_VALUE`。"
+"**Manim rendering** – the code typing animation is rendered using the "
+"configured backend (Cairo or OpenGL)."
+msgstr "**Manim 渲染** – 使用配置的后端（Cairo 或 OpenGL）渲染代码输入动画。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:6 of
+msgid ""
+"**Glow effect** – a soft glow post-processing effect is applied to the raw "
+"video via MoviePy."
+msgstr "**柔光效果** – 通过 MoviePy 对原始视频应用柔光后期处理效果。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:8 of
+msgid ""
+"The final video file is saved next to Manim's default output path with the "
+"name specified by ``video_name``."
+msgstr "最终视频文件保存在 Manim 默认输出路径旁，文件名由 ``video_name`` 指定。"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:10 of
+msgid ""
+"Whether to print progress messages and timing logs to the console during "
+"rendering. Defaults to :data:`~.DEFAULT_OUTPUT_VALUE`."
+msgstr "是否在渲染期间向控制台打印进度消息和计时日志。默认值为 :data:`~.DEFAULT_OUTPUT_VALUE`。"
+
+#: ../../mainclass.rst
+msgid "Returns"
+msgstr "返回值"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:13 of
+msgid "None"
+msgstr "无"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:16 of
+msgid "Example"
+msgstr "示例"
+
+#: CodeVideoRenderer.renderer.CameraFollowCursorCV.render:26 of
+#, python-brace-format
+msgid ""
+"The final MP4 file is typically located at "
+"``./media/videos/1080p60/{video_name}.mp4`` (the exact sub-directory depends"
+" on Manim's quality configuration)."
+msgstr ""
+"最终的 MP4 文件通常位于 ``./media/videos/1080p60/{video_name}.mp4``\\ （具体的子目录取决于 "
+"Manim 的质量配置）。"
 
 #: CodeVideoRenderer.renderer.CameraFollowCursorCV.__getattribute__:1 of
 msgid "Return getattr(self, name)."
 msgstr "返回 getattr(self, name)。"
+
+#~ msgid "Render the scene, optionally with console output."
+#~ msgstr "渲染场景，可选择是否输出到控制台。"

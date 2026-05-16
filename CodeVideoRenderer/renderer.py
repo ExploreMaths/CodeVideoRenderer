@@ -342,10 +342,32 @@ class CameraFollowCursorCV:
     @typechecked
     def render(self, output: bool = DEFAULT_OUTPUT_VALUE):
         """
-        Render the scene, optionally with console output.
+        Render the animated code video.
+
+        This method triggers the full rendering pipeline:
+
+        1. **Manim rendering** – the code typing animation is rendered using the configured backend (Cairo or OpenGL).
+        2. **Glow effect** – a soft glow post-processing effect is applied to the raw video via MoviePy.
+
+        The final video file is saved next to Manim's default output path with the name specified by ``video_name``.
 
         Args:
-            output (bool): Whether to print console output during rendering. Defaults to :data:`~.DEFAULT_OUTPUT_VALUE`.
+            output (bool): Whether to print progress messages and timing logs to the console during rendering. Defaults to :data:`~.DEFAULT_OUTPUT_VALUE`.
+
+        Returns:
+            None
+
+        Example:
+            >>> video = CameraFollowCursorCV(
+            ...     code=('string', 'print("Hello")'),
+            ...     language='python',
+            ...     video_name='HelloWorld'
+            ... )
+            >>> video.render()
+
+        Note:
+            The final MP4 file is typically located at ``./media/videos/1080p60/{video_name}.mp4``
+            (the exact sub-directory depends on Manim's quality configuration).
         """
         self.output = output
         self.scene.render()

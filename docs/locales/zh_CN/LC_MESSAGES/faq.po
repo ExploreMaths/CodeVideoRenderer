@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 18:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../faq.rst:2
+msgid "FAQ & Troubleshooting"
+msgstr "常见问题与故障排除"
+
+#: ../../faq.rst:4
+msgid "Frequently asked questions and common issues."
+msgstr "常见问题和一般故障排查。"
+
+#: ../../faq.rst:7
+msgid "General Questions"
+msgstr "一般问题"
+
+#: ../../faq.rst:10
+msgid "Where is the output video saved?"
+msgstr "输出视频保存在哪里？"
+
+#: ../../faq.rst:12
+msgid ""
+"After calling ``render()``, the final MP4 is placed next to Manim's internal"
+" render output, using the name you provided via ``video_name``:"
+msgstr ""
+"调用 ``render()`` 后，最终的 MP4 文件会放在 Manim 内部渲染输出目录中，文件名使用您通过 ``video_name`` "
+"指定的名称："
+
+#: ../../faq.rst:18
+msgid ""
+"The exact sub-directory (e.g. ``1080p60``) depends on Manim's current "
+"quality configuration."
+msgstr "具体的子目录（例如 ``1080p60``）取决于 Manim 当前的质量配置。"
+
+#: ../../faq.rst:21
+msgid "Cairo vs. OpenGL – which should I use?"
+msgstr "Cairo 与 OpenGL – 应该使用哪个？"
+
+#: ../../faq.rst:23
+msgid ""
+"**Cairo** (default, ``renderer='cairo'``) – CPU-based, works on virtually "
+"all systems."
+msgstr "**Cairo**\\ （默认，``renderer='cairo'``）– 基于 CPU，几乎可以在所有系统上运行。"
+
+#: ../../faq.rst:24
+msgid ""
+"**OpenGL** (``renderer='opengl'``) – GPU-based, can be faster but requires "
+"compatible graphics drivers."
+msgstr "**OpenGL**\\ （``renderer='opengl'``）– 基于 GPU，可能更快，但需要兼容的显卡驱动。"
+
+#: ../../faq.rst:26
+msgid "If you encounter rendering errors with OpenGL, switch back to Cairo:"
+msgstr "如果在使用 OpenGL 时遇到渲染错误，请切换回 Cairo："
+
+#: ../../faq.rst:37
+msgid "Does it support Chinese characters?"
+msgstr "支持中文字符吗？"
+
+#: ../../faq.rst:39
+msgid ""
+"Yes. CodeVideoRenderer bundles ``CodeVideoRendererFont`` to support CJK "
+"characters. If you see garbled text, ensure your input code is valid UTF-8."
+msgstr ""
+"支持。CodeVideoRenderer 内置了 ``CodeVideoRendererFont`` 字体以支持 CJK "
+"字符。如果出现乱码，请确保输入的代码是有效的 UTF-8 编码。"
+
+#: ../../faq.rst:42
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../faq.rst:45
+msgid "FFmpeg not found"
+msgstr "找不到 FFmpeg"
+
+#: ../../faq.rst:47
+msgid ""
+"If rendering fails with an FFmpeg-related error, verify FFmpeg is installed "
+"and available in your ``PATH``:"
+msgstr "如果渲染失败并出现与 FFmpeg 相关的错误，请验证 FFmpeg 已安装并在 ``PATH`` 中可用："
+
+#: ../../faq.rst:53
+msgid ""
+"If the command is not found, reinstall FFmpeg (see :doc:`installation`) and "
+"restart your terminal."
+msgstr "如果命令找不到，请重新安装 FFmpeg（参见 :doc:`installation`）并重启终端。"
+
+#: ../../faq.rst:56
+msgid "Invalid characters error"
+msgstr "无效字符错误"
+
+#: ../../faq.rst:58
+msgid ""
+"CodeVideoRenderer rejects the following characters because they can break "
+"Manim's text layout:"
+msgstr "CodeVideoRenderer 会拒绝以下字符，因为它们可能破坏 Manim 的文本布局："
+
+#: ../../faq.rst:60
+msgid "``\\r`` (carriage return)"
+msgstr "``\\r``\\ （回车符）"
+
+#: ../../faq.rst:61
+msgid "``\\v`` (vertical tab)"
+msgstr "``\\v``\\ （垂直制表符）"
+
+#: ../../faq.rst:62
+msgid "``\\f`` (form feed)"
+msgstr "``\\f``\\ （换页符）"
+
+#: ../../faq.rst:64
+msgid ""
+"If your code contains these (often copied from certain editors), replace "
+"them with regular spaces or newlines before passing the string to "
+"``CameraFollowCursorCV``."
+msgstr ""
+"如果您的代码中包含这些字符（通常是从某些编辑器复制而来），请在将字符串传递给 ``CameraFollowCursorCV`` "
+"之前将其替换为普通空格或换行符。"
+
+#: ../../faq.rst:67
+msgid "Code is cut off or too large"
+msgstr "代码被截断或太大"
+
+#: ../../faq.rst:69
+msgid ""
+"If your code block overflows the visible area or the camera zoom feels "
+"wrong, adjust ``camera_scale``:"
+msgstr "如果您的代码块超出了可视区域，或者相机缩放感觉不对，请调整 ``camera_scale``："
+
+#: ../../faq.rst:80
+msgid ""
+"Values smaller than the default ``0.5`` zoom the camera out; larger values "
+"zoom in."
+msgstr "小于默认值 ``0.5`` 的值会缩小相机视野；更大的值会放大。"
+
+#: ../../faq.rst:83
+msgid "How do I suppress console output during rendering?"
+msgstr "如何在渲染期间抑制控制台输出？"
+
+#: ../../faq.rst:85
+msgid "Pass ``output=False`` to :meth:`~.render`:"
+msgstr "向 :meth:`~.render` 传递 ``output=False``："
+
+#: ../../faq.rst:91
+msgid ""
+"This disables progress bars and timing logs while still producing the video "
+"file."
+msgstr "这会禁用进度条和计时日志，同时仍然生成视频文件。"
+
+#: ../../faq.rst:94
+msgid "Why does Manim caching not work?"
+msgstr "为什么 Manim 缓存不起作用？"
+
+#: ../../faq.rst:96
+msgid ""
+"CodeVideoRenderer internally sets ``config.disable_caching = True`` to "
+"prevent stale cache files from interfering with the code-typing animation. "
+"This is intentional and not a bug."
+msgstr ""
+"CodeVideoRenderer 在内部设置 ``config.disable_caching = "
+"True``，以防止过时的缓存文件干扰代码输入动画。这是有意设计的，并非 bug。"
+
+#: ../../faq.rst:99
+msgid "Why is my code slightly misaligned vertically?"
+msgstr "为什么我的代码在垂直方向上略有错位？"
+
+#: ../../faq.rst:101
+msgid ""
+"Certain characters (``acegmnopqrsuvwxyz+,-.:;<=>_~``) trigger a known Manim "
+"text-layout alignment bug. CodeVideoRenderer automatically applies a "
+"workaround offset (:data:`~.CODE_OFFSET`) for these characters. If you still"
+" see issues, try adjusting ``camera_scale`` or avoid those characters in "
+"critical positions."
+msgstr ""
+"某些字符（``acegmnopqrsuvwxyz+,-.:;<=>_~``）会触发一个已知的 Manim 文本布局对齐 "
+"bug。CodeVideoRenderer 会自动为这些字符应用变通偏移量（:data:`~.CODE_OFFSET`）。如果仍然看到问题，请尝试调整 "
+"``camera_scale``，或在关键位置避免使用这些字符。"
+
+#: ../../faq.rst:104
+msgid "Are tabs expanded? Can I change the tab size?"
+msgstr "Tab 会被扩展吗？我可以更改 tab 大小吗？"
+
+#: ../../faq.rst:106
+msgid ""
+"Yes — tabs are always expanded to spaces using a tab size of ``4`` (the "
+":data:`~.DEFAULT_TAB_WIDTH` constant). Currently this value cannot be "
+"changed at runtime; if you need a different tab size, preprocess your code "
+"string before passing it to :class:`~.CameraFollowCursorCV`."
+msgstr ""
+"是的 — tab 总是使用 ``4`` 的空格大小进行扩展（即 :data:`~.DEFAULT_TAB_WIDTH` "
+"常量）。目前该值无法在运行时更改；如果您需要不同的 tab 大小，请在将代码字符串传递给 :class:`~.CameraFollowCursorCV`"
+" 之前进行预处理。"
+
+#: ../../faq.rst:109
+msgid "What happens if ``video_name`` is empty?"
+msgstr "如果 ``video_name`` 为空会发生什么？"
+
+#: ../../faq.rst:111
+msgid ""
+"The constructor raises ``ValueError(\"video_name must be provided\")`` if "
+"``video_name`` is empty or falsy. Always provide a non-empty string."
+msgstr ""
+"如果 ``video_name`` 为空或为假值，构造函数会抛出 ``ValueError(\"video_name must be "
+"provided\")``。请始终提供非空字符串。"
+
+#: ../../faq.rst:114
+msgid "Rendering is slow"
+msgstr "渲染速度慢"
+
+#: ../../faq.rst:116
+msgid "Try ``renderer='opengl'`` if you have a compatible GPU."
+msgstr "如果您有兼容的 GPU，请尝试使用 ``renderer='opengl'``。"
+
+#: ../../faq.rst:117
+msgid "Reduce the code length or split it into multiple shorter videos."
+msgstr "缩短代码长度，或将其拆分为多个较短的视频。"
+
+#: ../../faq.rst:118
+msgid ""
+"Ensure you are not running inside a very slow virtual machine without GPU "
+"passthrough."
+msgstr "确保您没有在没有 GPU 直通功能的非常慢的虚拟机中运行。"

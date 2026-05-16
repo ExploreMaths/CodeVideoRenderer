@@ -7,26 +7,106 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../utils.rst:2
 msgid "Utilities"
 msgstr "工具函数"
 
+#: ../../utils.rst:4
+msgid ""
+"This module provides internal helper functions, video post-processing "
+"effects, and progress-bar utilities. Most users do not need to interact with"
+" these directly, but the public items are documented here for completeness."
+msgstr "本模块提供内部辅助函数、视频后期处理效果和进度条工具。大多数用户无需直接使用这些功能，但为完整起见，此处对公开项进行了文档说明。"
+
+#: ../../utils.rst:7
+msgid "String processing"
+msgstr "字符串处理"
+
+#: ../../utils.rst:9
+msgid ""
+":func:`~.stripEmptyLines` — Remove leading and trailing empty lines from a "
+"string."
+msgstr ":func:`~.stripEmptyLines` — 移除字符串的首尾空行。"
+
+#: ../../utils.rst:10
+msgid ""
+":func:`~.findSpacePositions` — Locate non-leading, non-trailing spaces in a "
+"multi-line string."
+msgstr ":func:`~.findSpacePositions` — 定位多行字符串中的非前导、非尾随空格。"
+
+#: ../../utils.rst:11
+msgid ""
+":func:`~.replaceMiddleSpacesWithOccupyCharacter` — Replace middle spaces "
+"with a placeholder character used by Manim."
+msgstr ""
+":func:`~.replaceMiddleSpacesWithOccupyCharacter` — 将中间空格替换为 Manim 使用的占位字符。"
+
+#: ../../utils.rst:14
+msgid "Video effects"
+msgstr "视频效果"
+
+#: ../../utils.rst:16
+msgid ""
+":func:`~.addGlowEffect` — Apply a soft-glow filter to a rendered video."
+msgstr ":func:`~.addGlowEffect` — 对渲染后的视频应用柔光滤镜。"
+
+#: ../../utils.rst:19
+msgid "Progress bars"
+msgstr "进度条"
+
+#: ../../utils.rst:21
+msgid ""
+":class:`~.DefaultProgressBar` — A ``rich`` progress bar used during "
+"rendering."
+msgstr ":class:`~.DefaultProgressBar` — 渲染期间使用的 ``rich`` 进度条。"
+
+#: ../../utils.rst:22
+msgid ""
+":class:`~.RichProgressBarLogger` — A ``proglog`` logger that bridges to Rich"
+" progress bars."
+msgstr ":class:`~.RichProgressBarLogger` — 桥接到 Rich 进度条的 ``proglog`` 日志记录器。"
+
+#: ../../utils.rst:25
+msgid "Context managers"
+msgstr "上下文管理器"
+
+#: ../../utils.rst:27
+msgid ""
+":func:`~.noManimOutput` — Suppress Manim console output within a ``with`` "
+"block."
+msgstr ":func:`~.noManimOutput` — 在 ``with`` 代码块内抑制 Manim 控制台输出。"
+
 #: CodeVideoRenderer.utils.noManimOutput:1 of
 msgid "Context manager used to execute code without outputting Manim logs."
 msgstr "用于在不输出 Manim 日志的情况下执行代码的上下文管理器。"
+
+#: CodeVideoRenderer.utils.noManimOutput:3 of
+msgid ""
+"Within the ``with`` block, Manim's standard output, standard error, and "
+"progress bars are suppressed. Streams are restored when the block exits."
+msgstr "在 ``with`` 代码块内，Manim 的标准输出、标准错误和进度条都会被抑制。代码块退出时流会恢复。"
+
+#: CodeVideoRenderer.utils.noManimOutput of
+msgid "Yields"
+msgstr "生成"
+
+#: CodeVideoRenderer.utils.addGlowEffect:10
+#: CodeVideoRenderer.utils.noManimOutput:6 of
+msgid "None"
+msgstr "无"
 
 #: CodeVideoRenderer.utils.stripEmptyLines:1 of
 msgid "Remove empty lines from the beginning and end of a string."
@@ -80,18 +160,11 @@ msgstr "输出视频文件的保存路径。"
 msgid "Whether to display progress bars."
 msgstr "是否显示进度条。"
 
-#: CodeVideoRenderer.utils.addGlowEffect:10 of
-msgid "None"
-msgstr "无"
-
 #: CodeVideoRenderer.utils.findSpacePositions:1 of
 msgid ""
-"Find the 2D positions of all non-leading, non-trailing spaces in a "
-"string. Each position is represented as a list ``[row_index, "
-"column_index]``."
-msgstr ""
-"查找字符串中所有非开头、非结尾的空格的二维位置。"
-"每个位置以列表 ``[row_index, column_index]`` 表示。"
+"Find the 2D positions of all non-leading, non-trailing spaces in a string. "
+"Each position is represented as a list ``[row_index, column_index]``."
+msgstr "查找字符串中所有非开头、非结尾的空格的二维位置。每个位置以列表 ``[row_index, column_index]`` 表示。"
 
 #: CodeVideoRenderer.utils.findEmptyLinePositions:3
 #: CodeVideoRenderer.utils.findSpacePositions:4 of
@@ -102,9 +175,7 @@ msgstr "一个字符串。"
 msgid ""
 "A list of 2D positions of all non-leading, non-trailing spaces. Each "
 "position is represented as a list ``[row_index, column_index]``."
-msgstr ""
-"所有非开头、非结尾空格的二维位置列表。"
-"每个位置以列表 ``[row_index, column_index]`` 表示。"
+msgstr "所有非开头、非结尾空格的二维位置列表。每个位置以列表 ``[row_index, column_index]`` 表示。"
 
 #: CodeVideoRenderer.utils.findEmptyLinePositions:1 of
 msgid "Find the line indices of all empty lines in a string."
@@ -118,9 +189,7 @@ msgstr "所有空行的行索引列表。"
 msgid ""
 "Replace all non-leading, non-trailing spaces in the input string with "
 ":data:`~.OCCUPY_CHARACTER`. Retain leading and trailing spaces."
-msgstr ""
-"将输入字符串中所有非开头、非结尾的空格替换为 :data:`~.OCCUPY_CHARACTER`。"
-"保留开头和结尾的空格。"
+msgstr "将输入字符串中所有非开头、非结尾的空格替换为 :data:`~.OCCUPY_CHARACTER`。保留开头和结尾的空格。"
 
 #: CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:4 of
 msgid "Original string."
@@ -128,18 +197,32 @@ msgstr "原始字符串。"
 
 #: CodeVideoRenderer.utils.replaceMiddleSpacesWithOccupyCharacter:7 of
 msgid ""
-"Processed string with middle spaces replaced by "
-":data:`~.OCCUPY_CHARACTER`."
-msgstr ""
-"中间空格已被替换为 :data:`~.OCCUPY_CHARACTER` 的处理后字符串。"
+"Processed string with middle spaces replaced by :data:`~.OCCUPY_CHARACTER`."
+msgstr "中间空格已被替换为 :data:`~.OCCUPY_CHARACTER` 的处理后字符串。"
 
 #: CodeVideoRenderer.utils.DefaultProgressBar:1 of
-msgid "Default progress bar."
-msgstr "默认进度条。"
+msgid "Default progress bar used during video rendering."
+msgstr "视频渲染期间使用的默认进度条。"
+
+#: CodeVideoRenderer.utils.DefaultProgressBar:3 of
+msgid ""
+"This is a thin wrapper around ``rich.progress.Progress`` pre-configured with"
+" descriptive columns (task name, bar, completion count, percentage, time "
+"remaining, and transfer speed)."
+msgstr ""
+"这是对 ``rich.progress.Progress`` 的轻量包装，预配置了描述性列（任务名称、进度条、完成计数、百分比、剩余时间和传输速度）。"
 
 #: CodeVideoRenderer.utils.RichProgressBarLogger:1 of
 msgid "A progress logger that uses Rich to display progress bars."
 msgstr "使用 Rich 显示进度条的进度记录器。"
+
+#: CodeVideoRenderer.utils.RichProgressBarLogger:3 of
+msgid ""
+"This class bridges ``proglog`` (used by MoviePy) and ``rich`` progress bars,"
+" allowing the glow-effect post-processing step to show a native-looking "
+"progress indicator in the terminal."
+msgstr ""
+"此类桥接 ``proglog``\\ （MoviePy 使用）和 ``rich`` 进度条，使柔光效果后期处理步骤能够在终端中显示原生外观的进度指示器。"
 
 #: CodeVideoRenderer.utils.RichProgressBarLogger.new_tqdm_bar:1 of
 msgid "Create a Rich progress bar task for the given bar."

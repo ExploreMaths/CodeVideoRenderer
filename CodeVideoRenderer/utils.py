@@ -24,6 +24,12 @@ from .typing import StrPath
 def noManimOutput() -> Generator[None, Any, None]:
     """
     Context manager used to execute code without outputting Manim logs.
+
+    Within the ``with`` block, Manim's standard output, standard error, and
+    progress bars are suppressed. Streams are restored when the block exits.
+
+    Yields:
+        None
     """
     sys.stdout = StringIO()
     stderr_buffer = StringIO()
@@ -234,9 +240,18 @@ def replaceMiddleSpacesWithOccupyCharacter(string: str) -> str:
 
 class DefaultProgressBar(Progress):
     """
-    Default progress bar.
+    Default progress bar used during video rendering.
+
+    This is a thin wrapper around ``rich.progress.Progress`` pre-configured with
+    descriptive columns (task name, bar, completion count, percentage, time remaining,
+    and transfer speed).
     """
     def __init__(self, output: bool):
+        """
+        Args:
+            output (bool): If ``False``, the progress bar is attached to a ``None`` console
+                so that no output is displayed.
+        """
         super().__init__(
             TextColumn("[progress.description]{task.description}"),
             BarColumn(),
@@ -250,6 +265,10 @@ class DefaultProgressBar(Progress):
 class RichProgressBarLogger(ProgressBarLogger):
     """
     A progress logger that uses Rich to display progress bars.
+
+    This class bridges ``proglog`` (used by MoviePy) and ``rich`` progress bars,
+    allowing the glow-effect post-processing step to show a native-looking progress
+    indicator in the terminal.
     """
     def __init__(
         self,
@@ -264,6 +283,19 @@ class RichProgressBarLogger(ProgressBarLogger):
         min_time_interval=0.1,
         ignore_bars_under=0,
     ):
+        """
+        Args:
+            output (bool): Whether to display the progress bar.
+            title (str): Title shown at the top of the progress bar.
+            init_state: Initial state forwarded to ``ProgressBarLogger``.
+            bars: Bar definitions forwarded to ``ProgressBarLogger``.
+            leave_bars (bool): If ``True``, finished bars remain visible.
+            ignored_bars: Bars to ignore forwarded to ``ProgressBarLogger``.
+            logged_bars: Bars to log forwarded to ``ProgressBarLogger``.
+            print_messages (bool): Whether to print log messages.
+            min_time_interval (float): Minimum update interval in seconds.
+            ignore_bars_under (int): Ignore bars with fewer than this many items.
+        """
         # 调用父类构造函数，初始化核心属性
         super().__init__(
             init_state=init_state,

@@ -24,6 +24,26 @@ CodeVideoRenderer is a Python animation library specifically designed for creati
 
 ## 🚀 Quick Installation
 
+### Prerequisites
+
+* **Python 3.8+**
+* **FFmpeg** (required for video rendering)
+
+Install FFmpeg first if you haven't:
+
+```bash
+# Windows
+winget install ffmpeg
+
+# macOS
+brew install ffmpeg
+
+# Linux
+sudo apt update && sudo apt install ffmpeg
+```
+
+### Install from PyPI
+
 ```bash
 pip install codevideorenderer
 ```

@@ -7,22 +7,72 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../config.rst:2
 msgid "Configuration and constants"
 msgstr "配置与常量"
+
+#: ../../config.rst:4
+msgid ""
+"This module contains all default constants and configuration values used by "
+"CodeVideoRenderer. You can import these constants to customize the rendering"
+" behavior, or pass your own values directly to "
+":class:`~.CameraFollowCursorCV`."
+msgstr ""
+"本模块包含 CodeVideoRenderer 使用的所有默认常量和配置值。您可以导入这些常量来自定义渲染行为，或将自己的值直接传递给 "
+":class:`~.CameraFollowCursorCV`。"
+
+#: ../../config.rst:7
+msgid "Commonly customized constants"
+msgstr "常用自定义常量"
+
+#: ../../config.rst:9
+msgid ""
+":data:`~.DEFAULT_TAB_WIDTH` — Number of spaces used to expand tab characters"
+" (default: ``4``)."
+msgstr ":data:`~.DEFAULT_TAB_WIDTH` — 用于扩展 tab 字符的空格数（默认值：``4``）。"
+
+#: ../../config.rst:10
+msgid ""
+":data:`~.DEFAULT_TYPE_INTERVAL` — Seconds between typed characters (default:"
+" ``0.15``)."
+msgstr ":data:`~.DEFAULT_TYPE_INTERVAL` — 输入字符之间的间隔秒数（默认值：``0.15``）。"
+
+#: ../../config.rst:11
+msgid ""
+":data:`~.DEFAULT_LINE_SPACING` — Vertical spacing between code lines "
+"(default: ``0.8``)."
+msgstr ":data:`~.DEFAULT_LINE_SPACING` — 代码行之间的垂直间距（默认值：``0.8``）。"
+
+#: ../../config.rst:12
+msgid ""
+":data:`~.DEFAULT_CURSOR_BLINK_RUN_TIME` — Duration of the cursor blink "
+"animation (default: ``0.5``)."
+msgstr ":data:`~.DEFAULT_CURSOR_BLINK_RUN_TIME` — 光标闪烁动画的持续时间（默认值：``0.5``）。"
+
+#: ../../config.rst:13
+msgid ""
+":data:`~.CODE_OFFSET` — Vertical offset applied to code positioning "
+"(default: ``0.08``)."
+msgstr ":data:`~.CODE_OFFSET` — 应用于代码定位的垂直偏移量（默认值：``0.08``）。"
+
+#: ../../config.rst:14
+msgid ""
+":data:`~.NOT_AVAILABLE_CHARACTERS` — Characters that are rejected during "
+"rendering (``'\\r\\v\\f'``)."
+msgstr ":data:`~.NOT_AVAILABLE_CHARACTERS` — 渲染期间会被拒绝的字符（``'\\r\\v\\f'``）。"
 
 #: CodeVideoRenderer.config.ORIGINAL_STDOUT:1 of
 msgid "Original standard output stream, used for console output."

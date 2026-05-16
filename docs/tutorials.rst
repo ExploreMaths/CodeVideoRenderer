@@ -121,14 +121,43 @@ Code Preparation
 * **Consistent Formatting**: Use consistent indentation
 * **Reasonable Length**: Keep code blocks under 100 lines for optimal viewing
 
+Switching to OpenGL
+^^^^^^^^^^^^^^^^^^^
+
+By default CodeVideoRenderer uses the Cairo (CPU) backend. If you have a compatible GPU, you can switch to OpenGL for faster rendering:
+
+.. code-block:: python
+
+   video = CameraFollowCursorCV(
+       code=('string', 'your_code_here'),
+       language='python',
+       renderer='opengl'  # Use GPU acceleration
+   )
+   video.render()
+
+.. note::
+
+   OpenGL support depends on your graphics drivers and operating system. If rendering fails with OpenGL, fall back to ``renderer='cairo'`` (the default).
+
+Controlling Console Output
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default :meth:`~.render` prints progress bars and timing logs. To run silently:
+
+.. code-block:: python
+
+   video.render(output=False)
+
+This is useful when rendering in CI/CD pipelines or batch scripts where console noise should be minimized.
+
 Performance Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Use OpenGL**: For faster rendering on supported systems
+* **Use OpenGL**: For faster rendering on supported systems (see example above)
 * **Batch Processing**: Render multiple videos in sequence
 * **Resolution**: Choose appropriate resolution for your needs
 
 Troubleshooting Common Issues
 ------------------------------
 
-See the :doc:`reference` section for detailed API documentation and troubleshooting tips.
+See the :doc:`faq` section for solutions to common problems (FFmpeg errors, invalid characters, slow rendering, etc.).

@@ -450,7 +450,7 @@ CodeVideoRenderer 1.0.0.3
 
 **Date**: Aug 16, 2025
 
-No information available.
+See details at https://pypi.org/project/codevideorenderer/1.0.0.3/.
 
 CodeVideoRenderer 1.0.0.2
 ----------------------------

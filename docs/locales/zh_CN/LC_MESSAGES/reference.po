@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../reference.rst:2
@@ -26,14 +26,13 @@ msgstr "参考手册"
 
 #: ../../reference.rst:4
 msgid ""
-"This reference manual details modules, functions, and variables included "
-"in CodeVideoRenderer, describing what they are and what they do. For "
-"learning how to use CodeVideoRenderer, see :doc:`tutorials`. For a list "
-"of changes since the last release, see the :doc:`changelog`."
+"This reference manual details modules, functions, and variables included in "
+"CodeVideoRenderer, describing what they are and what they do. For learning "
+"how to use CodeVideoRenderer, see :doc:`tutorials`. For a list of changes "
+"since the last release, see the :doc:`changelog`."
 msgstr ""
-"本参考手册详细介绍了 CodeVideoRenderer 包含的模块、函数和变量，"
-"说明它们的定义和功能。要学习如何使用 CodeVideoRenderer，请参阅 :doc:`tutorials`。"
-"要了解自上次发布以来的变更列表，请参阅 :doc:`changelog`。"
+"本参考手册详细介绍了 CodeVideoRenderer 包含的模块、函数和变量，说明它们的定义和功能。要学习如何使用 "
+"CodeVideoRenderer，请参阅 :doc:`tutorials`。要了解自上次发布以来的变更列表，请参阅 :doc:`changelog`。"
 
 #: ../../reference.rst:8
 msgid ":doc:`tutorials` for practical usage guides"
@@ -48,5 +47,65 @@ msgid ":doc:`installation` for setup instructions"
 msgstr ":doc:`installation` 安装说明"
 
 #: ../../reference.rst:13
+msgid "Module Overview"
+msgstr "模块概览"
+
+#: ../../reference.rst:19
+msgid "Module"
+msgstr "模块"
+
+#: ../../reference.rst:20
+msgid "Description"
+msgstr "描述"
+
+#: ../../reference.rst:21
+msgid ":doc:`mainclass`"
+msgstr ":doc:`mainclass`"
+
+#: ../../reference.rst:22
+msgid ""
+"``CameraFollowCursorCV`` – the main class for creating code animation "
+"videos."
+msgstr "``CameraFollowCursorCV`` – 用于创建代码动画视频的主类。"
+
+#: ../../reference.rst:23
+msgid ":doc:`config`"
+msgstr ":doc:`config`"
+
+#: ../../reference.rst:24
+msgid ""
+"Default constants and configuration values (spacing, timing, fonts, offsets,"
+" etc.)."
+msgstr "默认常量和配置值（间距、计时、字体、偏移量等）。"
+
+#: ../../reference.rst:25
+msgid ":doc:`typing`"
+msgstr ":doc:`typing`"
+
+#: ../../reference.rst:26
+msgid ""
+"Type aliases and custom types used across the library (``PygmentsLanguage``,"
+" ``StrPath``, etc.)."
+msgstr "库中使用的类型别名和自定义类型（``PygmentsLanguage``、``StrPath`` 等）。"
+
+#: ../../reference.rst:27
+msgid ":doc:`utils`"
+msgstr ":doc:`utils`"
+
+#: ../../reference.rst:28
+msgid ""
+"Internal utility functions and helper classes for text processing, progress "
+"bars, and video post-processing."
+msgstr "用于文本处理、进度条和视频后期处理的内部实用函数和辅助类。"
+
+#: ../../reference.rst:29
+msgid ":doc:`version`"
+msgstr ":doc:`version`"
+
+#: ../../reference.rst:30
+msgid "Package version string (``__version__``)."
+msgstr "包版本字符串（``__version__``）。"
+
+#: ../../reference.rst:33
 msgid "Index"
 msgstr "索引"

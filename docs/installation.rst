@@ -12,6 +12,13 @@ Before installing CodeVideoRenderer, ensure you have the following:
 * **pip** (Python package installer)
 * **FFmpeg** (for video rendering)
 
+We strongly recommend installing inside a virtual environment because Manim (a heavy dependency) may conflict with other packages in your global Python environment.
+
+.. code-block:: bash
+
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
 Installing FFmpeg
 ^^^^^^^^^^^^^^^^^
 
@@ -35,6 +42,17 @@ Installing FFmpeg
 
          sudo apt update
          sudo apt install ffmpeg
+
+Verifying FFmpeg
+^^^^^^^^^^^^^^^^
+
+After installation, confirm FFmpeg is available in your ``PATH``:
+
+.. code-block:: bash
+
+   ffmpeg -version
+
+You should see version information printed. If you get a "command not found" error, restart your terminal or add FFmpeg to your system ``PATH`` before continuing.
 
 Basic Installation
 ------------------

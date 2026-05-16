@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Explore Maths
+# This file is distributed under the same license as the CodeVideoRenderer
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeVideoRenderer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../migration.rst:2
+msgid "Migration Guide"
+msgstr "迁移指南"
+
+#: ../../migration.rst:4
+msgid "This guide helps you upgrade from older versions of CodeVideoRenderer."
+msgstr "本指南帮助您从旧版本升级 CodeVideoRenderer。"
+
+#: ../../migration.rst:7
+msgid "Migrating to 1.2.x"
+msgstr "迁移到 1.2.x"
+
+#: ../../migration.rst:9
+msgid ""
+"Version 1.2.x introduced breaking API changes. Follow the sections below "
+"when upgrading from 1.1.x or earlier."
+msgstr "1.2.x 版本引入了破坏性的 API 更改。从 1.1.x 或更早版本升级时，请遵循以下部分。"
+
+#: ../../migration.rst:12
+msgid "Function Naming Convention"
+msgstr "函数命名规范"
+
+#: ../../migration.rst:14
+msgid ""
+"All public functions and classes switched from **snake_case** to "
+"**camelCase** in 1.2.1."
+msgstr "1.2.1 版本中，所有公共函数和类都从 **snake_case** 切换为 **camelCase**。"
+
+#: ../../migration.rst:20
+msgid "Old (1.1.x and earlier)"
+msgstr "旧版（1.1.x 及更早）"
+
+#: ../../migration.rst:21
+msgid "New (1.2.x)"
+msgstr "新版（1.2.x）"
+
+#: ../../migration.rst:22
+msgid "``type_checker``"
+msgstr "``type_checker``"
+
+#: ../../migration.rst:23 ../../migration.rst:33
+msgid "``typeChecker``"
+msgstr "``typeChecker``"
+
+#: ../../migration.rst:25
+msgid ""
+"If you were calling utility functions directly from "
+"``CodeVideoRenderer.utils``, update your code accordingly."
+msgstr "如果您直接从 ``CodeVideoRenderer.utils`` 调用实用函数，请相应地更新代码。"
+
+#: ../../migration.rst:28
+msgid "Removed Utilities"
+msgstr "已移除的实用函数"
+
+#: ../../migration.rst:30
+msgid "The following functions were removed from ``utils.py`` in 1.2.3:"
+msgstr "以下函数在 1.2.3 版本中被从 ``utils.py`` 中移除："
+
+#: ../../migration.rst:32
+msgid "``checkType``"
+msgstr "``checkType``"
+
+#: ../../migration.rst:35
+msgid ""
+"If your own code depends on these functions, replace them with "
+"``typeguard.typechecked`` (which CodeVideoRenderer now uses internally) or "
+"implement your own type checking."
+msgstr ""
+"如果您自己的代码依赖于这些函数，请将其替换为 ``typeguard.typechecked``\\ （CodeVideoRenderer "
+"现在内部使用）或实现自己的类型检查。"
+
+#: ../../migration.rst:38
+msgid "No Action Needed for Basic Usage"
+msgstr "基本用法无需操作"
+
+#: ../../migration.rst:40
+msgid ""
+"If you only use the high-level :class:`~.CameraFollowCursorCV` API (as shown"
+" in :doc:`tutorials`), no code changes are required—the breaking changes "
+"affect internal utilities and direct imports from ``utils.py``."
+msgstr ""
+"如果您仅使用高级 :class:`~.CameraFollowCursorCV` API（如 :doc:`tutorials` "
+"中所示），则无需更改代码—破坏性更改仅影响内部实用函数和直接从 ``utils.py`` 导入的内容。"

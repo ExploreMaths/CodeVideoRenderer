@@ -64,6 +64,8 @@ Index
    installation
    tutorials
    reference
+   faq
+   migration
    changelog
    contributing
    code_of_conduct

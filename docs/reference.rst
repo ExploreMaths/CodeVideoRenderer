@@ -9,6 +9,26 @@ This reference manual details modules, functions, and variables included in Code
     * :doc:`examples` for code examples
     * :doc:`installation` for setup instructions
 
+Module Overview
+---------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 75
+
+   * - Module
+     - Description
+   * - :doc:`mainclass`
+     - ``CameraFollowCursorCV`` – the main class for creating code animation videos.
+   * - :doc:`config`
+     - Default constants and configuration values (spacing, timing, fonts, offsets, etc.).
+   * - :doc:`typing`
+     - Type aliases and custom types used across the library (``PygmentsLanguage``, ``StrPath``, etc.).
+   * - :doc:`utils`
+     - Internal utility functions and helper classes for text processing, progress bars, and video post-processing.
+   * - :doc:`version`
+     - Package version string (``__version__``).
+
 Index
 -----
 

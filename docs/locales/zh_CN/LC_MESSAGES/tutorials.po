@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorials.rst:2
@@ -26,8 +26,8 @@ msgstr "教程与指南"
 
 #: ../../tutorials.rst:4
 msgid ""
-"This section contains step-by-step tutorials and comprehensive guides for"
-" using CodeVideoRenderer."
+"This section contains step-by-step tutorials and comprehensive guides for "
+"using CodeVideoRenderer."
 msgstr "本部分包含使用 CodeVideoRenderer 的分步教程和综合指南。"
 
 #: ../../tutorials.rst:7
@@ -144,33 +144,73 @@ msgstr "**一致的格式**：使用一致的缩进"
 
 #: ../../tutorials.rst:122
 msgid ""
-"**Reasonable Length**: Keep code blocks under 100 lines for optimal "
-"viewing"
+"**Reasonable Length**: Keep code blocks under 100 lines for optimal viewing"
 msgstr "**合理长度**：为获得最佳观看效果，保持代码块在 100 行以内"
 
 #: ../../tutorials.rst:125
+msgid "Switching to OpenGL"
+msgstr "切换到 OpenGL"
+
+#: ../../tutorials.rst:127
+msgid ""
+"By default CodeVideoRenderer uses the Cairo (CPU) backend. If you have a "
+"compatible GPU, you can switch to OpenGL for faster rendering:"
+msgstr ""
+"默认情况下，CodeVideoRenderer 使用 Cairo（CPU）后端。如果您有兼容的 GPU，可以切换到 OpenGL 以获得更快的渲染速度："
+
+#: ../../tutorials.rst:140
+msgid ""
+"OpenGL support depends on your graphics drivers and operating system. If "
+"rendering fails with OpenGL, fall back to ``renderer='cairo'`` (the "
+"default)."
+msgstr ""
+"OpenGL 支持取决于您的显卡驱动和操作系统。如果使用 OpenGL 渲染失败，请回退到 ``renderer='cairo'``\\ （默认）。"
+
+#: ../../tutorials.rst:143
+msgid "Controlling Console Output"
+msgstr "控制控制台输出"
+
+#: ../../tutorials.rst:145
+msgid ""
+"By default :meth:`~.render` prints progress bars and timing logs. To run "
+"silently:"
+msgstr "默认情况下，:meth:`~.render` 会打印进度条和计时日志。要静默运行："
+
+#: ../../tutorials.rst:151
+msgid ""
+"This is useful when rendering in CI/CD pipelines or batch scripts where "
+"console noise should be minimized."
+msgstr "这在 CI/CD 流水线或批处理脚本中渲染时非常有用，可以最大程度减少控制台噪音。"
+
+#: ../../tutorials.rst:154
 msgid "Performance Optimization"
 msgstr "性能优化"
 
-#: ../../tutorials.rst:127
-msgid "**Use OpenGL**: For faster rendering on supported systems"
-msgstr "**使用 OpenGL**：在支持的系统上获得更快的渲染速度"
+#: ../../tutorials.rst:156
+msgid ""
+"**Use OpenGL**: For faster rendering on supported systems (see example "
+"above)"
+msgstr "**使用 OpenGL**：在支持的系统上获得更快的渲染速度（参见上面的示例）"
 
-#: ../../tutorials.rst:128
+#: ../../tutorials.rst:157
 msgid "**Batch Processing**: Render multiple videos in sequence"
 msgstr "**批处理**：按顺序渲染多个视频"
 
-#: ../../tutorials.rst:129
+#: ../../tutorials.rst:158
 msgid "**Resolution**: Choose appropriate resolution for your needs"
 msgstr "**分辨率**：根据您的需求选择合适的分辨率"
 
-#: ../../tutorials.rst:132
+#: ../../tutorials.rst:161
 msgid "Troubleshooting Common Issues"
 msgstr "常见问题故障排除"
 
-#: ../../tutorials.rst:134
+#: ../../tutorials.rst:163
 msgid ""
-"See the :doc:`reference` section for detailed API documentation and "
-"troubleshooting tips."
-msgstr ""
-"有关详细的 API 文档和故障排除提示，请参阅 :doc:`reference` 部分。"
+"See the :doc:`faq` section for solutions to common problems (FFmpeg errors, "
+"invalid characters, slow rendering, etc.)."
+msgstr "有关常见问题的解决方案（FFmpeg 错误、无效字符、渲染缓慢等），请参阅 :doc:`faq` 部分。"
+
+#~ msgid ""
+#~ "See the :doc:`reference` section for detailed API documentation and "
+#~ "troubleshooting tips."
+#~ msgstr "有关详细的 API 文档和故障排除提示，请参阅 :doc:`reference` 部分。"

@@ -7,17 +7,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../examples.rst:2
@@ -28,9 +28,7 @@ msgstr "示例画廊"
 msgid ""
 "This gallery showcases various examples of CodeVideoRenderer in action, "
 "demonstrating different use cases and configurations."
-msgstr ""
-"本画廊展示了 CodeVideoRenderer 的各种实际应用示例，"
-"演示了不同的使用场景和配置。"
+msgstr "本画廊展示了 CodeVideoRenderer 的各种实际应用示例，演示了不同的使用场景和配置。"
 
 #: ../../examples.rst:8
 msgid ":doc:`tutorials` for step-by-step guides"
@@ -108,34 +106,53 @@ msgstr "算法讲解"
 msgid "Demonstrate sorting algorithms:"
 msgstr "演示排序算法："
 
-#: ../../examples.rst:178
+#: ../../examples.rst:185
 msgid "Code Review Demonstration"
 msgstr "代码审查演示"
 
-#: ../../examples.rst:180
+#: ../../examples.rst:187
 msgid "Show before/after code improvements:"
 msgstr "展示代码改进前后的对比："
 
-#: ../../examples.rst:208
+#: ../../examples.rst:229
+msgid "Video Output"
+msgstr "视频输出"
+
+#: ../../examples.rst:231
+msgid ""
+"All examples above produce an MP4 file after calling ``render()``. The "
+"default output location follows Manim's convention:"
+msgstr "以上所有示例在调用 ``render()`` 后都会生成 MP4 文件。默认输出位置遵循 Manim 的约定："
+
+#: ../../examples.rst:237
+msgid ""
+"The exact sub-directory depends on Manim's quality settings. You control the"
+" file name via the ``video_name`` parameter passed to "
+":class:`~.CameraFollowCursorCV`."
+msgstr ""
+"具体的子目录取决于 Manim 的质量设置。您可以通过传递给 :class:`~.CameraFollowCursorCV` 的 "
+"``video_name`` 参数来控制文件名。"
+
+#: ../../examples.rst:240
 msgid "Video Output Examples"
 msgstr "视频输出示例"
 
-#: ../../examples.rst:210
+#: ../../examples.rst:242
 msgid "Generated videos will feature:"
 msgstr "生成的视频将具备以下特点："
 
-#: ../../examples.rst:212
+#: ../../examples.rst:244
 msgid "**Smooth typing animation** with realistic timing"
 msgstr "**流畅的打字动画**，具有真实的时间节奏"
 
-#: ../../examples.rst:213
+#: ../../examples.rst:245
 msgid "**Syntax highlighting** appropriate for each language"
-msgstr "适合每种语言的**语法高亮**"
+msgstr "适合每种语言的\\ **语法高亮**"
 
-#: ../../examples.rst:214
+#: ../../examples.rst:246
 msgid "**Camera movement** that follows the cursor naturally"
-msgstr "自然跟随光标的**镜头移动**"
+msgstr "自然跟随光标的\\ **镜头移动**"
 
-#: ../../examples.rst:215
+#: ../../examples.rst:247
 msgid "**Professional appearance** suitable for presentations"
-msgstr "适合演示的**专业外观**"
+msgstr "适合演示的\\ **专业外观**"

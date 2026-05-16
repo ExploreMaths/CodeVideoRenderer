@@ -16,3 +16,16 @@ body[data-theme="dark"] {
     margin-top: -0.45em;
     border-radius: 100rem;
 }
+
+/* Increase heading line-height and spacing for better readability */
+.content h2 {
+    line-height: 1.5;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content h3 {
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}

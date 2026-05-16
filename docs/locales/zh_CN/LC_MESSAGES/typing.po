@@ -7,37 +7,73 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CodeVideoRenderer \n"
+"Project-Id-Version: CodeVideoRenderer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-16 12:12+0800\n"
+"POT-Creation-Date: 2026-05-16 17:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../typing.rst:2
-msgid "Typings"
-msgstr "类型定义"
+msgid "Type Aliases"
+msgstr "类型别名"
+
+#: ../../typing.rst:4
+msgid ""
+"This module defines the type aliases used throughout CodeVideoRenderer for "
+"type checking and autocompletion."
+msgstr "本模块定义了 CodeVideoRenderer 中用于类型检查和自动补全的类型别名。"
+
+#: ../../typing.rst:7
+msgid "Quick reference"
+msgstr "快速参考"
+
+#: ../../typing.rst:9
+msgid ""
+":data:`~.PygmentsLanguage` — Valid language identifiers for syntax "
+"highlighting (e.g. ``'python'``, ``'javascript'``)."
+msgstr ""
+":data:`~.PygmentsLanguage` — 语法高亮的有效语言标识符（例如 ``'python'``、``'javascript'``）。"
+
+#: ../../typing.rst:10
+msgid ""
+":data:`~.PygmentsFormatterStyle` — Valid Pygments style names (e.g. "
+"``'material'``, ``'github-dark'``, ``'monokai'``)."
+msgstr ""
+":data:`~.PygmentsFormatterStyle` — 有效的 Pygments 样式名称（例如 "
+"``'material'``、``'github-dark'``、``'monokai'``）。"
+
+#: ../../typing.rst:11
+msgid ""
+":data:`~.StrPath` — A ``str`` or ``os.PathLike`` representing a file system "
+"path."
+msgstr ":data:`~.StrPath` — 表示文件系统路径的 ``str`` 或 ``os.PathLike``。"
+
+#: ../../typing.rst:15
+msgid ""
+"The lists above are not exhaustive. If you want to see every supported "
+"language or style, run the sample code shown in the docstrings below."
+msgstr "上面的列表并不详尽。如果您想查看所有支持的语言或样式，请运行下面 docstring 中显示的示例代码。"
 
 #: of typing.Literal:1
 msgid ""
 "A string literal type representing programming languages supported by "
 "Pygments for syntax highlighting. This type is used to ensure that only "
 "valid language identifiers are accepted when specifying the language for "
-"code rendering in the ``CodeVideoRenderer`` class. The list includes a "
-"wide range of programming languages, markup languages, configuration file"
-" formats, and other text-based formats that Pygments can recognize and "
+"code rendering in the ``CodeVideoRenderer`` class. The list includes a wide "
+"range of programming languages, markup languages, configuration file "
+"formats, and other text-based formats that Pygments can recognize and "
 "highlight appropriately."
 msgstr ""
-"一个字符串字面量类型，表示 Pygments 支持的用于语法高亮的编程语言。"
-"该类型用于确保在 ``CodeVideoRenderer`` 类中指定代码渲染语言时，"
-"只接受有效的语言标识符。列表包括多种编程语言、标记语言、配置文件格式，"
-"以及 Pygments 可以识别并正确高亮的其他基于文本的格式。"
+"一个字符串字面量类型，表示 Pygments 支持的用于语法高亮的编程语言。该类型用于确保在 ``CodeVideoRenderer`` "
+"类中指定代码渲染语言时，只接受有效的语言标识符。列表包括多种编程语言、标记语言、配置文件格式，以及 Pygments "
+"可以识别并正确高亮的其他基于文本的格式。"
 
 #: of typing.Literal:6
 msgid ""
@@ -47,18 +83,16 @@ msgstr "您可以运行以下代码获取支持的完整语言列表："
 
 #: of typing.Literal:1
 msgid ""
-"A string literal type representing formatter styles supported by Pygments"
-" for syntax highlighting. This type is used to ensure that only valid "
-"formatter styles are accepted when specifying the formatter style for "
-"code rendering in the ``CodeVideoRenderer`` class. The list includes a "
-"variety of styles that can be applied to the syntax highlighting, ranging"
-" from light and dark themes to styles designed for accessibility and "
-"specific color schemes."
+"A string literal type representing formatter styles supported by Pygments "
+"for syntax highlighting. This type is used to ensure that only valid "
+"formatter styles are accepted when specifying the formatter style for code "
+"rendering in the ``CodeVideoRenderer`` class. The list includes a variety of"
+" styles that can be applied to the syntax highlighting, ranging from light "
+"and dark themes to styles designed for accessibility and specific color "
+"schemes."
 msgstr ""
-"一个字符串字面量类型，表示 Pygments 支持的用于语法高亮的格式化器样式。"
-"该类型用于确保在 ``CodeVideoRenderer`` 类中指定代码渲染的格式化器样式时，"
-"只接受有效的样式。列表包括多种可应用于语法高亮的样式，"
-"涵盖浅色和深色主题，以及专为无障碍和特定配色方案设计的样式。"
+"一个字符串字面量类型，表示 Pygments 支持的用于语法高亮的格式化器样式。该类型用于确保在 ``CodeVideoRenderer`` "
+"类中指定代码渲染的格式化器样式时，只接受有效的样式。列表包括多种可应用于语法高亮的样式，涵盖浅色和深色主题，以及专为无障碍和特定配色方案设计的样式。"
 
 #: of typing.Literal:6
 msgid ""
@@ -67,5 +101,9 @@ msgid ""
 msgstr "您可以运行以下代码获取支持的完整格式化器样式列表："
 
 #: of typing.Union:1
-msgid "A string or ``os.PathLike`` representing a path to a directory or file."
+msgid ""
+"A string or ``os.PathLike`` representing a path to a directory or file."
 msgstr "表示目录或文件路径的字符串或 ``os.PathLike``。"
+
+#~ msgid "Typings"
+#~ msgstr "类型定义"
