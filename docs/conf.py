@@ -34,6 +34,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'locales']
 # -- Internationalization --------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalization
 
+# RTD normalizes language codes to ll-cc (e.g. zh-cn), but Sphinx uses ll_CC (e.g. zh_CN).
+language = os.environ.get('READTHEDOCS_LANGUAGE', 'en')
+if '-' in language:
+    lang, country = language.split('-')
+    language = f'{lang}_{country.upper()}'
+
 locale_dirs = ['locales']
 gettext_compact = False
 autodoc_mock_imports = [
