@@ -8,6 +8,8 @@ body[data-theme="dark"] {
 
 .sidebar-brand-text {
     font-size: 1.45rem !important;
+    word-break: keep-all;
+    overflow-wrap: normal;
 }
 
 .sd-badge {
