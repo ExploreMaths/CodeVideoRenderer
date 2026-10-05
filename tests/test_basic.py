@@ -299,6 +299,127 @@ print("Symbols: @#$%^&*()")
     )
     assert video is not None
 
+# --- Post-processing helpers -------------------------------------------------
+
+def test_postprocess_functions_imported():
+    """All post-processing helpers should be importable and callable."""
+    from CodeVideoRenderer import (
+        find_ffmpeg, remove_subtitles, add_subtitles, add_background_music,
+        concat_videos, set_quality, add_watermark, add_title_card,
+        extract_cover, extract_audio, remove_audio, trim_video, change_speed,
+    )
+    for fn in (
+        find_ffmpeg, remove_subtitles, add_subtitles, add_background_music,
+        concat_videos, set_quality, add_watermark, add_title_card,
+        extract_cover, extract_audio, remove_audio, trim_video, change_speed,
+    ):
+        assert callable(fn)
+
+
+def test_find_ffmpeg_returns_path():
+    """find_ffmpeg should resolve to an existing executable."""
+    import os
+    from CodeVideoRenderer import find_ffmpeg
+    path = find_ffmpeg()
+    assert isinstance(path, str) and os.path.exists(path)
+
+
+def test_postprocess_validation_errors():
+    """Invalid arguments should raise ValueError early."""
+    import pytest
+    from CodeVideoRenderer import add_watermark, concat_videos, set_quality, change_speed, extract_audio
+
+    with pytest.raises(ValueError):
+        add_watermark("x.mp4")  # neither text nor image
+
+    with pytest.raises(ValueError):
+        concat_videos(["only_one.mp4"], "out.mp4")  # fewer than two inputs
+
+    with pytest.raises(ValueError):
+        set_quality("x.mp4", resolution="not-a-preset")
+
+    with pytest.raises(ValueError):
+        change_speed("x.mp4", speed=0)
+
+    with pytest.raises(ValueError):
+        extract_audio("x.mp4", format="flac")
+
+
+def test_clear_code_parameter_accepted():
+    """CameraFollowCursorCV should accept the new clear_code parameter."""
+    video = CameraFollowCursorCV(
+        code=('string', 'print("hi")'),
+        language='python',
+        video_name='test_clear_code',
+        clear_code=True,
+        clear_code_run_time=0.5,
+    )
+    assert video is not None
+
+
+def test_new_render_parameters_accepted():
+    """Backspace-delete / autocomplete / theme parameters should be accepted."""
+    video = CameraFollowCursorCV(
+        code=('string', 'def foo():\n    return 1'),
+        language='python',
+        video_name='test_new_params',
+        clear_code=True,
+        clear_code_mode='backspace',
+        clear_code_interval=0.02,
+        autocomplete=True,
+        autocomplete_wait_time=0.4,
+        background_color='#1E1E1E',
+        line_highlight_color='#2D2D2D',
+        end_wait_time=0.5,
+    )
+    assert video is not None
+
+
+def test_clear_code_interval_validation():
+    """clear_code_interval must be positive."""
+    with pytest.raises(ValueError):
+        CameraFollowCursorCV(
+            code=('string', 'x = 1'),
+            language='python',
+            video_name='test_bad_interval',
+            clear_code_interval=0,
+        )
+
+
+def test_chinese_ime_parameters_accepted():
+    """The Chinese IME parameters should be accepted."""
+    video = CameraFollowCursorCV(
+        code=('string', '# 注释\nprint("你好世界")'),
+        language='python',
+        video_name='test_ime',
+        autocomplete=True,
+        chinese_ime=True,
+        ime_wait_time=0.3,
+        formatter_style='vscode-dark-plus',
+    )
+    assert video is not None
+
+
+def test_vscode_theme_registered():
+    """The VS Code style and lexer should be registered with Pygments."""
+    from pygments.styles import get_style_by_name
+    from pygments.lexers import get_lexer_by_name
+    assert get_style_by_name("vscode-dark-plus") is not None
+    lexer = get_lexer_by_name("python-vscode")
+    assert lexer is not None
+
+
+def test_ime_helpers():
+    """IME helpers should detect CJK runs and produce hyphenated pinyin."""
+    from CodeVideoRenderer import is_cjk, cjk_run_at, get_ime
+    assert is_cjk("世") is True
+    assert is_cjk("a") is False
+    assert cjk_run_at("# 世界", 3) == (2, 4)
+    pinyin, cands = get_ime("print('世界')", 8)
+    assert pinyin == "shi-jie"
+    assert cands and cands[0] == "世界"
+
+
 # Note: The actual render test is commented out to avoid creating video files during testing
 # def test_render_functionality():
 #     """Test actual rendering functionality (creates video file)"""
